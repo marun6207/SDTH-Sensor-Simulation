@@ -7,3 +7,4 @@ pytest-cache-files-*/
 .coverage
 htmlcov/
 *.egg-info/
+simulated_data_*/
