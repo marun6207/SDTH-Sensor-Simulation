@@ -635,7 +635,26 @@
         }
       ],
       "emitter_events": [],
-      "ais_events": []
+      "ais_events": [
+        {
+          "time_s": 0,
+          "enabled": true,
+          "mmsi": "563001001",
+          "vessel_name": "COASTAL RUNNER 01"
+        },
+        {
+          "time_s": 900,
+          "enabled": false,
+          "mmsi": "563001001",
+          "vessel_name": "COASTAL RUNNER 01"
+        },
+        {
+          "time_s": 1400,
+          "enabled": true,
+          "mmsi": "563001101",
+          "vessel_name": "COASTAL RUNNER 01"
+        }
+      ]
     },
     {
       "contact_id": "HOSTILE_SURFACE_02",
@@ -709,7 +728,14 @@
         }
       ],
       "emitter_events": [],
-      "ais_events": []
+      "ais_events": [
+        {
+          "time_s": 0,
+          "enabled": true,
+          "mmsi": "563001002",
+          "vessel_name": "COASTAL RUNNER 02"
+        }
+      ]
     },
     {
       "contact_id": "HOSTILE_SURFACE_03",
@@ -783,7 +809,20 @@
         }
       ],
       "emitter_events": [],
-      "ais_events": []
+      "ais_events": [
+        {
+          "time_s": 0,
+          "enabled": true,
+          "mmsi": "563001003",
+          "vessel_name": "COASTAL RUNNER 03"
+        },
+        {
+          "time_s": 1800,
+          "enabled": false,
+          "mmsi": "563001003",
+          "vessel_name": "COASTAL RUNNER 03"
+        }
+      ]
     }
   ],
   "fusion_mappings": []

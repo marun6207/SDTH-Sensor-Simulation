@@ -166,7 +166,7 @@
     "timestamp": "00:00:06",
     "track_id": "RDR-166",
     "azimuth_deg": 47.2,
-    "range_km": 9,
+    "range_km": 9.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -175,7 +175,7 @@
     "timestamp": "00:00:06",
     "track_id": "RDR-704",
     "azimuth_deg": 47.2,
-    "range_km": 9,
+    "range_km": 9.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -193,7 +193,7 @@
     "timestamp": "00:00:07",
     "track_id": "RDR-166",
     "azimuth_deg": 47.2,
-    "range_km": 9,
+    "range_km": 9.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -211,7 +211,7 @@
     "timestamp": "00:00:07",
     "track_id": "RDR-921",
     "azimuth_deg": 47.2,
-    "range_km": 9,
+    "range_km": 9.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -2658,7 +2658,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:38",
     "track_id": "RDR-704",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.3,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -2685,7 +2685,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:39",
     "track_id": "RDR-704",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.29,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -2712,7 +2712,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:40",
     "track_id": "RDR-704",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.29,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -2739,7 +2739,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:41",
     "track_id": "RDR-704",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.28,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -2766,7 +2766,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:42",
     "track_id": "RDR-704",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.27,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -2793,7 +2793,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:43",
     "track_id": "RDR-704",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.26,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -2820,7 +2820,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:44",
     "track_id": "RDR-704",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.26,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -2847,7 +2847,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:45",
     "track_id": "RDR-704",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.25,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -2865,7 +2865,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:46",
     "track_id": "RDR-166",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.3,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -2874,7 +2874,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:46",
     "track_id": "RDR-704",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.24,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -2892,7 +2892,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:47",
     "track_id": "RDR-166",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.29,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -2901,7 +2901,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:47",
     "track_id": "RDR-704",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.23,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -2919,7 +2919,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:48",
     "track_id": "RDR-166",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.29,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -2928,7 +2928,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:48",
     "track_id": "RDR-704",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.23,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -2946,7 +2946,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:49",
     "track_id": "RDR-166",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.28,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -2973,7 +2973,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:50",
     "track_id": "RDR-166",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.27,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3000,7 +3000,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:51",
     "track_id": "RDR-166",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.26,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3027,7 +3027,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:52",
     "track_id": "RDR-166",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.26,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3054,7 +3054,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:53",
     "track_id": "RDR-166",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.25,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3081,7 +3081,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:54",
     "track_id": "RDR-166",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.24,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3099,7 +3099,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:54",
     "track_id": "RDR-921",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.3,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3108,7 +3108,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:55",
     "track_id": "RDR-166",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.24,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3126,7 +3126,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:55",
     "track_id": "RDR-921",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.29,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3135,7 +3135,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:56",
     "track_id": "RDR-166",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.23,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3153,7 +3153,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:56",
     "track_id": "RDR-921",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.28,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3162,7 +3162,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:57",
     "track_id": "RDR-166",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.22,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3180,7 +3180,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:57",
     "track_id": "RDR-921",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.28,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3207,7 +3207,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:58",
     "track_id": "RDR-921",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.27,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3234,7 +3234,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:01:59",
     "track_id": "RDR-921",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.26,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3261,7 +3261,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:00",
     "track_id": "RDR-921",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.26,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3288,7 +3288,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:01",
     "track_id": "RDR-921",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.25,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3315,7 +3315,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:02",
     "track_id": "RDR-921",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.24,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3342,7 +3342,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:03",
     "track_id": "RDR-921",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.24,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3369,7 +3369,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:04",
     "track_id": "RDR-921",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.23,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3396,7 +3396,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:05",
     "track_id": "RDR-921",
-    "azimuth_deg": 48,
+    "azimuth_deg": 48.0,
     "range_km": 8.22,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -3766,7 +3766,7 @@
     "timestamp": "00:02:19",
     "track_id": "RDR-704",
     "azimuth_deg": 48.9,
-    "range_km": 8,
+    "range_km": 8.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -3793,7 +3793,7 @@
     "timestamp": "00:02:20",
     "track_id": "RDR-704",
     "azimuth_deg": 48.9,
-    "range_km": 8,
+    "range_km": 8.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -3819,7 +3819,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:21",
     "track_id": "RDR-704",
-    "azimuth_deg": 49,
+    "azimuth_deg": 49.0,
     "range_km": 7.99,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -4027,7 +4027,7 @@
     "timestamp": "00:02:29",
     "track_id": "RDR-166",
     "azimuth_deg": 48.9,
-    "range_km": 8,
+    "range_km": 8.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -4054,7 +4054,7 @@
     "timestamp": "00:02:30",
     "track_id": "RDR-166",
     "azimuth_deg": 48.9,
-    "range_km": 8,
+    "range_km": 8.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -4080,7 +4080,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:31",
     "track_id": "RDR-166",
-    "azimuth_deg": 49,
+    "azimuth_deg": 49.0,
     "range_km": 7.99,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -4251,7 +4251,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:37",
     "track_id": "RDR-704",
-    "azimuth_deg": 50,
+    "azimuth_deg": 50.0,
     "range_km": 7.89,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -4278,7 +4278,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:38",
     "track_id": "RDR-704",
-    "azimuth_deg": 50,
+    "azimuth_deg": 50.0,
     "range_km": 7.89,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -4315,7 +4315,7 @@
     "timestamp": "00:02:39",
     "track_id": "RDR-921",
     "azimuth_deg": 48.9,
-    "range_km": 8,
+    "range_km": 8.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -4342,7 +4342,7 @@
     "timestamp": "00:02:40",
     "track_id": "RDR-921",
     "azimuth_deg": 48.9,
-    "range_km": 8,
+    "range_km": 8.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -4368,7 +4368,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:41",
     "track_id": "RDR-921",
-    "azimuth_deg": 49,
+    "azimuth_deg": 49.0,
     "range_km": 7.99,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -4512,7 +4512,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:47",
     "track_id": "RDR-166",
-    "azimuth_deg": 50,
+    "azimuth_deg": 50.0,
     "range_km": 7.89,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -4539,7 +4539,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:48",
     "track_id": "RDR-166",
-    "azimuth_deg": 50,
+    "azimuth_deg": 50.0,
     "range_km": 7.89,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -4710,7 +4710,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:54",
     "track_id": "RDR-704",
-    "azimuth_deg": 51,
+    "azimuth_deg": 51.0,
     "range_km": 7.79,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -4800,7 +4800,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:57",
     "track_id": "RDR-921",
-    "azimuth_deg": 50,
+    "azimuth_deg": 50.0,
     "range_km": 7.89,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -4827,7 +4827,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:02:58",
     "track_id": "RDR-921",
-    "azimuth_deg": 50,
+    "azimuth_deg": 50.0,
     "range_km": 7.89,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -4971,7 +4971,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:03:04",
     "track_id": "RDR-166",
-    "azimuth_deg": 51,
+    "azimuth_deg": 51.0,
     "range_km": 7.79,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -5142,7 +5142,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:03:10",
     "track_id": "RDR-704",
-    "azimuth_deg": 52,
+    "azimuth_deg": 52.0,
     "range_km": 7.7,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -5259,7 +5259,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:03:14",
     "track_id": "RDR-921",
-    "azimuth_deg": 51,
+    "azimuth_deg": 51.0,
     "range_km": 7.79,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -5403,7 +5403,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:03:20",
     "track_id": "RDR-166",
-    "azimuth_deg": 52,
+    "azimuth_deg": 52.0,
     "range_km": 7.7,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -5547,7 +5547,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:03:25",
     "track_id": "RDR-704",
-    "azimuth_deg": 53,
+    "azimuth_deg": 53.0,
     "range_km": 7.61,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -5574,7 +5574,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:03:26",
     "track_id": "RDR-704",
-    "azimuth_deg": 53,
+    "azimuth_deg": 53.0,
     "range_km": 7.61,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -5691,7 +5691,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:03:30",
     "track_id": "RDR-921",
-    "azimuth_deg": 52,
+    "azimuth_deg": 52.0,
     "range_km": 7.7,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -5808,7 +5808,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:03:35",
     "track_id": "RDR-166",
-    "azimuth_deg": 53,
+    "azimuth_deg": 53.0,
     "range_km": 7.61,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -5835,7 +5835,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:03:36",
     "track_id": "RDR-166",
-    "azimuth_deg": 53,
+    "azimuth_deg": 53.0,
     "range_km": 7.61,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -5979,7 +5979,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:03:41",
     "track_id": "RDR-704",
-    "azimuth_deg": 54,
+    "azimuth_deg": 54.0,
     "range_km": 7.52,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -6096,7 +6096,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:03:45",
     "track_id": "RDR-921",
-    "azimuth_deg": 53,
+    "azimuth_deg": 53.0,
     "range_km": 7.61,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -6123,7 +6123,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:03:46",
     "track_id": "RDR-921",
-    "azimuth_deg": 53,
+    "azimuth_deg": 53.0,
     "range_km": 7.61,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -6240,7 +6240,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:03:51",
     "track_id": "RDR-166",
-    "azimuth_deg": 54,
+    "azimuth_deg": 54.0,
     "range_km": 7.52,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -6384,7 +6384,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:03:56",
     "track_id": "RDR-704",
-    "azimuth_deg": 55,
+    "azimuth_deg": 55.0,
     "range_km": 7.44,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -6528,7 +6528,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:01",
     "track_id": "RDR-921",
-    "azimuth_deg": 54,
+    "azimuth_deg": 54.0,
     "range_km": 7.52,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -6645,7 +6645,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:06",
     "track_id": "RDR-166",
-    "azimuth_deg": 55,
+    "azimuth_deg": 55.0,
     "range_km": 7.44,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -6762,7 +6762,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:10",
     "track_id": "RDR-704",
-    "azimuth_deg": 56,
+    "azimuth_deg": 56.0,
     "range_km": 7.37,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -6789,7 +6789,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:11",
     "track_id": "RDR-704",
-    "azimuth_deg": 56,
+    "azimuth_deg": 56.0,
     "range_km": 7.36,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -6933,7 +6933,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:16",
     "track_id": "RDR-921",
-    "azimuth_deg": 55,
+    "azimuth_deg": 55.0,
     "range_km": 7.44,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -7023,7 +7023,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:20",
     "track_id": "RDR-166",
-    "azimuth_deg": 56,
+    "azimuth_deg": 56.0,
     "range_km": 7.37,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -7050,7 +7050,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:21",
     "track_id": "RDR-166",
-    "azimuth_deg": 56,
+    "azimuth_deg": 56.0,
     "range_km": 7.36,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -7140,7 +7140,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:24",
     "track_id": "RDR-704",
-    "azimuth_deg": 57,
+    "azimuth_deg": 57.0,
     "range_km": 7.3,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -7167,7 +7167,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:25",
     "track_id": "RDR-704",
-    "azimuth_deg": 57,
+    "azimuth_deg": 57.0,
     "range_km": 7.29,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -7311,7 +7311,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:30",
     "track_id": "RDR-921",
-    "azimuth_deg": 56,
+    "azimuth_deg": 56.0,
     "range_km": 7.37,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -7338,7 +7338,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:31",
     "track_id": "RDR-921",
-    "azimuth_deg": 56,
+    "azimuth_deg": 56.0,
     "range_km": 7.36,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -7401,7 +7401,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:34",
     "track_id": "RDR-166",
-    "azimuth_deg": 57,
+    "azimuth_deg": 57.0,
     "range_km": 7.3,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -7428,7 +7428,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:35",
     "track_id": "RDR-166",
-    "azimuth_deg": 57,
+    "azimuth_deg": 57.0,
     "range_km": 7.29,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -7545,7 +7545,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:39",
     "track_id": "RDR-704",
-    "azimuth_deg": 58,
+    "azimuth_deg": 58.0,
     "range_km": 7.22,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -7689,7 +7689,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:44",
     "track_id": "RDR-921",
-    "azimuth_deg": 57,
+    "azimuth_deg": 57.0,
     "range_km": 7.3,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -7716,7 +7716,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:45",
     "track_id": "RDR-921",
-    "azimuth_deg": 57,
+    "azimuth_deg": 57.0,
     "range_km": 7.29,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -7806,7 +7806,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:49",
     "track_id": "RDR-166",
-    "azimuth_deg": 58,
+    "azimuth_deg": 58.0,
     "range_km": 7.22,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -7896,7 +7896,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:52",
     "track_id": "RDR-704",
-    "azimuth_deg": 59,
+    "azimuth_deg": 59.0,
     "range_km": 7.16,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -7923,7 +7923,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:53",
     "track_id": "RDR-704",
-    "azimuth_deg": 59,
+    "azimuth_deg": 59.0,
     "range_km": 7.16,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -8094,7 +8094,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:04:59",
     "track_id": "RDR-921",
-    "azimuth_deg": 58,
+    "azimuth_deg": 58.0,
     "range_km": 7.22,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -8157,7 +8157,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:02",
     "track_id": "RDR-166",
-    "azimuth_deg": 59,
+    "azimuth_deg": 59.0,
     "range_km": 7.16,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -8184,7 +8184,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:03",
     "track_id": "RDR-166",
-    "azimuth_deg": 59,
+    "azimuth_deg": 59.0,
     "range_km": 7.16,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -8274,7 +8274,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:06",
     "track_id": "RDR-704",
-    "azimuth_deg": 60,
+    "azimuth_deg": 60.0,
     "range_km": 7.1,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -8445,7 +8445,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:12",
     "track_id": "RDR-921",
-    "azimuth_deg": 59,
+    "azimuth_deg": 59.0,
     "range_km": 7.16,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -8472,7 +8472,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:13",
     "track_id": "RDR-921",
-    "azimuth_deg": 59,
+    "azimuth_deg": 59.0,
     "range_km": 7.16,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -8535,7 +8535,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:16",
     "track_id": "RDR-166",
-    "azimuth_deg": 60,
+    "azimuth_deg": 60.0,
     "range_km": 7.1,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -8625,7 +8625,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:19",
     "track_id": "RDR-704",
-    "azimuth_deg": 61,
+    "azimuth_deg": 61.0,
     "range_km": 7.04,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -8823,7 +8823,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:26",
     "track_id": "RDR-921",
-    "azimuth_deg": 60,
+    "azimuth_deg": 60.0,
     "range_km": 7.1,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -8869,7 +8869,7 @@
     "timestamp": "00:05:28",
     "track_id": "RDR-704",
     "azimuth_deg": 61.7,
-    "range_km": 7,
+    "range_km": 7.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -8886,7 +8886,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:29",
     "track_id": "RDR-166",
-    "azimuth_deg": 61,
+    "azimuth_deg": 61.0,
     "range_km": 7.04,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -8896,7 +8896,7 @@
     "timestamp": "00:05:29",
     "track_id": "RDR-704",
     "azimuth_deg": 61.7,
-    "range_km": 7,
+    "range_km": 7.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -8976,7 +8976,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:32",
     "track_id": "RDR-704",
-    "azimuth_deg": 62,
+    "azimuth_deg": 62.0,
     "range_km": 6.98,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -9003,7 +9003,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:33",
     "track_id": "RDR-704",
-    "azimuth_deg": 62,
+    "azimuth_deg": 62.0,
     "range_km": 6.98,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -9130,7 +9130,7 @@
     "timestamp": "00:05:38",
     "track_id": "RDR-166",
     "azimuth_deg": 61.7,
-    "range_km": 7,
+    "range_km": 7.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -9157,7 +9157,7 @@
     "timestamp": "00:05:39",
     "track_id": "RDR-166",
     "azimuth_deg": 61.7,
-    "range_km": 7,
+    "range_km": 7.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -9174,7 +9174,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:39",
     "track_id": "RDR-921",
-    "azimuth_deg": 61,
+    "azimuth_deg": 61.0,
     "range_km": 7.04,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -9237,7 +9237,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:42",
     "track_id": "RDR-166",
-    "azimuth_deg": 62,
+    "azimuth_deg": 62.0,
     "range_km": 6.98,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -9264,7 +9264,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:43",
     "track_id": "RDR-166",
-    "azimuth_deg": 62,
+    "azimuth_deg": 62.0,
     "range_km": 6.98,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -9327,7 +9327,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:45",
     "track_id": "RDR-704",
-    "azimuth_deg": 63,
+    "azimuth_deg": 63.0,
     "range_km": 6.93,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -9418,7 +9418,7 @@
     "timestamp": "00:05:48",
     "track_id": "RDR-921",
     "azimuth_deg": 61.7,
-    "range_km": 7,
+    "range_km": 7.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -9445,7 +9445,7 @@
     "timestamp": "00:05:49",
     "track_id": "RDR-921",
     "azimuth_deg": 61.7,
-    "range_km": 7,
+    "range_km": 7.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -9525,7 +9525,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:52",
     "track_id": "RDR-921",
-    "azimuth_deg": 62,
+    "azimuth_deg": 62.0,
     "range_km": 6.98,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -9552,7 +9552,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:53",
     "track_id": "RDR-921",
-    "azimuth_deg": 62,
+    "azimuth_deg": 62.0,
     "range_km": 6.98,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -9588,7 +9588,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:55",
     "track_id": "RDR-166",
-    "azimuth_deg": 63,
+    "azimuth_deg": 63.0,
     "range_km": 6.93,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -9678,7 +9678,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:05:58",
     "track_id": "RDR-704",
-    "azimuth_deg": 64,
+    "azimuth_deg": 64.0,
     "range_km": 6.88,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -9876,7 +9876,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:05",
     "track_id": "RDR-921",
-    "azimuth_deg": 63,
+    "azimuth_deg": 63.0,
     "range_km": 6.93,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -9939,7 +9939,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:08",
     "track_id": "RDR-166",
-    "azimuth_deg": 64,
+    "azimuth_deg": 64.0,
     "range_km": 6.88,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -10002,7 +10002,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:10",
     "track_id": "RDR-704",
-    "azimuth_deg": 65,
+    "azimuth_deg": 65.0,
     "range_km": 6.83,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -10029,7 +10029,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:11",
     "track_id": "RDR-704",
-    "azimuth_deg": 65,
+    "azimuth_deg": 65.0,
     "range_km": 6.83,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -10227,7 +10227,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:18",
     "track_id": "RDR-921",
-    "azimuth_deg": 64,
+    "azimuth_deg": 64.0,
     "range_km": 6.88,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -10263,7 +10263,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:20",
     "track_id": "RDR-166",
-    "azimuth_deg": 65,
+    "azimuth_deg": 65.0,
     "range_km": 6.83,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -10290,7 +10290,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:21",
     "track_id": "RDR-166",
-    "azimuth_deg": 65,
+    "azimuth_deg": 65.0,
     "range_km": 6.83,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -10353,7 +10353,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:23",
     "track_id": "RDR-704",
-    "azimuth_deg": 66,
+    "azimuth_deg": 66.0,
     "range_km": 6.79,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -10551,7 +10551,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:30",
     "track_id": "RDR-921",
-    "azimuth_deg": 65,
+    "azimuth_deg": 65.0,
     "range_km": 6.83,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -10578,7 +10578,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:31",
     "track_id": "RDR-921",
-    "azimuth_deg": 65,
+    "azimuth_deg": 65.0,
     "range_km": 6.83,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -10614,7 +10614,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:33",
     "track_id": "RDR-166",
-    "azimuth_deg": 66,
+    "azimuth_deg": 66.0,
     "range_km": 6.79,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -10677,7 +10677,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:35",
     "track_id": "RDR-704",
-    "azimuth_deg": 67,
+    "azimuth_deg": 67.0,
     "range_km": 6.74,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -10902,7 +10902,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:43",
     "track_id": "RDR-921",
-    "azimuth_deg": 66,
+    "azimuth_deg": 66.0,
     "range_km": 6.79,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -10938,7 +10938,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:45",
     "track_id": "RDR-166",
-    "azimuth_deg": 67,
+    "azimuth_deg": 67.0,
     "range_km": 6.74,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -11001,7 +11001,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:47",
     "track_id": "RDR-704",
-    "azimuth_deg": 68,
+    "azimuth_deg": 68.0,
     "range_km": 6.7,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -11226,7 +11226,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:55",
     "track_id": "RDR-921",
-    "azimuth_deg": 67,
+    "azimuth_deg": 67.0,
     "range_km": 6.74,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -11262,7 +11262,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:57",
     "track_id": "RDR-166",
-    "azimuth_deg": 68,
+    "azimuth_deg": 68.0,
     "range_km": 6.7,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -11325,7 +11325,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:06:59",
     "track_id": "RDR-704",
-    "azimuth_deg": 69,
+    "azimuth_deg": 69.0,
     "range_km": 6.67,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -11550,7 +11550,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:07:07",
     "track_id": "RDR-921",
-    "azimuth_deg": 68,
+    "azimuth_deg": 68.0,
     "range_km": 6.7,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -11586,7 +11586,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:07:09",
     "track_id": "RDR-166",
-    "azimuth_deg": 69,
+    "azimuth_deg": 69.0,
     "range_km": 6.67,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -11649,7 +11649,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:07:11",
     "track_id": "RDR-704",
-    "azimuth_deg": 70,
+    "azimuth_deg": 70.0,
     "range_km": 6.63,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -11874,7 +11874,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:07:19",
     "track_id": "RDR-921",
-    "azimuth_deg": 69,
+    "azimuth_deg": 69.0,
     "range_km": 6.67,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -11910,7 +11910,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:07:21",
     "track_id": "RDR-166",
-    "azimuth_deg": 70,
+    "azimuth_deg": 70.0,
     "range_km": 6.63,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -11946,7 +11946,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:07:22",
     "track_id": "RDR-704",
-    "azimuth_deg": 71,
+    "azimuth_deg": 71.0,
     "range_km": 6.6,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -12198,7 +12198,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:07:31",
     "track_id": "RDR-921",
-    "azimuth_deg": 70,
+    "azimuth_deg": 70.0,
     "range_km": 6.63,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -12207,7 +12207,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:07:32",
     "track_id": "RDR-166",
-    "azimuth_deg": 71,
+    "azimuth_deg": 71.0,
     "range_km": 6.6,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -12270,7 +12270,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:07:34",
     "track_id": "RDR-704",
-    "azimuth_deg": 72,
+    "azimuth_deg": 72.0,
     "range_km": 6.57,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -12495,7 +12495,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:07:42",
     "track_id": "RDR-921",
-    "azimuth_deg": 71,
+    "azimuth_deg": 71.0,
     "range_km": 6.6,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -12531,7 +12531,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:07:44",
     "track_id": "RDR-166",
-    "azimuth_deg": 72,
+    "azimuth_deg": 72.0,
     "range_km": 6.57,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -12567,7 +12567,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:07:45",
     "track_id": "RDR-704",
-    "azimuth_deg": 73,
+    "azimuth_deg": 73.0,
     "range_km": 6.54,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -12819,7 +12819,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:07:54",
     "track_id": "RDR-921",
-    "azimuth_deg": 72,
+    "azimuth_deg": 72.0,
     "range_km": 6.57,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -12828,7 +12828,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:07:55",
     "track_id": "RDR-166",
-    "azimuth_deg": 73,
+    "azimuth_deg": 73.0,
     "range_km": 6.54,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -12891,7 +12891,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:07:57",
     "track_id": "RDR-704",
-    "azimuth_deg": 74,
+    "azimuth_deg": 74.0,
     "range_km": 6.52,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -13116,7 +13116,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:05",
     "track_id": "RDR-921",
-    "azimuth_deg": 73,
+    "azimuth_deg": 73.0,
     "range_km": 6.54,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -13152,7 +13152,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:07",
     "track_id": "RDR-166",
-    "azimuth_deg": 74,
+    "azimuth_deg": 74.0,
     "range_km": 6.52,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -13188,7 +13188,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:08",
     "track_id": "RDR-704",
-    "azimuth_deg": 75,
+    "azimuth_deg": 75.0,
     "range_km": 6.49,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -13440,7 +13440,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:17",
     "track_id": "RDR-921",
-    "azimuth_deg": 74,
+    "azimuth_deg": 74.0,
     "range_km": 6.52,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -13449,7 +13449,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:18",
     "track_id": "RDR-166",
-    "azimuth_deg": 75,
+    "azimuth_deg": 75.0,
     "range_km": 6.49,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -13485,7 +13485,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:19",
     "track_id": "RDR-704",
-    "azimuth_deg": 76,
+    "azimuth_deg": 76.0,
     "range_km": 6.47,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -13737,7 +13737,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:28",
     "track_id": "RDR-921",
-    "azimuth_deg": 75,
+    "azimuth_deg": 75.0,
     "range_km": 6.49,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -13746,7 +13746,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:29",
     "track_id": "RDR-166",
-    "azimuth_deg": 76,
+    "azimuth_deg": 76.0,
     "range_km": 6.47,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -13836,7 +13836,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:32",
     "track_id": "RDR-704",
-    "azimuth_deg": 77,
+    "azimuth_deg": 77.0,
     "range_km": 6.41,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -13863,7 +13863,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:33",
     "track_id": "RDR-704",
-    "azimuth_deg": 77,
+    "azimuth_deg": 77.0,
     "range_km": 6.41,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -14034,7 +14034,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:39",
     "track_id": "RDR-921",
-    "azimuth_deg": 76,
+    "azimuth_deg": 76.0,
     "range_km": 6.47,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -14097,7 +14097,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:42",
     "track_id": "RDR-166",
-    "azimuth_deg": 77,
+    "azimuth_deg": 77.0,
     "range_km": 6.41,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -14124,7 +14124,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:43",
     "track_id": "RDR-166",
-    "azimuth_deg": 77,
+    "azimuth_deg": 77.0,
     "range_km": 6.41,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -14349,7 +14349,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:51",
     "track_id": "RDR-704",
-    "azimuth_deg": 78,
+    "azimuth_deg": 78.0,
     "range_km": 6.26,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -14385,7 +14385,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:52",
     "track_id": "RDR-921",
-    "azimuth_deg": 77,
+    "azimuth_deg": 77.0,
     "range_km": 6.41,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -14412,7 +14412,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:08:53",
     "track_id": "RDR-921",
-    "azimuth_deg": 77,
+    "azimuth_deg": 77.0,
     "range_km": 6.41,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -14610,7 +14610,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:01",
     "track_id": "RDR-166",
-    "azimuth_deg": 78,
+    "azimuth_deg": 78.0,
     "range_km": 6.26,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -14808,7 +14808,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:08",
     "track_id": "RDR-704",
-    "azimuth_deg": 79,
+    "azimuth_deg": 79.0,
     "range_km": 6.12,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -14898,7 +14898,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:11",
     "track_id": "RDR-921",
-    "azimuth_deg": 78,
+    "azimuth_deg": 78.0,
     "range_km": 6.26,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -15069,7 +15069,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:18",
     "track_id": "RDR-166",
-    "azimuth_deg": 79,
+    "azimuth_deg": 79.0,
     "range_km": 6.12,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -15214,7 +15214,7 @@
     "timestamp": "00:09:23",
     "track_id": "RDR-704",
     "azimuth_deg": 79.9,
-    "range_km": 6,
+    "range_km": 6.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -15240,7 +15240,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:24",
     "track_id": "RDR-704",
-    "azimuth_deg": 80,
+    "azimuth_deg": 80.0,
     "range_km": 5.99,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -15267,7 +15267,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:25",
     "track_id": "RDR-704",
-    "azimuth_deg": 80,
+    "azimuth_deg": 80.0,
     "range_km": 5.98,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -15357,7 +15357,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:28",
     "track_id": "RDR-921",
-    "azimuth_deg": 79,
+    "azimuth_deg": 79.0,
     "range_km": 6.12,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -15384,7 +15384,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:29",
     "track_id": "RDR-921",
-    "azimuth_deg": 79,
+    "azimuth_deg": 79.0,
     "range_km": 6.11,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -15475,7 +15475,7 @@
     "timestamp": "00:09:33",
     "track_id": "RDR-166",
     "azimuth_deg": 79.9,
-    "range_km": 6,
+    "range_km": 6.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -15501,7 +15501,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:34",
     "track_id": "RDR-166",
-    "azimuth_deg": 80,
+    "azimuth_deg": 80.0,
     "range_km": 5.99,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -15528,7 +15528,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:35",
     "track_id": "RDR-166",
-    "azimuth_deg": 80,
+    "azimuth_deg": 80.0,
     "range_km": 5.98,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -15672,7 +15672,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:40",
     "track_id": "RDR-704",
-    "azimuth_deg": 81,
+    "azimuth_deg": 81.0,
     "range_km": 5.86,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -15699,7 +15699,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:41",
     "track_id": "RDR-704",
-    "azimuth_deg": 81,
+    "azimuth_deg": 81.0,
     "range_km": 5.85,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -15763,7 +15763,7 @@
     "timestamp": "00:09:43",
     "track_id": "RDR-921",
     "azimuth_deg": 79.9,
-    "range_km": 6,
+    "range_km": 6.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -15816,7 +15816,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:45",
     "track_id": "RDR-921",
-    "azimuth_deg": 80,
+    "azimuth_deg": 80.0,
     "range_km": 5.99,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -15933,7 +15933,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:50",
     "track_id": "RDR-166",
-    "azimuth_deg": 81,
+    "azimuth_deg": 81.0,
     "range_km": 5.86,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -15960,7 +15960,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:51",
     "track_id": "RDR-166",
-    "azimuth_deg": 81,
+    "azimuth_deg": 81.0,
     "range_km": 5.85,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -16077,7 +16077,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:55",
     "track_id": "RDR-704",
-    "azimuth_deg": 82,
+    "azimuth_deg": 82.0,
     "range_km": 5.75,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -16104,7 +16104,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:09:56",
     "track_id": "RDR-704",
-    "azimuth_deg": 82,
+    "azimuth_deg": 82.0,
     "range_km": 5.74,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -16248,7 +16248,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:01",
     "track_id": "RDR-921",
-    "azimuth_deg": 81,
+    "azimuth_deg": 81.0,
     "range_km": 5.86,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -16338,7 +16338,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:05",
     "track_id": "RDR-166",
-    "azimuth_deg": 82,
+    "azimuth_deg": 82.0,
     "range_km": 5.75,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -16365,7 +16365,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:06",
     "track_id": "RDR-166",
-    "azimuth_deg": 82,
+    "azimuth_deg": 82.0,
     "range_km": 5.74,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -16482,7 +16482,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:10",
     "track_id": "RDR-704",
-    "azimuth_deg": 83,
+    "azimuth_deg": 83.0,
     "range_km": 5.63,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -16653,7 +16653,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:16",
     "track_id": "RDR-921",
-    "azimuth_deg": 82,
+    "azimuth_deg": 82.0,
     "range_km": 5.74,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -16680,7 +16680,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:17",
     "track_id": "RDR-921",
-    "azimuth_deg": 82,
+    "azimuth_deg": 82.0,
     "range_km": 5.74,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -16743,7 +16743,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:20",
     "track_id": "RDR-166",
-    "azimuth_deg": 83,
+    "azimuth_deg": 83.0,
     "range_km": 5.63,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -16860,7 +16860,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:24",
     "track_id": "RDR-704",
-    "azimuth_deg": 84,
+    "azimuth_deg": 84.0,
     "range_km": 5.52,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -17058,7 +17058,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:31",
     "track_id": "RDR-921",
-    "azimuth_deg": 83,
+    "azimuth_deg": 83.0,
     "range_km": 5.63,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -17121,7 +17121,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:34",
     "track_id": "RDR-166",
-    "azimuth_deg": 84,
+    "azimuth_deg": 84.0,
     "range_km": 5.52,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -17211,7 +17211,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:37",
     "track_id": "RDR-704",
-    "azimuth_deg": 85,
+    "azimuth_deg": 85.0,
     "range_km": 5.43,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -17238,7 +17238,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:38",
     "track_id": "RDR-704",
-    "azimuth_deg": 85,
+    "azimuth_deg": 85.0,
     "range_km": 5.42,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -17436,7 +17436,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:45",
     "track_id": "RDR-921",
-    "azimuth_deg": 84,
+    "azimuth_deg": 84.0,
     "range_km": 5.52,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -17472,7 +17472,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:47",
     "track_id": "RDR-166",
-    "azimuth_deg": 85,
+    "azimuth_deg": 85.0,
     "range_km": 5.43,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -17499,7 +17499,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:48",
     "track_id": "RDR-166",
-    "azimuth_deg": 85,
+    "azimuth_deg": 85.0,
     "range_km": 5.42,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -17562,7 +17562,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:50",
     "track_id": "RDR-704",
-    "azimuth_deg": 86,
+    "azimuth_deg": 86.0,
     "range_km": 5.33,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -17589,7 +17589,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:51",
     "track_id": "RDR-704",
-    "azimuth_deg": 86,
+    "azimuth_deg": 86.0,
     "range_km": 5.32,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -17787,7 +17787,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:58",
     "track_id": "RDR-921",
-    "azimuth_deg": 85,
+    "azimuth_deg": 85.0,
     "range_km": 5.43,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -17814,7 +17814,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:10:59",
     "track_id": "RDR-921",
-    "azimuth_deg": 85,
+    "azimuth_deg": 85.0,
     "range_km": 5.42,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -17823,7 +17823,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:00",
     "track_id": "RDR-166",
-    "azimuth_deg": 86,
+    "azimuth_deg": 86.0,
     "range_km": 5.33,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -17850,7 +17850,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:01",
     "track_id": "RDR-166",
-    "azimuth_deg": 86,
+    "azimuth_deg": 86.0,
     "range_km": 5.32,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -17913,7 +17913,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:03",
     "track_id": "RDR-704",
-    "azimuth_deg": 87,
+    "azimuth_deg": 87.0,
     "range_km": 5.24,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -18165,7 +18165,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:12",
     "track_id": "RDR-921",
-    "azimuth_deg": 86,
+    "azimuth_deg": 86.0,
     "range_km": 5.32,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -18174,7 +18174,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:13",
     "track_id": "RDR-166",
-    "azimuth_deg": 87,
+    "azimuth_deg": 87.0,
     "range_km": 5.24,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -18237,7 +18237,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:15",
     "track_id": "RDR-704",
-    "azimuth_deg": 88,
+    "azimuth_deg": 88.0,
     "range_km": 5.15,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -18489,7 +18489,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:24",
     "track_id": "RDR-921",
-    "azimuth_deg": 87,
+    "azimuth_deg": 87.0,
     "range_km": 5.24,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -18498,7 +18498,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:25",
     "track_id": "RDR-166",
-    "azimuth_deg": 88,
+    "azimuth_deg": 88.0,
     "range_km": 5.15,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -18516,7 +18516,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:25",
     "track_id": "RDR-921",
-    "azimuth_deg": 87,
+    "azimuth_deg": 87.0,
     "range_km": 5.23,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -18561,7 +18561,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:27",
     "track_id": "RDR-704",
-    "azimuth_deg": 89,
+    "azimuth_deg": 89.0,
     "range_km": 5.07,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -18822,7 +18822,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:37",
     "track_id": "RDR-166",
-    "azimuth_deg": 89,
+    "azimuth_deg": 89.0,
     "range_km": 5.07,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -18832,7 +18832,7 @@
     "timestamp": "00:11:37",
     "track_id": "RDR-704",
     "azimuth_deg": 89.9,
-    "range_km": 5,
+    "range_km": 5.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -18840,7 +18840,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:37",
     "track_id": "RDR-921",
-    "azimuth_deg": 88,
+    "azimuth_deg": 88.0,
     "range_km": 5.15,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -18858,7 +18858,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:38",
     "track_id": "RDR-704",
-    "azimuth_deg": 90,
+    "azimuth_deg": 90.0,
     "range_km": 4.99,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -19093,7 +19093,7 @@
     "timestamp": "00:11:47",
     "track_id": "RDR-166",
     "azimuth_deg": 89.9,
-    "range_km": 5,
+    "range_km": 5.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -19119,7 +19119,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:48",
     "track_id": "RDR-166",
-    "azimuth_deg": 90,
+    "azimuth_deg": 90.0,
     "range_km": 4.99,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -19137,7 +19137,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:48",
     "track_id": "RDR-921",
-    "azimuth_deg": 89,
+    "azimuth_deg": 89.0,
     "range_km": 5.07,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -19155,7 +19155,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:49",
     "track_id": "RDR-704",
-    "azimuth_deg": 91,
+    "azimuth_deg": 91.0,
     "range_km": 4.92,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -19164,7 +19164,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:49",
     "track_id": "RDR-921",
-    "azimuth_deg": 89,
+    "azimuth_deg": 89.0,
     "range_km": 5.07,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -19182,7 +19182,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:50",
     "track_id": "RDR-704",
-    "azimuth_deg": 91,
+    "azimuth_deg": 91.0,
     "range_km": 4.91,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -19408,7 +19408,7 @@
     "timestamp": "00:11:58",
     "track_id": "RDR-921",
     "azimuth_deg": 89.8,
-    "range_km": 5,
+    "range_km": 5.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -19416,7 +19416,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:11:59",
     "track_id": "RDR-166",
-    "azimuth_deg": 91,
+    "azimuth_deg": 91.0,
     "range_km": 4.92,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -19435,7 +19435,7 @@
     "timestamp": "00:11:59",
     "track_id": "RDR-921",
     "azimuth_deg": 89.9,
-    "range_km": 5,
+    "range_km": 5.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -19443,7 +19443,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:00",
     "track_id": "RDR-166",
-    "azimuth_deg": 91,
+    "azimuth_deg": 91.0,
     "range_km": 4.91,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -19452,7 +19452,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:00",
     "track_id": "RDR-704",
-    "azimuth_deg": 92,
+    "azimuth_deg": 92.0,
     "range_km": 4.85,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -19461,7 +19461,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:00",
     "track_id": "RDR-921",
-    "azimuth_deg": 90,
+    "azimuth_deg": 90.0,
     "range_km": 4.99,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -19713,7 +19713,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:10",
     "track_id": "RDR-166",
-    "azimuth_deg": 92,
+    "azimuth_deg": 92.0,
     "range_km": 4.85,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -19749,7 +19749,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:11",
     "track_id": "RDR-704",
-    "azimuth_deg": 93,
+    "azimuth_deg": 93.0,
     "range_km": 4.78,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -19758,7 +19758,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:11",
     "track_id": "RDR-921",
-    "azimuth_deg": 91,
+    "azimuth_deg": 91.0,
     "range_km": 4.92,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -20010,7 +20010,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:21",
     "track_id": "RDR-166",
-    "azimuth_deg": 93,
+    "azimuth_deg": 93.0,
     "range_km": 4.78,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -20019,7 +20019,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:21",
     "track_id": "RDR-704",
-    "azimuth_deg": 94,
+    "azimuth_deg": 94.0,
     "range_km": 4.72,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -20055,7 +20055,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:22",
     "track_id": "RDR-921",
-    "azimuth_deg": 92,
+    "azimuth_deg": 92.0,
     "range_km": 4.85,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -20280,7 +20280,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:31",
     "track_id": "RDR-166",
-    "azimuth_deg": 94,
+    "azimuth_deg": 94.0,
     "range_km": 4.72,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -20289,7 +20289,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:31",
     "track_id": "RDR-704",
-    "azimuth_deg": 95,
+    "azimuth_deg": 95.0,
     "range_km": 4.65,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -20325,7 +20325,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:32",
     "track_id": "RDR-921",
-    "azimuth_deg": 93,
+    "azimuth_deg": 93.0,
     "range_km": 4.78,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -20550,7 +20550,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:41",
     "track_id": "RDR-166",
-    "azimuth_deg": 95,
+    "azimuth_deg": 95.0,
     "range_km": 4.65,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -20559,7 +20559,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:41",
     "track_id": "RDR-704",
-    "azimuth_deg": 96,
+    "azimuth_deg": 96.0,
     "range_km": 4.54,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -20622,7 +20622,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:43",
     "track_id": "RDR-921",
-    "azimuth_deg": 94,
+    "azimuth_deg": 94.0,
     "range_km": 4.71,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -20883,7 +20883,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:51",
     "track_id": "RDR-166",
-    "azimuth_deg": 96,
+    "azimuth_deg": 96.0,
     "range_km": 4.54,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -20937,7 +20937,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:52",
     "track_id": "RDR-704",
-    "azimuth_deg": 97,
+    "azimuth_deg": 97.0,
     "range_km": 4.36,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -20991,7 +20991,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:53",
     "track_id": "RDR-921",
-    "azimuth_deg": 95,
+    "azimuth_deg": 95.0,
     "range_km": 4.65,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -21180,7 +21180,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:58",
     "track_id": "RDR-171",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 24.51,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -21225,7 +21225,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:59",
     "track_id": "RDR-171",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 24.47,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -21234,7 +21234,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:12:59",
     "track_id": "RDR-292",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 24.51,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -21288,7 +21288,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:00",
     "track_id": "RDR-292",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 24.47,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -21414,7 +21414,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:02",
     "track_id": "RDR-166",
-    "azimuth_deg": 97,
+    "azimuth_deg": 97.0,
     "range_km": 4.36,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -21423,7 +21423,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:02",
     "track_id": "RDR-704",
-    "azimuth_deg": 98,
+    "azimuth_deg": 98.0,
     "range_km": 4.2,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -21486,7 +21486,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:03",
     "track_id": "RDR-921",
-    "azimuth_deg": 96,
+    "azimuth_deg": 96.0,
     "range_km": 4.54,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -21783,7 +21783,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:09",
     "track_id": "RDR-951",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 24.51,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -21837,7 +21837,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:10",
     "track_id": "RDR-951",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 24.47,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -21909,7 +21909,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:11",
     "track_id": "RDR-704",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 4.05,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -21954,7 +21954,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:12",
     "track_id": "RDR-166",
-    "azimuth_deg": 98,
+    "azimuth_deg": 98.0,
     "range_km": 4.2,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -22072,7 +22072,7 @@
     "timestamp": "00:13:14",
     "track_id": "RDR-704",
     "azimuth_deg": 99.4,
-    "range_km": 4,
+    "range_km": 4.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -22134,7 +22134,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:15",
     "track_id": "RDR-921",
-    "azimuth_deg": 97,
+    "azimuth_deg": 97.0,
     "range_km": 4.36,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -22143,7 +22143,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:16",
     "track_id": "RDR-171",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 23.69,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -22197,7 +22197,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:17",
     "track_id": "RDR-171",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 23.64,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -22206,7 +22206,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:17",
     "track_id": "RDR-292",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 23.69,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -22260,7 +22260,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:18",
     "track_id": "RDR-292",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 23.64,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -22341,7 +22341,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:19",
     "track_id": "RDR-704",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 3.92,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -22440,7 +22440,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:21",
     "track_id": "RDR-166",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 4.05,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -22603,7 +22603,7 @@
     "timestamp": "00:13:24",
     "track_id": "RDR-166",
     "azimuth_deg": 99.4,
-    "range_km": 4,
+    "range_km": 4.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -22674,7 +22674,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:25",
     "track_id": "RDR-921",
-    "azimuth_deg": 98,
+    "azimuth_deg": 98.0,
     "range_km": 4.2,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -22755,7 +22755,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:27",
     "track_id": "RDR-951",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 23.69,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -22773,7 +22773,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:27",
     "track_id": "RDR-704",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 3.79,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -22809,7 +22809,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:28",
     "track_id": "RDR-951",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 23.64,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -22872,7 +22872,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:29",
     "track_id": "RDR-166",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 3.92,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -23061,7 +23061,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:33",
     "track_id": "RDR-171",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 22.92,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -23115,7 +23115,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:34",
     "track_id": "RDR-171",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 22.87,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -23124,7 +23124,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:34",
     "track_id": "RDR-292",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 22.92,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -23178,7 +23178,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:35",
     "track_id": "RDR-292",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 22.87,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -23205,7 +23205,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:35",
     "track_id": "RDR-704",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 3.67,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -23214,7 +23214,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:35",
     "track_id": "RDR-921",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 4.05,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -23304,7 +23304,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:37",
     "track_id": "RDR-166",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 3.79,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -23583,7 +23583,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:42",
     "track_id": "RDR-704",
-    "azimuth_deg": 103,
+    "azimuth_deg": 103.0,
     "range_km": 3.56,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -23673,7 +23673,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:44",
     "track_id": "RDR-951",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 22.92,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -23700,7 +23700,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:44",
     "track_id": "RDR-921",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 3.91,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -23727,7 +23727,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:45",
     "track_id": "RDR-951",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 22.87,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -23736,7 +23736,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:45",
     "track_id": "RDR-166",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 3.67,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -23925,7 +23925,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:49",
     "track_id": "RDR-171",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 22.2,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -23979,7 +23979,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:50",
     "track_id": "RDR-171",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 22.15,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -23988,7 +23988,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:50",
     "track_id": "RDR-292",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 22.2,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -24042,7 +24042,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:51",
     "track_id": "RDR-292",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 22.15,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -24114,7 +24114,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:52",
     "track_id": "RDR-166",
-    "azimuth_deg": 103,
+    "azimuth_deg": 103.0,
     "range_km": 3.56,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -24132,7 +24132,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:13:52",
     "track_id": "RDR-921",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 3.79,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -24537,7 +24537,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:00",
     "track_id": "RDR-951",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 22.2,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -24564,7 +24564,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:00",
     "track_id": "RDR-921",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 3.68,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -24591,7 +24591,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:01",
     "track_id": "RDR-951",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 22.15,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -24879,7 +24879,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:06",
     "track_id": "RDR-704",
-    "azimuth_deg": 107,
+    "azimuth_deg": 107.0,
     "range_km": 3.19,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -25410,7 +25410,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:16",
     "track_id": "RDR-166",
-    "azimuth_deg": 107,
+    "azimuth_deg": 107.0,
     "range_km": 3.19,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -25582,7 +25582,7 @@
     "timestamp": "00:14:19",
     "track_id": "RDR-704",
     "azimuth_deg": 109.5,
-    "range_km": 3,
+    "range_km": 3.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -25698,7 +25698,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:21",
     "track_id": "RDR-921",
-    "azimuth_deg": 105,
+    "azimuth_deg": 105.0,
     "range_km": 3.37,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -25959,7 +25959,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:26",
     "track_id": "RDR-704",
-    "azimuth_deg": 111,
+    "azimuth_deg": 111.0,
     "range_km": 2.9,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -26113,7 +26113,7 @@
     "timestamp": "00:14:29",
     "track_id": "RDR-166",
     "azimuth_deg": 109.5,
-    "range_km": 3,
+    "range_km": 3.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -26302,7 +26302,7 @@
     "timestamp": "00:14:33",
     "track_id": "RDR-171",
     "azimuth_deg": 102.3,
-    "range_km": 20,
+    "range_km": 20.0,
     "classification": "UNKNOWN",
     "subtype": "unknown"
   },
@@ -26490,7 +26490,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:36",
     "track_id": "RDR-166",
-    "azimuth_deg": 111,
+    "azimuth_deg": 111.0,
     "range_km": 2.9,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -26670,7 +26670,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:39",
     "track_id": "RDR-921",
-    "azimuth_deg": 108,
+    "azimuth_deg": 108.0,
     "range_km": 3.11,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -27103,7 +27103,7 @@
     "timestamp": "00:14:47",
     "track_id": "RDR-921",
     "azimuth_deg": 109.5,
-    "range_km": 3,
+    "range_km": 3.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -27255,7 +27255,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:50",
     "track_id": "RDR-704",
-    "azimuth_deg": 117,
+    "azimuth_deg": 117.0,
     "range_km": 2.58,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -27381,7 +27381,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:53",
     "track_id": "RDR-171",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.98,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27435,7 +27435,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:54",
     "track_id": "RDR-171",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.93,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27444,8 +27444,8 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:54",
     "track_id": "RDR-292",
-    "azimuth_deg": 102,
-    "range_km": 19,
+    "azimuth_deg": 102.0,
+    "range_km": 19.0,
     "classification": "UNKNOWN",
     "subtype": "unknown"
   },
@@ -27489,7 +27489,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:55",
     "track_id": "RDR-171",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.87,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27498,7 +27498,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:55",
     "track_id": "RDR-292",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.95,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27543,7 +27543,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:56",
     "track_id": "RDR-171",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.82,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27552,7 +27552,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:56",
     "track_id": "RDR-292",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.9,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27597,7 +27597,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:57",
     "track_id": "RDR-171",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.77,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27606,7 +27606,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:57",
     "track_id": "RDR-292",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.85,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27633,7 +27633,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:57",
     "track_id": "RDR-704",
-    "azimuth_deg": 119,
+    "azimuth_deg": 119.0,
     "range_km": 2.47,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -27651,7 +27651,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:58",
     "track_id": "RDR-171",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.72,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27660,7 +27660,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:58",
     "track_id": "RDR-292",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.8,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27705,7 +27705,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:59",
     "track_id": "RDR-171",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.67,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27714,7 +27714,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:14:59",
     "track_id": "RDR-292",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.75,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27759,7 +27759,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:00",
     "track_id": "RDR-171",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.62,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27768,7 +27768,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:00",
     "track_id": "RDR-292",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.69,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27786,7 +27786,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:00",
     "track_id": "RDR-166",
-    "azimuth_deg": 117,
+    "azimuth_deg": 117.0,
     "range_km": 2.58,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -27795,7 +27795,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:00",
     "track_id": "RDR-704",
-    "azimuth_deg": 120,
+    "azimuth_deg": 120.0,
     "range_km": 2.42,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -27822,7 +27822,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:01",
     "track_id": "RDR-292",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.64,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27876,7 +27876,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:02",
     "track_id": "RDR-292",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.59,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -27993,8 +27993,8 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:04",
     "track_id": "RDR-951",
-    "azimuth_deg": 102,
-    "range_km": 19,
+    "azimuth_deg": 102.0,
+    "range_km": 19.0,
     "classification": "UNKNOWN",
     "subtype": "unknown"
   },
@@ -28047,7 +28047,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:05",
     "track_id": "RDR-951",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.95,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -28101,7 +28101,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:06",
     "track_id": "RDR-951",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.9,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -28119,7 +28119,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:06",
     "track_id": "RDR-704",
-    "azimuth_deg": 122,
+    "azimuth_deg": 122.0,
     "range_km": 2.33,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -28155,7 +28155,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:07",
     "track_id": "RDR-951",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.85,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -28164,7 +28164,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:07",
     "track_id": "RDR-166",
-    "azimuth_deg": 119,
+    "azimuth_deg": 119.0,
     "range_km": 2.47,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -28209,7 +28209,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:08",
     "track_id": "RDR-951",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.8,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -28236,7 +28236,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:08",
     "track_id": "RDR-921",
-    "azimuth_deg": 114,
+    "azimuth_deg": 114.0,
     "range_km": 2.73,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -28263,7 +28263,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:09",
     "track_id": "RDR-951",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.75,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -28281,7 +28281,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:09",
     "track_id": "RDR-704",
-    "azimuth_deg": 123,
+    "azimuth_deg": 123.0,
     "range_km": 2.29,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -28317,7 +28317,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:10",
     "track_id": "RDR-951",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.69,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -28326,7 +28326,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:10",
     "track_id": "RDR-166",
-    "azimuth_deg": 120,
+    "azimuth_deg": 120.0,
     "range_km": 2.42,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -28371,7 +28371,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:11",
     "track_id": "RDR-951",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.64,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -28408,7 +28408,7 @@
     "timestamp": "00:15:12",
     "track_id": "RDR-171",
     "azimuth_deg": 101.8,
-    "range_km": 18,
+    "range_km": 18.0,
     "classification": "UNKNOWN",
     "subtype": "unknown"
   },
@@ -28425,7 +28425,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:12",
     "track_id": "RDR-951",
-    "azimuth_deg": 102,
+    "azimuth_deg": 102.0,
     "range_km": 18.59,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -28650,7 +28650,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:16",
     "track_id": "RDR-166",
-    "azimuth_deg": 122,
+    "azimuth_deg": 122.0,
     "range_km": 2.33,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -28713,7 +28713,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:17",
     "track_id": "RDR-704",
-    "azimuth_deg": 126,
+    "azimuth_deg": 126.0,
     "range_km": 2.17,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -28812,7 +28812,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:19",
     "track_id": "RDR-166",
-    "azimuth_deg": 123,
+    "azimuth_deg": 123.0,
     "range_km": 2.29,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -28884,7 +28884,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:20",
     "track_id": "RDR-921",
-    "azimuth_deg": 117,
+    "azimuth_deg": 117.0,
     "range_km": 2.58,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -29244,7 +29244,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:27",
     "track_id": "RDR-166",
-    "azimuth_deg": 126,
+    "azimuth_deg": 126.0,
     "range_km": 2.17,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -29416,7 +29416,7 @@
     "timestamp": "00:15:30",
     "track_id": "RDR-704",
     "azimuth_deg": 131.6,
-    "range_km": 2,
+    "range_km": 2.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -29532,7 +29532,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:32",
     "track_id": "RDR-921",
-    "azimuth_deg": 121,
+    "azimuth_deg": 121.0,
     "range_km": 2.37,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -29802,7 +29802,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:37",
     "track_id": "RDR-921",
-    "azimuth_deg": 123,
+    "azimuth_deg": 123.0,
     "range_km": 2.29,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -29947,7 +29947,7 @@
     "timestamp": "00:15:40",
     "track_id": "RDR-166",
     "azimuth_deg": 131.6,
-    "range_km": 2,
+    "range_km": 2.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -30514,7 +30514,7 @@
     "timestamp": "00:15:51",
     "track_id": "RDR-171",
     "azimuth_deg": 101.2,
-    "range_km": 16,
+    "range_km": 16.0,
     "classification": "UNKNOWN",
     "subtype": "unknown"
   },
@@ -30631,7 +30631,7 @@
     "timestamp": "00:15:53",
     "track_id": "RDR-292",
     "azimuth_deg": 101.2,
-    "range_km": 16,
+    "range_km": 16.0,
     "classification": "UNKNOWN",
     "subtype": "unknown"
   },
@@ -30657,7 +30657,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:15:53",
     "track_id": "RDR-704",
-    "azimuth_deg": 144,
+    "azimuth_deg": 144.0,
     "range_km": 1.75,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -30829,7 +30829,7 @@
     "timestamp": "00:15:56",
     "track_id": "RDR-921",
     "azimuth_deg": 131.8,
-    "range_km": 2,
+    "range_km": 2.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -31053,7 +31053,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:01",
     "track_id": "RDR-171",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.49,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31107,7 +31107,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:02",
     "track_id": "RDR-171",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.44,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31161,7 +31161,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:03",
     "track_id": "RDR-171",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.39,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31170,7 +31170,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:03",
     "track_id": "RDR-292",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.49,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31180,7 +31180,7 @@
     "timestamp": "00:16:03",
     "track_id": "RDR-951",
     "azimuth_deg": 101.2,
-    "range_km": 16,
+    "range_km": 16.0,
     "classification": "UNKNOWN",
     "subtype": "unknown"
   },
@@ -31188,7 +31188,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:03",
     "track_id": "RDR-166",
-    "azimuth_deg": 144,
+    "azimuth_deg": 144.0,
     "range_km": 1.75,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -31215,7 +31215,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:04",
     "track_id": "RDR-171",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.34,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31224,7 +31224,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:04",
     "track_id": "RDR-292",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.44,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31269,7 +31269,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:05",
     "track_id": "RDR-171",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.29,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31278,7 +31278,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:05",
     "track_id": "RDR-292",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.39,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31323,7 +31323,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:06",
     "track_id": "RDR-171",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.24,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31332,7 +31332,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:06",
     "track_id": "RDR-292",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.34,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31386,7 +31386,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:07",
     "track_id": "RDR-292",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.29,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31422,7 +31422,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:07",
     "track_id": "RDR-921",
-    "azimuth_deg": 138,
+    "azimuth_deg": 138.0,
     "range_km": 1.85,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -31440,7 +31440,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:08",
     "track_id": "RDR-292",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.24,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31719,7 +31719,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:13",
     "track_id": "RDR-951",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.49,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31773,7 +31773,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:14",
     "track_id": "RDR-951",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.44,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31791,7 +31791,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:14",
     "track_id": "RDR-704",
-    "azimuth_deg": 158,
+    "azimuth_deg": 158.0,
     "range_km": 1.62,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -31827,7 +31827,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:15",
     "track_id": "RDR-951",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.39,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31881,7 +31881,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:16",
     "track_id": "RDR-951",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.34,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31935,7 +31935,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:17",
     "track_id": "RDR-951",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.29,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -31989,7 +31989,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:18",
     "track_id": "RDR-951",
-    "azimuth_deg": 101,
+    "azimuth_deg": 101.0,
     "range_km": 15.24,
     "classification": "UNKNOWN",
     "subtype": "unknown"
@@ -32070,7 +32070,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:19",
     "track_id": "RDR-921",
-    "azimuth_deg": 146,
+    "azimuth_deg": 146.0,
     "range_km": 1.73,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -32322,7 +32322,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:24",
     "track_id": "RDR-166",
-    "azimuth_deg": 158,
+    "azimuth_deg": 158.0,
     "range_km": 1.62,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -33087,7 +33087,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:38",
     "track_id": "RDR-704",
-    "azimuth_deg": 172,
+    "azimuth_deg": 172.0,
     "range_km": 1.35,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -33258,7 +33258,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:41",
     "track_id": "RDR-921",
-    "azimuth_deg": 163,
+    "azimuth_deg": 163.0,
     "range_km": 1.6,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -33591,7 +33591,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:48",
     "track_id": "RDR-171",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 13.09,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -33645,7 +33645,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:49",
     "track_id": "RDR-171",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 13.04,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -33699,7 +33699,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:50",
     "track_id": "RDR-171",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 12.98,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -33753,7 +33753,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:51",
     "track_id": "RDR-171",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 12.93,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -33762,7 +33762,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:51",
     "track_id": "RDR-292",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 13.06,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -33780,7 +33780,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:51",
     "track_id": "RDR-166",
-    "azimuth_deg": 173,
+    "azimuth_deg": 173.0,
     "range_km": 1.32,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -33816,8 +33816,8 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:52",
     "track_id": "RDR-292",
-    "azimuth_deg": 100,
-    "range_km": 13,
+    "azimuth_deg": 100.0,
+    "range_km": 13.0,
     "classification": "UAS",
     "subtype": "fixed-wing"
   },
@@ -33870,7 +33870,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:53",
     "track_id": "RDR-292",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 12.95,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -33924,7 +33924,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:54",
     "track_id": "RDR-292",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 12.9,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -34050,7 +34050,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:56",
     "track_id": "RDR-166",
-    "azimuth_deg": 176,
+    "azimuth_deg": 176.0,
     "range_km": 1.26,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -34113,7 +34113,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:57",
     "track_id": "RDR-704",
-    "azimuth_deg": 186,
+    "azimuth_deg": 186.0,
     "range_km": 1.09,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -34122,7 +34122,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:57",
     "track_id": "RDR-921",
-    "azimuth_deg": 170,
+    "azimuth_deg": 170.0,
     "range_km": 1.4,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -34230,7 +34230,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:16:59",
     "track_id": "RDR-921",
-    "azimuth_deg": 171,
+    "azimuth_deg": 171.0,
     "range_km": 1.38,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -34311,7 +34311,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:01",
     "track_id": "RDR-951",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 13.06,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -34365,8 +34365,8 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:02",
     "track_id": "RDR-951",
-    "azimuth_deg": 100,
-    "range_km": 13,
+    "azimuth_deg": 100.0,
+    "range_km": 13.0,
     "classification": "UAS",
     "subtype": "fixed-wing"
   },
@@ -34374,7 +34374,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:02",
     "track_id": "RDR-166",
-    "azimuth_deg": 180,
+    "azimuth_deg": 180.0,
     "range_km": 1.18,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -34419,7 +34419,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:03",
     "track_id": "RDR-951",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 12.95,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -34473,7 +34473,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:04",
     "track_id": "RDR-951",
-    "azimuth_deg": 100,
+    "azimuth_deg": 100.0,
     "range_km": 12.9,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -34554,7 +34554,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:05",
     "track_id": "RDR-921",
-    "azimuth_deg": 174,
+    "azimuth_deg": 174.0,
     "range_km": 1.3,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -34600,7 +34600,7 @@
     "timestamp": "00:17:06",
     "track_id": "RDR-704",
     "azimuth_deg": 194.8,
-    "range_km": 1,
+    "range_km": 1.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -34707,7 +34707,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:08",
     "track_id": "RDR-704",
-    "azimuth_deg": 197,
+    "azimuth_deg": 197.0,
     "range_km": 0.99,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -34860,7 +34860,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:11",
     "track_id": "RDR-166",
-    "azimuth_deg": 187,
+    "azimuth_deg": 187.0,
     "range_km": 1.08,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -35347,7 +35347,7 @@
     "timestamp": "00:17:20",
     "track_id": "RDR-166",
     "azimuth_deg": 195.3,
-    "range_km": 1,
+    "range_km": 1.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -35481,7 +35481,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:23",
     "track_id": "RDR-171",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 11.3,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -35535,7 +35535,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:24",
     "track_id": "RDR-171",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 11.25,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -35580,7 +35580,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:24",
     "track_id": "RDR-921",
-    "azimuth_deg": 186,
+    "azimuth_deg": 186.0,
     "range_km": 1.09,
     "classification": "VESSEL",
     "subtype": "vessel"
@@ -35589,7 +35589,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:25",
     "track_id": "RDR-171",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 11.2,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -35598,7 +35598,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:25",
     "track_id": "RDR-292",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 11.33,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -35652,7 +35652,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:26",
     "track_id": "RDR-292",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 11.28,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -35706,7 +35706,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:27",
     "track_id": "RDR-292",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 11.23,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -36147,7 +36147,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:35",
     "track_id": "RDR-951",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 11.33,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -36174,8 +36174,8 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:35",
     "track_id": "RDR-921",
-    "azimuth_deg": 195,
-    "range_km": 1,
+    "azimuth_deg": 195.0,
+    "range_km": 1.0,
     "classification": "VESSEL",
     "subtype": "vessel"
   },
@@ -36201,7 +36201,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:36",
     "track_id": "RDR-951",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 11.28,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -36255,7 +36255,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:37",
     "track_id": "RDR-951",
-    "azimuth_deg": 99,
+    "azimuth_deg": 99.0,
     "range_km": 11.23,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -36885,7 +36885,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:49",
     "track_id": "RDR-171",
-    "azimuth_deg": 98,
+    "azimuth_deg": 98.0,
     "range_km": 9.97,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -36939,7 +36939,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:50",
     "track_id": "RDR-171",
-    "azimuth_deg": 98,
+    "azimuth_deg": 98.0,
     "range_km": 9.92,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -37056,7 +37056,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:52",
     "track_id": "RDR-292",
-    "azimuth_deg": 98,
+    "azimuth_deg": 98.0,
     "range_km": 9.97,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -37110,7 +37110,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:17:53",
     "track_id": "RDR-292",
-    "azimuth_deg": 98,
+    "azimuth_deg": 98.0,
     "range_km": 9.92,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -37605,7 +37605,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:02",
     "track_id": "RDR-951",
-    "azimuth_deg": 98,
+    "azimuth_deg": 98.0,
     "range_km": 9.97,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -37659,7 +37659,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:03",
     "track_id": "RDR-951",
-    "azimuth_deg": 98,
+    "azimuth_deg": 98.0,
     "range_km": 9.92,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -37803,7 +37803,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:06",
     "track_id": "RDR-171",
-    "azimuth_deg": 97,
+    "azimuth_deg": 97.0,
     "range_km": 9.12,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -37974,7 +37974,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:09",
     "track_id": "RDR-292",
-    "azimuth_deg": 97,
+    "azimuth_deg": 97.0,
     "range_km": 9.12,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -38406,7 +38406,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:17",
     "track_id": "RDR-292",
-    "azimuth_deg": 96,
+    "azimuth_deg": 96.0,
     "range_km": 8.75,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -38523,7 +38523,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:19",
     "track_id": "RDR-951",
-    "azimuth_deg": 97,
+    "azimuth_deg": 97.0,
     "range_km": 9.12,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -38784,7 +38784,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:24",
     "track_id": "RDR-292",
-    "azimuth_deg": 95,
+    "azimuth_deg": 95.0,
     "range_km": 8.43,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -38937,7 +38937,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:27",
     "track_id": "RDR-171",
-    "azimuth_deg": 94,
+    "azimuth_deg": 94.0,
     "range_km": 8.14,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -38955,7 +38955,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:27",
     "track_id": "RDR-951",
-    "azimuth_deg": 96,
+    "azimuth_deg": 96.0,
     "range_km": 8.75,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -39100,7 +39100,7 @@
     "timestamp": "00:18:30",
     "track_id": "RDR-171",
     "azimuth_deg": 93.5,
-    "range_km": 8,
+    "range_km": 8.0,
     "classification": "UAS",
     "subtype": "fixed-wing"
   },
@@ -39261,7 +39261,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:33",
     "track_id": "RDR-171",
-    "azimuth_deg": 93,
+    "azimuth_deg": 93.0,
     "range_km": 7.86,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -39333,7 +39333,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:34",
     "track_id": "RDR-951",
-    "azimuth_deg": 95,
+    "azimuth_deg": 95.0,
     "range_km": 8.43,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -39756,7 +39756,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:42",
     "track_id": "RDR-292",
-    "azimuth_deg": 92,
+    "azimuth_deg": 92.0,
     "range_km": 7.62,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -39855,7 +39855,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:44",
     "track_id": "RDR-171",
-    "azimuth_deg": 91,
+    "azimuth_deg": 91.0,
     "range_km": 7.37,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -40305,7 +40305,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:52",
     "track_id": "RDR-951",
-    "azimuth_deg": 92,
+    "azimuth_deg": 92.0,
     "range_km": 7.62,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -40513,7 +40513,7 @@
     "timestamp": "00:18:56",
     "track_id": "RDR-292",
     "azimuth_deg": 89.3,
-    "range_km": 7,
+    "range_km": 7.0,
     "classification": "UAS",
     "subtype": "fixed-wing"
   },
@@ -40566,7 +40566,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:57",
     "track_id": "RDR-292",
-    "azimuth_deg": 89,
+    "azimuth_deg": 89.0,
     "range_km": 6.96,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -40611,7 +40611,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:18:58",
     "track_id": "RDR-171",
-    "azimuth_deg": 88,
+    "azimuth_deg": 88.0,
     "range_km": 6.75,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -40827,7 +40827,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:02",
     "track_id": "RDR-171",
-    "azimuth_deg": 87,
+    "azimuth_deg": 87.0,
     "range_km": 6.58,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -41043,7 +41043,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:06",
     "track_id": "RDR-171",
-    "azimuth_deg": 86,
+    "azimuth_deg": 86.0,
     "range_km": 6.41,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -41052,7 +41052,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:06",
     "track_id": "RDR-292",
-    "azimuth_deg": 87,
+    "azimuth_deg": 87.0,
     "range_km": 6.57,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -41062,7 +41062,7 @@
     "timestamp": "00:19:06",
     "track_id": "RDR-951",
     "azimuth_deg": 89.3,
-    "range_km": 7,
+    "range_km": 7.0,
     "classification": "UAS",
     "subtype": "fixed-wing"
   },
@@ -41115,7 +41115,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:07",
     "track_id": "RDR-951",
-    "azimuth_deg": 89,
+    "azimuth_deg": 89.0,
     "range_km": 6.96,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -41268,7 +41268,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:10",
     "track_id": "RDR-292",
-    "azimuth_deg": 86,
+    "azimuth_deg": 86.0,
     "range_km": 6.4,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -41601,7 +41601,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:16",
     "track_id": "RDR-951",
-    "azimuth_deg": 87,
+    "azimuth_deg": 87.0,
     "range_km": 6.57,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -41799,7 +41799,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:20",
     "track_id": "RDR-171",
-    "azimuth_deg": 82,
+    "azimuth_deg": 82.0,
     "range_km": 5.83,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -41817,7 +41817,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:20",
     "track_id": "RDR-951",
-    "azimuth_deg": 86,
+    "azimuth_deg": 86.0,
     "range_km": 6.4,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -41961,7 +41961,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:23",
     "track_id": "RDR-171",
-    "azimuth_deg": 81,
+    "azimuth_deg": 81.0,
     "range_km": 5.71,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -42024,7 +42024,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:24",
     "track_id": "RDR-292",
-    "azimuth_deg": 82,
+    "azimuth_deg": 82.0,
     "range_km": 5.83,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -42123,7 +42123,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:26",
     "track_id": "RDR-171",
-    "azimuth_deg": 80,
+    "azimuth_deg": 80.0,
     "range_km": 5.59,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -42510,7 +42510,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:33",
     "track_id": "RDR-292",
-    "azimuth_deg": 79,
+    "azimuth_deg": 79.0,
     "range_km": 5.48,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -42573,7 +42573,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:34",
     "track_id": "RDR-951",
-    "azimuth_deg": 82,
+    "azimuth_deg": 82.0,
     "range_km": 5.83,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -42672,7 +42672,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:36",
     "track_id": "RDR-292",
-    "azimuth_deg": 78,
+    "azimuth_deg": 78.0,
     "range_km": 5.37,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -43059,7 +43059,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:43",
     "track_id": "RDR-951",
-    "azimuth_deg": 79,
+    "azimuth_deg": 79.0,
     "range_km": 5.48,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -43095,7 +43095,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:44",
     "track_id": "RDR-171",
-    "azimuth_deg": 73,
+    "azimuth_deg": 73.0,
     "range_km": 4.92,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -43221,7 +43221,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:46",
     "track_id": "RDR-951",
-    "azimuth_deg": 78,
+    "azimuth_deg": 78.0,
     "range_km": 5.37,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -43590,7 +43590,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:53",
     "track_id": "RDR-292",
-    "azimuth_deg": 71,
+    "azimuth_deg": 71.0,
     "range_km": 4.77,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -43698,7 +43698,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:19:55",
     "track_id": "RDR-292",
-    "azimuth_deg": 70,
+    "azimuth_deg": 70.0,
     "range_km": 4.71,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -44130,7 +44130,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:03",
     "track_id": "RDR-292",
-    "azimuth_deg": 66,
+    "azimuth_deg": 66.0,
     "range_km": 4.46,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -44139,7 +44139,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:03",
     "track_id": "RDR-951",
-    "azimuth_deg": 71,
+    "azimuth_deg": 71.0,
     "range_km": 4.77,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -44247,7 +44247,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:05",
     "track_id": "RDR-951",
-    "azimuth_deg": 70,
+    "azimuth_deg": 70.0,
     "range_km": 4.71,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -44337,7 +44337,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:07",
     "track_id": "RDR-171",
-    "azimuth_deg": 61,
+    "azimuth_deg": 61.0,
     "range_km": 4.21,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -44616,7 +44616,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:12",
     "track_id": "RDR-292",
-    "azimuth_deg": 61,
+    "azimuth_deg": 61.0,
     "range_km": 4.21,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -44679,7 +44679,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:13",
     "track_id": "RDR-951",
-    "azimuth_deg": 66,
+    "azimuth_deg": 66.0,
     "range_km": 4.46,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -44770,7 +44770,7 @@
     "timestamp": "00:20:15",
     "track_id": "RDR-171",
     "azimuth_deg": 56.2,
-    "range_km": 4,
+    "range_km": 4.0,
     "classification": "UAS",
     "subtype": "fixed-wing"
   },
@@ -44931,7 +44931,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:18",
     "track_id": "RDR-171",
-    "azimuth_deg": 55,
+    "azimuth_deg": 55.0,
     "range_km": 3.87,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -45049,7 +45049,7 @@
     "timestamp": "00:20:20",
     "track_id": "RDR-292",
     "azimuth_deg": 56.2,
-    "range_km": 4,
+    "range_km": 4.0,
     "classification": "UAS",
     "subtype": "fixed-wing"
   },
@@ -45165,7 +45165,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:22",
     "track_id": "RDR-951",
-    "azimuth_deg": 61,
+    "azimuth_deg": 61.0,
     "range_km": 4.21,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -45210,7 +45210,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:23",
     "track_id": "RDR-292",
-    "azimuth_deg": 55,
+    "azimuth_deg": 55.0,
     "range_km": 3.87,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -45309,7 +45309,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:25",
     "track_id": "RDR-171",
-    "azimuth_deg": 52,
+    "azimuth_deg": 52.0,
     "range_km": 3.57,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -45417,7 +45417,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:27",
     "track_id": "RDR-171",
-    "azimuth_deg": 51,
+    "azimuth_deg": 51.0,
     "range_km": 3.49,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -45525,7 +45525,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:29",
     "track_id": "RDR-171",
-    "azimuth_deg": 50,
+    "azimuth_deg": 50.0,
     "range_km": 3.4,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -45588,7 +45588,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:30",
     "track_id": "RDR-292",
-    "azimuth_deg": 52,
+    "azimuth_deg": 52.0,
     "range_km": 3.57,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -45598,7 +45598,7 @@
     "timestamp": "00:20:30",
     "track_id": "RDR-951",
     "azimuth_deg": 56.2,
-    "range_km": 4,
+    "range_km": 4.0,
     "classification": "UAS",
     "subtype": "fixed-wing"
   },
@@ -45696,7 +45696,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:32",
     "track_id": "RDR-292",
-    "azimuth_deg": 51,
+    "azimuth_deg": 51.0,
     "range_km": 3.49,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -45804,7 +45804,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:34",
     "track_id": "RDR-292",
-    "azimuth_deg": 50,
+    "azimuth_deg": 50.0,
     "range_km": 3.4,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -45867,7 +45867,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:35",
     "track_id": "RDR-951",
-    "azimuth_deg": 54,
+    "azimuth_deg": 54.0,
     "range_km": 3.76,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -45903,7 +45903,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:36",
     "track_id": "RDR-171",
-    "azimuth_deg": 46,
+    "azimuth_deg": 46.0,
     "range_km": 3.12,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -46182,7 +46182,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:41",
     "track_id": "RDR-292",
-    "azimuth_deg": 46,
+    "azimuth_deg": 46.0,
     "range_km": 3.12,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -46191,7 +46191,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:41",
     "track_id": "RDR-951",
-    "azimuth_deg": 51,
+    "azimuth_deg": 51.0,
     "range_km": 3.49,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -46227,7 +46227,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:42",
     "track_id": "RDR-171",
-    "azimuth_deg": 42,
+    "azimuth_deg": 42.0,
     "range_km": 2.89,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -46443,7 +46443,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:46",
     "track_id": "RDR-171",
-    "azimuth_deg": 39,
+    "azimuth_deg": 39.0,
     "range_km": 2.75,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -46506,7 +46506,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:47",
     "track_id": "RDR-292",
-    "azimuth_deg": 42,
+    "azimuth_deg": 42.0,
     "range_km": 2.89,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -46722,7 +46722,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:51",
     "track_id": "RDR-292",
-    "azimuth_deg": 39,
+    "azimuth_deg": 39.0,
     "range_km": 2.75,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -46821,7 +46821,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:53",
     "track_id": "RDR-171",
-    "azimuth_deg": 33,
+    "azimuth_deg": 33.0,
     "range_km": 2.52,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -46875,7 +46875,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:54",
     "track_id": "RDR-171",
-    "azimuth_deg": 32,
+    "azimuth_deg": 32.0,
     "range_km": 2.49,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -46929,7 +46929,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:55",
     "track_id": "RDR-171",
-    "azimuth_deg": 31,
+    "azimuth_deg": 31.0,
     "range_km": 2.46,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -46947,7 +46947,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:55",
     "track_id": "RDR-951",
-    "azimuth_deg": 42,
+    "azimuth_deg": 42.0,
     "range_km": 2.89,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -46983,7 +46983,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:56",
     "track_id": "RDR-171",
-    "azimuth_deg": 30,
+    "azimuth_deg": 30.0,
     "range_km": 2.44,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47037,7 +47037,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:57",
     "track_id": "RDR-171",
-    "azimuth_deg": 29,
+    "azimuth_deg": 29.0,
     "range_km": 2.41,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47091,7 +47091,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:58",
     "track_id": "RDR-171",
-    "azimuth_deg": 28,
+    "azimuth_deg": 28.0,
     "range_km": 2.38,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47100,7 +47100,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:58",
     "track_id": "RDR-292",
-    "azimuth_deg": 33,
+    "azimuth_deg": 33.0,
     "range_km": 2.52,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47154,7 +47154,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:20:59",
     "track_id": "RDR-292",
-    "azimuth_deg": 32,
+    "azimuth_deg": 32.0,
     "range_km": 2.49,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47208,7 +47208,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:00",
     "track_id": "RDR-292",
-    "azimuth_deg": 31,
+    "azimuth_deg": 31.0,
     "range_km": 2.46,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47262,7 +47262,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:01",
     "track_id": "RDR-292",
-    "azimuth_deg": 30,
+    "azimuth_deg": 30.0,
     "range_km": 2.44,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47316,7 +47316,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:02",
     "track_id": "RDR-292",
-    "azimuth_deg": 29,
+    "azimuth_deg": 29.0,
     "range_km": 2.41,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47325,7 +47325,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:02",
     "track_id": "RDR-951",
-    "azimuth_deg": 36,
+    "azimuth_deg": 36.0,
     "range_km": 2.63,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47370,7 +47370,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:03",
     "track_id": "RDR-292",
-    "azimuth_deg": 28,
+    "azimuth_deg": 28.0,
     "range_km": 2.38,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47379,7 +47379,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:03",
     "track_id": "RDR-951",
-    "azimuth_deg": 35,
+    "azimuth_deg": 35.0,
     "range_km": 2.59,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47433,7 +47433,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:04",
     "track_id": "RDR-951",
-    "azimuth_deg": 34,
+    "azimuth_deg": 34.0,
     "range_km": 2.56,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47469,7 +47469,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:05",
     "track_id": "RDR-171",
-    "azimuth_deg": 20,
+    "azimuth_deg": 20.0,
     "range_km": 2.22,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47487,7 +47487,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:05",
     "track_id": "RDR-951",
-    "azimuth_deg": 33,
+    "azimuth_deg": 33.0,
     "range_km": 2.53,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47541,7 +47541,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:06",
     "track_id": "RDR-951",
-    "azimuth_deg": 32,
+    "azimuth_deg": 32.0,
     "range_km": 2.49,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47748,7 +47748,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:10",
     "track_id": "RDR-292",
-    "azimuth_deg": 20,
+    "azimuth_deg": 20.0,
     "range_km": 2.22,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -47919,7 +47919,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:13",
     "track_id": "RDR-951",
-    "azimuth_deg": 24,
+    "azimuth_deg": 24.0,
     "range_km": 2.29,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -48603,7 +48603,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:26",
     "track_id": "RDR-171",
-    "azimuth_deg": 351,
+    "azimuth_deg": 351.0,
     "range_km": 2.05,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -48882,7 +48882,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:31",
     "track_id": "RDR-292",
-    "azimuth_deg": 351,
+    "azimuth_deg": 351.0,
     "range_km": 2.05,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -48891,7 +48891,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:31",
     "track_id": "RDR-951",
-    "azimuth_deg": 358,
+    "azimuth_deg": 358.0,
     "range_km": 2.04,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -49197,7 +49197,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:37",
     "track_id": "RDR-171",
-    "azimuth_deg": 336,
+    "azimuth_deg": 336.0,
     "range_km": 2.18,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -49476,7 +49476,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:21:42",
     "track_id": "RDR-292",
-    "azimuth_deg": 336,
+    "azimuth_deg": 336.0,
     "range_km": 2.18,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -51195,7 +51195,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:14",
     "track_id": "RDR-171",
-    "azimuth_deg": 304,
+    "azimuth_deg": 304.0,
     "range_km": 3.36,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -51267,7 +51267,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:15",
     "track_id": "RDR-951",
-    "azimuth_deg": 307,
+    "azimuth_deg": 307.0,
     "range_km": 3.15,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -51303,7 +51303,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:16",
     "track_id": "RDR-171",
-    "azimuth_deg": 303,
+    "azimuth_deg": 303.0,
     "range_km": 3.45,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -51411,7 +51411,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:18",
     "track_id": "RDR-171",
-    "azimuth_deg": 302,
+    "azimuth_deg": 302.0,
     "range_km": 3.53,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -51474,7 +51474,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:19",
     "track_id": "RDR-292",
-    "azimuth_deg": 304,
+    "azimuth_deg": 304.0,
     "range_km": 3.36,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -51537,7 +51537,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:20",
     "track_id": "RDR-951",
-    "azimuth_deg": 304,
+    "azimuth_deg": 304.0,
     "range_km": 3.37,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -51582,7 +51582,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:21",
     "track_id": "RDR-292",
-    "azimuth_deg": 303,
+    "azimuth_deg": 303.0,
     "range_km": 3.45,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -51690,7 +51690,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:23",
     "track_id": "RDR-292",
-    "azimuth_deg": 302,
+    "azimuth_deg": 302.0,
     "range_km": 3.53,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -51897,7 +51897,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:27",
     "track_id": "RDR-171",
-    "azimuth_deg": 298,
+    "azimuth_deg": 298.0,
     "range_km": 3.91,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -52275,7 +52275,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:34",
     "track_id": "RDR-171",
-    "azimuth_deg": 295,
+    "azimuth_deg": 295.0,
     "range_km": 4.2,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -52608,7 +52608,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:40",
     "track_id": "RDR-292",
-    "azimuth_deg": 295,
+    "azimuth_deg": 295.0,
     "range_km": 4.21,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -53085,7 +53085,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:49",
     "track_id": "RDR-171",
-    "azimuth_deg": 290,
+    "azimuth_deg": 290.0,
     "range_km": 4.86,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -53094,7 +53094,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:49",
     "track_id": "RDR-292",
-    "azimuth_deg": 292,
+    "azimuth_deg": 292.0,
     "range_km": 4.57,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -53248,7 +53248,7 @@
     "timestamp": "00:22:52",
     "track_id": "RDR-171",
     "azimuth_deg": 289.1,
-    "range_km": 5,
+    "range_km": 5.0,
     "classification": "UAS",
     "subtype": "fixed-wing"
   },
@@ -53265,7 +53265,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:52",
     "track_id": "RDR-951",
-    "azimuth_deg": 292,
+    "azimuth_deg": 292.0,
     "range_km": 4.57,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -53463,7 +53463,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:56",
     "track_id": "RDR-171",
-    "azimuth_deg": 288,
+    "azimuth_deg": 288.0,
     "range_km": 5.18,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -53472,7 +53472,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:56",
     "track_id": "RDR-292",
-    "azimuth_deg": 290,
+    "azimuth_deg": 290.0,
     "range_km": 4.86,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -53481,7 +53481,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:22:56",
     "track_id": "RDR-951",
-    "azimuth_deg": 291,
+    "azimuth_deg": 291.0,
     "range_km": 4.71,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -53679,7 +53679,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:00",
     "track_id": "RDR-171",
-    "azimuth_deg": 287,
+    "azimuth_deg": 287.0,
     "range_km": 5.37,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -53697,7 +53697,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:00",
     "track_id": "RDR-951",
-    "azimuth_deg": 290,
+    "azimuth_deg": 290.0,
     "range_km": 4.86,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -53904,7 +53904,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:04",
     "track_id": "RDR-292",
-    "azimuth_deg": 288,
+    "azimuth_deg": 288.0,
     "range_km": 5.2,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -53914,7 +53914,7 @@
     "timestamp": "00:23:04",
     "track_id": "RDR-951",
     "azimuth_deg": 289.1,
-    "range_km": 5,
+    "range_km": 5.0,
     "classification": "UAS",
     "subtype": "fixed-wing"
   },
@@ -54165,7 +54165,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:09",
     "track_id": "RDR-171",
-    "azimuth_deg": 285,
+    "azimuth_deg": 285.0,
     "range_km": 5.79,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -54390,7 +54390,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:13",
     "track_id": "RDR-292",
-    "azimuth_deg": 286,
+    "azimuth_deg": 286.0,
     "range_km": 5.58,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -54435,7 +54435,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:14",
     "track_id": "RDR-171",
-    "azimuth_deg": 284,
+    "azimuth_deg": 284.0,
     "range_km": 6.02,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -54660,7 +54660,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:18",
     "track_id": "RDR-292",
-    "azimuth_deg": 285,
+    "azimuth_deg": 285.0,
     "range_km": 5.79,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -54759,7 +54759,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:20",
     "track_id": "RDR-171",
-    "azimuth_deg": 283,
+    "azimuth_deg": 283.0,
     "range_km": 6.31,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -54777,7 +54777,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:20",
     "track_id": "RDR-951",
-    "azimuth_deg": 286,
+    "azimuth_deg": 286.0,
     "range_km": 5.58,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -54975,7 +54975,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:24",
     "track_id": "RDR-171",
-    "azimuth_deg": 282,
+    "azimuth_deg": 282.0,
     "range_km": 6.48,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -55101,7 +55101,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:26",
     "track_id": "RDR-951",
-    "azimuth_deg": 285,
+    "azimuth_deg": 285.0,
     "range_km": 5.81,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -55137,7 +55137,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:27",
     "track_id": "RDR-171",
-    "azimuth_deg": 281,
+    "azimuth_deg": 281.0,
     "range_km": 6.58,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -55425,7 +55425,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:32",
     "track_id": "RDR-951",
-    "azimuth_deg": 284,
+    "azimuth_deg": 284.0,
     "range_km": 6.03,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -55524,7 +55524,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:34",
     "track_id": "RDR-292",
-    "azimuth_deg": 282,
+    "azimuth_deg": 282.0,
     "range_km": 6.48,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -55677,7 +55677,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:37",
     "track_id": "RDR-171",
-    "azimuth_deg": 278,
+    "azimuth_deg": 278.0,
     "range_km": 6.95,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -55686,7 +55686,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:37",
     "track_id": "RDR-292",
-    "azimuth_deg": 281,
+    "azimuth_deg": 281.0,
     "range_km": 6.58,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -55803,7 +55803,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:39",
     "track_id": "RDR-951",
-    "azimuth_deg": 283,
+    "azimuth_deg": 283.0,
     "range_km": 6.29,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -56055,7 +56055,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:44",
     "track_id": "RDR-171",
-    "azimuth_deg": 276,
+    "azimuth_deg": 276.0,
     "range_km": 7.22,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -56226,7 +56226,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:47",
     "track_id": "RDR-292",
-    "azimuth_deg": 278,
+    "azimuth_deg": 278.0,
     "range_km": 6.95,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -56271,7 +56271,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:48",
     "track_id": "RDR-171",
-    "azimuth_deg": 275,
+    "azimuth_deg": 275.0,
     "range_km": 7.38,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -56487,7 +56487,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:52",
     "track_id": "RDR-171",
-    "azimuth_deg": 274,
+    "azimuth_deg": 274.0,
     "range_km": 7.53,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -56604,7 +56604,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:54",
     "track_id": "RDR-292",
-    "azimuth_deg": 276,
+    "azimuth_deg": 276.0,
     "range_km": 7.22,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -56703,7 +56703,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:56",
     "track_id": "RDR-171",
-    "azimuth_deg": 273,
+    "azimuth_deg": 273.0,
     "range_km": 7.7,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -56820,7 +56820,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:23:58",
     "track_id": "RDR-292",
-    "azimuth_deg": 275,
+    "azimuth_deg": 275.0,
     "range_km": 7.38,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -57036,7 +57036,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:24:02",
     "track_id": "RDR-292",
-    "azimuth_deg": 274,
+    "azimuth_deg": 274.0,
     "range_km": 7.53,
     "classification": "UAS",
     "subtype": "fixed-wing"
@@ -57252,7 +57252,7 @@
     "sensor_id": "RADAR_2D_02",
     "timestamp": "00:24:06",
     "track_id": "RDR-292",
-    "azimuth_deg": 273,
+    "azimuth_deg": 273.0,
     "range_km": 7.7,
     "classification": "UAS",
     "subtype": "fixed-wing"

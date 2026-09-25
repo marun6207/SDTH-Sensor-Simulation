@@ -36,7 +36,7 @@ class Contact(StrictModel):
     name: str = Field(min_length=1, max_length=80)
     domain: Literal["air", "surface"]
     subtype: str = Field(default="unknown", max_length=60)
-    affiliation: Literal["hostile"] = "hostile"
+    affiliation: Literal["hostile", "civilian"] = "hostile"
     emcon_mode: Literal["active", "passive", "silent"] = "active"
     detectable_range_km: dict[str, float] = Field(default_factory=dict)
     waypoints: list[Waypoint] = Field(min_length=1)

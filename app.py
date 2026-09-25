@@ -15,6 +15,7 @@ from pydantic import ValidationError
 from simulator.demo import build_demo_scenario
 from simulator.engine import _eligible, contact_state_at, extrapolate_waypoint, generate_outputs, relative_timestamp
 from simulator.models import (
+    AisEvent,
     AisSensor,
     CctvSensor,
     Contact,
@@ -50,6 +51,8 @@ PALETTE = [
     ("fusion", "AIS + SAR", "sensor"),
     ("air", "Hostile Air", "contact"),
     ("surface", "Hostile Vessel", "contact"),
+    ("civilian_air", "Civilian Air", "contact"),
+    ("civilian_surface", "Civilian Vessel", "contact"),
 ]
 TARGET_RANGE_TYPES = ["radar_2d", "radar_3d", "eoir", "ew", "cctv", "ais", "sar"]
 
@@ -347,16 +350,30 @@ def mutate_scenario(click_data, _save, _apply_target, _delete, _settings, _reset
                 payload["sensors"].append(sensor.model_dump(mode="json"))
                 placed_id = sensor_id
             else:
-                count = sum(contact["domain"] == placement_mode for contact in payload["contacts"]) + 1
-                contact_id = f"HOSTILE_{placement_mode.upper()}_{count:02d}"
-                contact = Contact(contact_id=contact_id, name=f"Hostile {placement_mode.title()} {count}", domain=placement_mode,
-                                  subtype="fixed-wing" if placement_mode == "air" else "vessel",
+                contact_placement = {
+                    "air": ("air", "hostile", "HOSTILE", "Hostile"),
+                    "surface": ("surface", "hostile", "HOSTILE", "Hostile"),
+                    "civilian_air": ("air", "civilian", "CIVILIAN", "Civilian"),
+                    "civilian_surface": ("surface", "civilian", "CIVILIAN", "Civilian"),
+                }
+                if placement_mode not in contact_placement:
+                    raise ValueError(f"Unsupported placement type: {placement_mode}")
+                domain, affiliation, id_prefix, name_prefix = contact_placement[placement_mode]
+                count = sum(contact["domain"] == domain and contact.get("affiliation", "hostile") == affiliation
+                             for contact in payload["contacts"]) + 1
+                contact_id = f"{id_prefix}_{domain.upper()}_{count:02d}"
+                surface_count = sum(item["domain"] == "surface" for item in payload["contacts"]) + 1
+                contact = Contact(contact_id=contact_id, name=f"{name_prefix} {domain.title()} {count}", domain=domain,
+                                  affiliation=affiliation, subtype="fixed-wing" if domain == "air" else "vessel",
                                   emcon_mode="active", detectable_range_km=(
                                       {"radar_2d": 35, "radar_3d": 40, "eoir": 20, "ew": 50}
-                                      if placement_mode == "air" else {"eoir": 20, "cctv": 15, "ais": 80, "sar": 100}
+                                      if domain == "air" else {"eoir": 20, "cctv": 15, "ais": 80, "sar": 100}
                                   ),
-                                  waypoints=[Waypoint(latitude=latitude, longitude=longitude, altitude_m=1000 if placement_mode == "air" else 0,
-                                                      time_s=0, speed_kts=100 if placement_mode == "air" else 15)])
+                                  ais_events=([AisEvent(time_s=0, enabled=True,
+                                                        mmsi=f"56300{surface_count:05d}",
+                                                        vessel_name=f"{name_prefix} Vessel {count}")] if domain == "surface" else []),
+                                  waypoints=[Waypoint(latitude=latitude, longitude=longitude, altitude_m=1000 if domain == "air" else 0,
+                                                      time_s=0, speed_kts=100 if domain == "air" else 15)])
                 payload["contacts"].append(contact.model_dump(mode="json"))
                 placed_id = contact_id
             updated = Scenario.model_validate(payload)
@@ -406,7 +423,7 @@ def render_scenario_settings(raw_scenario):
 def entity_options(raw_scenario, selected):
     scenario = Scenario.model_validate(raw_scenario)
     options = ([{"label": f"SENSOR · {item.name}", "value": item.sensor_id} for item in scenario.sensors] +
-               [{"label": f"HOSTILE · {item.name}", "value": item.contact_id} for item in scenario.contacts])
+               [{"label": f"{item.affiliation.upper()} · {item.name}", "value": item.contact_id} for item in scenario.contacts])
     values = {option["value"] for option in options}
     return options, selected if selected in values else None
 
@@ -430,7 +447,7 @@ def render_entity_editor(selected, raw_scenario):
         if contact.contact_id == selected:
             values = [contact.detectable_range_km.get(sensor_type) for sensor_type in TARGET_RANGE_TYPES]
             return (json.dumps(contact.model_dump(mode="json"), indent=2),
-                    f"{contact.domain.upper()} CONTACT · HOSTILE", {"display": "block"}, contact.emcon_mode, *values)
+                    f"{contact.domain.upper()} CONTACT · {contact.affiliation.upper()}", {"display": "block"}, contact.emcon_mode, *values)
     return "", "Entity no longer exists", {"display": "none"}, None, *([None] * len(TARGET_RANGE_TYPES))
 
 

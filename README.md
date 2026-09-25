@@ -193,7 +193,7 @@ internet access.
 
 ### Create and run a scenario
 
-1. Choose a sensor or hostile contact from **Place entity**, then click the map to place it.
+1. Choose a sensor, hostile contact, or civilian air/vessel contact from **Place entity**, then click the map to place it.
 2. Select an entity in **Entity inspector** to edit coordinates, sensor limits, refresh rate,
    probabilities, orientation, and enabled state.
 3. Select a hostile contact and choose **Add waypoint on map**. Click successive map positions to
