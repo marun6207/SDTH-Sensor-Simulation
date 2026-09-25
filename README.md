@@ -249,3 +249,36 @@ settings before calling `generate_outputs(scenario)`. Useful patterns include:
 
 Keep `random_seed` fixed when comparing runs. The simulator uses that seed for detection and
 classification checks, so the same scenario and seed produce identical JSON output.
+
+## Civil-infrastructure impact prediction
+
+The `hazard_forecast` package performs deterministic, defensive screening of a live target history
+against an immutable OpenStreetMap snapshot. It interpolates observations at a fixed cadence,
+projects a straight likely corridor, builds a compact radial possible area without turn hypotheses,
+and reports affected civil infrastructure. The generated MapLibre map uses red for affected
+infrastructure, yellow for the likely corridor, and orange for the possible area.
+
+Create the example snapshot:
+
+```powershell
+.\.venv\Scripts\python.exe -m hazard_forecast osm-refresh snapshot-spec.json `
+  --output osm-snapshot
+```
+
+Replay the example at ten-second observation and prediction intervals:
+
+```powershell
+.\.venv\Scripts\python.exe -m hazard_forecast replay trajectory_target_input.json `
+  --snapshot osm-snapshot `
+  --output forecast-output `
+  --type-map trajectory_target_type_map.json `
+  --observation-step-s 10 `
+  --horizon-s 120 `
+  --step-s 10 `
+  --likely-only `
+  --track-id live-target-001
+```
+
+For cumulative live input, replace `replay` with `assess` and write to a JSON file with `--output`.
+The full input, output, and safety contract is documented in
+[`hazard_forecast/CONTRACT.md`](hazard_forecast/CONTRACT.md).

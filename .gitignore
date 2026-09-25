@@ -8,3 +8,7 @@ pytest-cache-files-*/
 htmlcov/
 *.egg-info/
 simulated_data_*/
+forecast-output*/
+osm-snapshot*/
+current-assessment.json
+live-assessment.json

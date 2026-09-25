@@ -14,7 +14,11 @@ dependencies = [
   "requests>=2.32,<3",
   "dash>=2.18,<4",
   "dash-leaflet>=1.0.15,<2",
+  "shapely>=2.0,<3",
 ]
 
+[project.scripts]
+hazard-forecast = "hazard_forecast.cli:main"
+
 [tool.setuptools.packages.find]
-include = ["simulator*"]
+include = ["simulator*", "hazard_forecast*"]
