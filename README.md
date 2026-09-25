@@ -216,10 +216,33 @@ ground truth.
 
 ## Scenario 2 - Multi-Sensor Disagreement
 
-**Southwest UAS Approach with Multi-Sensor Disagreement** contains exactly five
-physical fixed-wing UAS, shared by both sites. AIRBASE_02 is at **1.275000,
-103.820000** and ARMY_BASE_02 is at **1.263000, 103.829000**. Their spherical
-surface separation is **1.6678 km**. These are fictional scenario coordinates.
+**Southwest UAS Approach with Multi-Sensor Disagreement** retains a hidden ground
+truth of exactly five physical fixed-wing UAS approaching AIRBASE_02 and ARMY_BASE_02
+from the southwest. Unlike Scenario 1's generally corroborating observations, the
+sensors intentionally begin with differing assessments of the same physical event.
+
+Disagreement is introduced through different numbers and subsets of independently
+resolved objects, different sensor-local track identities and confidence levels,
+temporary EO/IR classification uncertainty, asynchronous updates, and different
+viewing geometry caused by the geographically separated sites.
+
+MPSTAR consistently resolves all five tracks. Initially, Airbase EO/IR resolves
+fewer objects, while Army EO/IR may resolve a different number or subset of the same
+five UAS. One persistent EO/IR track temporarily reports `UNKNOWN` with low confidence
+before returning to `UAS` / `fixed-wing`. EW continues to provide supporting RF
+evidence for the overall event, and CCTV provides supporting visual UAS evidence.
+Nexus C2 must reconcile these observations. As the UAS approach, both EO/IR sensors
+progressively resolve all five objects, moving the picture from **multi-sensor
+disagreement** toward **stronger multi-sensor corroboration**. Fewer EO/IR tracks
+indicate incomplete resolution: **five physical UAS remain present throughout**.
+
+All sensors stay operational. Disagreement is **not** created through sensor outages,
+missed scheduled updates, radar track dropouts, RF or CCTV non-detection, or random
+or physically nonsensical measurements.
+
+AIRBASE_02 is at **1.275000, 103.820000** and ARMY_BASE_02 is at **1.263000,
+103.829000**. Their spherical surface separation is **1.6678 km**. These are
+fictional scenario coordinates.
 
 The group approaches northeast from southwest of both sites over 14:30:00 through 15:00:00.
 Continuous curved trajectories have different starting positions, paths, and altitudes.
@@ -228,13 +251,9 @@ The fixed seed is `20260925`. Geometry uses a spherical Earth with radius 6371.0
 surface range, and local flat elevation relative to synthetic sites at altitude zero.
 This is a coherent synthetic observation model, not a calibrated sensor performance model.
 
-All sensors stay operational. Scenario 2 does **not** simulate sensor outages,
-RF non-detection, CCTV non-detection, or radar track dropout. Disagreement comes from
-resolved counts and subsets, shuffled persistent sensor-local IDs, different viewing
-geometry, asynchronous timing, varying confidence, and one temporary classification uncertainty.
-Acquisition order is a scripted model of different viewpoints and gradual resolution;
-fewer EO tracks never means fewer physical UAS. Confidence depends on approach distance
-with independent seeded quality variation and small non-monotonic changes.
+Acquisition order is a scripted model of different viewpoints and gradual resolution.
+Confidence depends on approach distance with independent seeded quality variation
+and small non-monotonic changes.
 
 | Sensor | Interval | Seconds | Observations |
 |---|---:|---:|---:|
