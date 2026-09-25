@@ -224,3 +224,28 @@ $env:PLAYWRIGHT_BROWSERS_PATH = "$PWD\.venv\pw-browsers"
 python -m playwright install chromium
 python -m pytest tests/e2e -q
 ```
+
+### Create sensor disagreement data
+
+Use `generate_simulated_data.py` to regenerate the checked-in example under
+[`examples/sensor_disagreement`](examples/sensor_disagreement). It starts from the demonstration
+scenario and deliberately changes sensor behavior while keeping the target track the same:
+
+```powershell
+.\.venv\Scripts\python.exe generate_simulated_data.py
+```
+
+To create your own disagreement, copy `build_disagreement_scenario()` and adjust sensor or contact
+settings before calling `generate_outputs(scenario)`. Useful patterns include:
+
+- Set one sensor's `classification_probability` to `0` while another sensor retains a non-zero
+  value. Both can detect the same target, but one emits `UNKNOWN`.
+- Give one sensor a smaller `detection_range_km`, `field_of_view_deg`, or target
+  `detectable_range_km` cap. It will miss a contact that another sensor reports.
+- Add an `EmitterEvent(enabled=False)` to create an EW outage, or an `AisEvent(enabled=False)` to
+  create an AIS outage while SAR or another sensor continues reporting.
+- Use different `refresh_rate_s` values to create timestamp gaps, then compare records by
+  `timestamp` and `track_id`.
+
+Keep `random_seed` fixed when comparing runs. The simulator uses that seed for detection and
+classification checks, so the same scenario and seed produce identical JSON output.

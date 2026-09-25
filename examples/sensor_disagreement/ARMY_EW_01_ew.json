@@ -1,0 +1,191 @@
+[
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:00:00",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 43.9,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:00:10",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 44.6,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:00:20",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 45.4,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:00:30",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 46.2,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:00:40",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 47.1,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:00:50",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 48.1,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:01:00",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 49.2,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:01:10",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 50.4,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:01:20",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 51.7,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:01:30",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 53.2,
+    "classification": "unknown_emitter",
+    "confidence": 0.5
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:01:40",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 54.8,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:01:50",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 56.6,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:02:00",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 58.7,
+    "classification": "unknown_emitter",
+    "confidence": 0.5
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:02:10",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 59.5,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:02:20",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 60.6,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:02:30",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 61.8,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:02:40",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 63.3,
+    "classification": "unknown_emitter",
+    "confidence": 0.5
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:02:50",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 65.0,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:03:00",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 67.3,
+    "classification": "unknown_emitter",
+    "confidence": 0.5
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:03:10",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 70.2,
+    "classification": "unknown_emitter",
+    "confidence": 0.5
+  },
+  {
+    "sensor_id": "ARMY_EW_01",
+    "timestamp": "00:03:20",
+    "emitter_id": "RF-656",
+    "detected": true,
+    "bearing_deg": 74.0,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  }
+]

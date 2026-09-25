@@ -44,32 +44,3 @@ $env:PLAYWRIGHT_BROWSERS_PATH = "$PWD\.venv\pw-browsers"
 ```
 
 The simulator is for synthetic training and demonstration; it does not connect to live sensors.
-
-## Civil-infrastructure danger forecasting
-
-The `hazard_forecast` package is a separate defensive screening module. It replays one JSON array of
-timestamped positions, creates deterministic likely/possible movement corridors, and reports civilian
-infrastructure exposed by those corridors. It does not model weapons, targets, or strategic value.
-
-Install the project to expose the `hazard-forecast` command:
-
-```powershell
-.\.venv\Scripts\python.exe -m pip install -e .
-```
-
-Validate a track, create a bounded OSM snapshot, and replay it:
-
-```powershell
-hazard-forecast validate track.json
-hazard-forecast osm-refresh snapshot-spec.json --output osm-snapshot
-hazard-forecast replay track.json --snapshot osm-snapshot --output forecast-output
-```
-
-`snapshot-spec.json` contains either `{"bbox": [south, west, north, east]}` or a GeoJSON Polygon under
-`polygon`. Snapshot refresh is the only analytical command that accesses the network; replay uses the
-immutable snapshot and writes JSONL, consolidated JSON, GeoJSON, an attributed Leaflet map, and a hash
-manifest. Use `--type-map mapping.json` to map caller-owned opaque type tokens to the documented generic
-mobility profiles.
-
-The complete field and artifact definitions are in
-[`hazard_forecast/CONTRACT.md`](hazard_forecast/CONTRACT.md).

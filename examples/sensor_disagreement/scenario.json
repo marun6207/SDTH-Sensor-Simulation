@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "scenario_id": "sensor-disagreement-demo",
+  "name": "Sensor Disagreement Demonstration",
+  "start_time": "2026-09-25T14:32:00Z",
+  "duration_s": 300,
+  "random_seed": 17,
+  "sensors": [
+    {
+      "sensor_id": "GIRAFFE_AIRBASE_01",
+      "name": "Giraffe 3D Radar",
+      "owner": "Air",
+      "latitude": 1.365,
+      "longitude": 103.902,
+      "orientation_deg": 0.0,
+      "detection_range_km": 45.0,
+      "classification_range_km": 25.0,
+      "field_of_view_deg": 360.0,
+      "min_altitude_m": 0.0,
+      "max_altitude_m": 20000.0,
+      "refresh_rate_s": 5.0,
+      "detection_probability": 0.98,
+      "classification_probability": 0.92,
+      "enabled": true,
+      "sensor_type": "radar_3d"
+    },
+    {
+      "sensor_id": "MPSTAR_AIRBASE_01",
+      "name": "MPSTAR Radar",
+      "owner": "Air",
+      "latitude": 1.334,
+      "longitude": 103.889,
+      "orientation_deg": 0.0,
+      "detection_range_km": 35.0,
+      "classification_range_km": 20.0,
+      "field_of_view_deg": 360.0,
+      "min_altitude_m": 0.0,
+      "max_altitude_m": 20000.0,
+      "refresh_rate_s": 6.0,
+      "detection_probability": 1.0,
+      "classification_probability": 1.0,
+      "enabled": true,
+      "sensor_type": "radar_2d"
+    },
+    {
+      "sensor_id": "EOIR_AIRBASE_01",
+      "name": "Airbase EO/IR",
+      "owner": "Air",
+      "latitude": 1.35,
+      "longitude": 103.92,
+      "orientation_deg": 45.0,
+      "detection_range_km": 28.0,
+      "classification_range_km": 22.0,
+      "field_of_view_deg": 120.0,
+      "min_altitude_m": 0.0,
+      "max_altitude_m": 20000.0,
+      "refresh_rate_s": 8.0,
+      "detection_probability": 1.0,
+      "classification_probability": 0.0,
+      "enabled": true,
+      "sensor_type": "eoir"
+    },
+    {
+      "sensor_id": "ARMY_EW_01",
+      "name": "Army EW Direction Finder",
+      "owner": "Army",
+      "latitude": 1.305,
+      "longitude": 103.825,
+      "orientation_deg": 45.0,
+      "detection_range_km": 60.0,
+      "classification_range_km": 45.0,
+      "field_of_view_deg": 180.0,
+      "min_altitude_m": 0.0,
+      "max_altitude_m": 20000.0,
+      "refresh_rate_s": 10.0,
+      "detection_probability": 1.0,
+      "classification_probability": 0.86,
+      "enabled": true,
+      "sensor_type": "ew"
+    },
+    {
+      "sensor_id": "CCTV_COASTAL_01",
+      "name": "Coastal Surveillance CCTV",
+      "owner": "Army",
+      "latitude": 1.27,
+      "longitude": 103.93,
+      "orientation_deg": 150.0,
+      "detection_range_km": 30.0,
+      "classification_range_km": 18.0,
+      "field_of_view_deg": 180.0,
+      "min_altitude_m": 0.0,
+      "max_altitude_m": 20000.0,
+      "refresh_rate_s": 10.0,
+      "detection_probability": 1.0,
+      "classification_probability": 0.0,
+      "enabled": true,
+      "sensor_type": "cctv"
+    },
+    {
+      "sensor_id": "EOIR_NAVYBASE_01",
+      "name": "Navy EO/IR",
+      "owner": "Navy",
+      "latitude": 1.255,
+      "longitude": 103.93,
+      "orientation_deg": 100.0,
+      "detection_range_km": 35.0,
+      "classification_range_km": 24.0,
+      "field_of_view_deg": 160.0,
+      "min_altitude_m": 0.0,
+      "max_altitude_m": 20000.0,
+      "refresh_rate_s": 10.0,
+      "detection_probability": 1.0,
+      "classification_probability": 1.0,
+      "enabled": true,
+      "sensor_type": "eoir"
+    },
+    {
+      "sensor_id": "AIS_OCEANS_X",
+      "name": "MPA OCEANS-X AIS",
+      "owner": "Navy",
+      "latitude": 1.245,
+      "longitude": 103.89,
+      "orientation_deg": 0.0,
+      "detection_range_km": 80.0,
+      "classification_range_km": 80.0,
+      "field_of_view_deg": 360.0,
+      "min_altitude_m": 0.0,
+      "max_altitude_m": 20000.0,
+      "refresh_rate_s": 15.0,
+      "detection_probability": 1.0,
+      "classification_probability": 1.0,
+      "enabled": true,
+      "sensor_type": "ais"
+    },
+    {
+      "sensor_id": "GLINT_SAR_01",
+      "name": "GLINT / Sentinel-1 SAR",
+      "owner": "Navy",
+      "latitude": 1.21,
+      "longitude": 103.85,
+      "orientation_deg": 0.0,
+      "detection_range_km": 120.0,
+      "classification_range_km": 70.0,
+      "field_of_view_deg": 360.0,
+      "min_altitude_m": 0.0,
+      "max_altitude_m": 20000.0,
+      "refresh_rate_s": 60.0,
+      "detection_probability": 1.0,
+      "classification_probability": 1.0,
+      "enabled": true,
+      "sensor_type": "sar"
+    },
+    {
+      "sensor_id": "AIS_SAR_FUSION_01",
+      "name": "AIS + SAR Correlation",
+      "owner": "Navy",
+      "latitude": 1.245,
+      "longitude": 103.89,
+      "orientation_deg": 0.0,
+      "detection_range_km": 120.0,
+      "classification_range_km": 120.0,
+      "field_of_view_deg": 360.0,
+      "min_altitude_m": 0.0,
+      "max_altitude_m": 20000.0,
+      "refresh_rate_s": 15.0,
+      "detection_probability": 1.0,
+      "classification_probability": 1.0,
+      "enabled": true,
+      "sensor_type": "fusion",
+      "source_ais_sensor_id": "AIS_OCEANS_X",
+      "source_sar_sensor_id": "GLINT_SAR_01"
+    }
+  ],
+  "contacts": [
+    {
+      "contact_id": "HOSTILE_UAS_01",
+      "name": "Red Kite",
+      "domain": "air",
+      "subtype": "fixed-wing",
+      "affiliation": "hostile",
+      "emcon_mode": "active",
+      "detectable_range_km": {
+        "radar_2d": 38.0,
+        "radar_3d": 44.0,
+        "eoir": 24.0,
+        "ew": 55.0
+      },
+      "waypoints": [
+        {
+          "latitude": 1.54,
+          "longitude": 104.05,
+          "altitude_m": 2400.0,
+          "time_s": 0.0,
+          "speed_kts": 140.0,
+          "hold_s": 0.0
+        },
+        {
+          "latitude": 1.4,
+          "longitude": 103.98,
+          "altitude_m": 1800.0,
+          "time_s": 120.0,
+          "speed_kts": 135.0,
+          "hold_s": 0.0
+        },
+        {
+          "latitude": 1.29,
+          "longitude": 103.86,
+          "altitude_m": 900.0,
+          "time_s": 240.0,
+          "speed_kts": 120.0,
+          "hold_s": 0.0
+        },
+        {
+          "latitude": 1.22,
+          "longitude": 103.79,
+          "altitude_m": 500.0,
+          "time_s": 300.0,
+          "speed_kts": 110.0,
+          "hold_s": 0.0
+        }
+      ],
+      "emitter_events": [
+        {
+          "time_s": 0.0,
+          "enabled": true
+        },
+        {
+          "time_s": 210.0,
+          "enabled": false
+        }
+      ],
+      "ais_events": []
+    },
+    {
+      "contact_id": "HOSTILE_VESSEL_01",
+      "name": "Grey Marlin",
+      "domain": "surface",
+      "subtype": "cargo",
+      "affiliation": "hostile",
+      "emcon_mode": "passive",
+      "detectable_range_km": {
+        "eoir": 25.0,
+        "cctv": 24.0,
+        "ais": 80.0,
+        "sar": 110.0
+      },
+      "waypoints": [
+        {
+          "latitude": 1.12,
+          "longitude": 104.04,
+          "altitude_m": 0.0,
+          "time_s": 0.0,
+          "speed_kts": 18.0,
+          "hold_s": 0.0
+        },
+        {
+          "latitude": 1.17,
+          "longitude": 103.94,
+          "altitude_m": 0.0,
+          "time_s": 150.0,
+          "speed_kts": 18.0,
+          "hold_s": 0.0
+        },
+        {
+          "latitude": 1.21,
+          "longitude": 103.81,
+          "altitude_m": 0.0,
+          "time_s": 300.0,
+          "speed_kts": 16.0,
+          "hold_s": 0.0
+        }
+      ],
+      "emitter_events": [],
+      "ais_events": [
+        {
+          "time_s": 0.0,
+          "enabled": true,
+          "mmsi": "563009999",
+          "vessel_name": "MPA OCEANS-X"
+        },
+        {
+          "time_s": 135.0,
+          "enabled": false,
+          "mmsi": "563009999",
+          "vessel_name": "MPA OCEANS-X"
+        },
+        {
+          "time_s": 230.0,
+          "enabled": true,
+          "mmsi": "563008888",
+          "vessel_name": "NORTH STAR"
+        }
+      ]
+    }
+  ],
+  "fusion_mappings": [
+    {
+      "fusion_sensor_id": "AIS_SAR_FUSION_01",
+      "contact_id": "HOSTILE_VESSEL_01",
+      "ais_identity": "563009999",
+      "sar_track_id": "SAR-871",
+      "tolerance_s": 20.0
+    }
+  ]
+}

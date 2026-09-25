@@ -3,20 +3,18 @@ requires = ["setuptools>=75"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "civil-hazard-forecast"
+name = "joint-sensor-simulator"
 version = "0.1.0"
-description = "Deterministic civil-infrastructure danger corridor forecasting"
+description = "Deterministic Dash multi-sensor scenario simulator"
 requires-python = ">=3.11"
 dependencies = [
   "numpy>=2.0,<3",
   "pydantic>=2.9,<3",
   "pyproj>=3.7,<4",
   "requests>=2.32,<3",
-  "shapely>=2.0,<3",
+  "dash>=2.18,<4",
+  "dash-leaflet>=1.0.15,<2",
 ]
 
-[project.scripts]
-hazard-forecast = "hazard_forecast.cli:main"
-
 [tool.setuptools.packages.find]
-include = ["hazard_forecast*"]
+include = ["simulator*"]
