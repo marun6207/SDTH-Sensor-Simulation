@@ -280,5 +280,4 @@ Replay the example at ten-second observation and prediction intervals:
 ```
 
 For cumulative live input, replace `replay` with `assess` and write to a JSON file with `--output`.
-The full input, output, and safety contract is documented in
-[`hazard_forecast/CONTRACT.md`](hazard_forecast/CONTRACT.md).
+See the [`hazard_forecast` README](hazard_forecast/README.md) for the system architecture, classification checks, and military-site filtering. The full input, output, and safety contract is documented in [`hazard_forecast/CONTRACT.md`](hazard_forecast/CONTRACT.md).
