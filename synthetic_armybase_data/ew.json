@@ -1,0 +1,65 @@
+[
+  {
+    "sensor_id": "ARMYBASE_EW_01",
+    "timestamp": "14:30:02",
+    "emitter_id": "RF-001",
+    "detected": true,
+    "bearing_deg": 79.9,
+    "classification": "suspected_uas_link",
+    "confidence": 0.69
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_01",
+    "timestamp": "14:35:02",
+    "emitter_id": "RF-001",
+    "detected": true,
+    "bearing_deg": 78.3,
+    "classification": "suspected_uas_link",
+    "confidence": 0.74
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_01",
+    "timestamp": "14:40:02",
+    "emitter_id": "RF-001",
+    "detected": true,
+    "bearing_deg": 77.0,
+    "classification": "suspected_uas_link",
+    "confidence": 0.79
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_01",
+    "timestamp": "14:45:02",
+    "emitter_id": "RF-001",
+    "detected": true,
+    "bearing_deg": 76.1,
+    "classification": "suspected_uas_link",
+    "confidence": 0.79
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_01",
+    "timestamp": "14:50:02",
+    "emitter_id": "RF-001",
+    "detected": true,
+    "bearing_deg": 70.9,
+    "classification": "suspected_uas_link",
+    "confidence": 0.85
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_01",
+    "timestamp": "14:55:02",
+    "emitter_id": "RF-001",
+    "detected": true,
+    "bearing_deg": 64.7,
+    "classification": "suspected_uas_link",
+    "confidence": 0.86
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_01",
+    "timestamp": "15:00:02",
+    "emitter_id": "RF-001",
+    "detected": true,
+    "bearing_deg": 54.5,
+    "classification": "suspected_uas_link",
+    "confidence": 0.91
+  }
+]

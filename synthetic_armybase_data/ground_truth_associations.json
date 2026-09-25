@@ -1,0 +1,17 @@
+{
+  "UAS-01": {
+    "army_eoir_track": "ARMY-EO-001"
+  },
+  "UAS-02": {
+    "army_eoir_track": "ARMY-EO-002"
+  },
+  "UAS-03": {
+    "army_eoir_track": "ARMY-EO-003"
+  },
+  "UAS-04": {
+    "army_eoir_track": "ARMY-EO-004"
+  },
+  "UAS-05": {
+    "army_eoir_track": "ARMY-EO-005"
+  }
+}

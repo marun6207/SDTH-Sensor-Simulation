@@ -1,0 +1,11 @@
+{
+  "site_id": "ARMY_BASE_01",
+  "latitude": 1.337282,
+  "longitude": 103.987278,
+  "coordinate_system": "WGS84",
+  "relative_to": "AIRBASE_01",
+  "approx_distance_km": 2.0,
+  "relative_direction": "southwest",
+  "scenario_start": "14:30:00",
+  "scenario_end": "15:00:00"
+}

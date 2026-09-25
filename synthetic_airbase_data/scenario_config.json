@@ -1,0 +1,8 @@
+{
+  "site_id": "AIRBASE_01",
+  "latitude": 1.35,
+  "longitude": 104.0,
+  "coordinate_system": "WGS84",
+  "scenario_start": "14:30:00",
+  "scenario_end": "15:00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "UAS-01": {
+    "mpstar_track": "RDR-001",
+    "eoir_track": "EO-001"
+  },
+  "UAS-02": {
+    "mpstar_track": "RDR-002",
+    "eoir_track": "EO-002"
+  },
+  "UAS-03": {
+    "mpstar_track": "RDR-003",
+    "eoir_track": "EO-003"
+  },
+  "UAS-04": {
+    "mpstar_track": "RDR-004",
+    "eoir_track": "EO-004"
+  },
+  "UAS-05": {
+    "mpstar_track": "RDR-005",
+    "eoir_track": "EO-005"
+  }
+}
