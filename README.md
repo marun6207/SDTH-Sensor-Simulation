@@ -170,3 +170,57 @@ renamed, or added. They also check confidence ranges, timestamp boundaries,
 track persistence, chronological event ordering, ground-truth coordinate
 bounds, and the separation between raw observations and development-only
 ground truth.
+
+## Web application
+
+The `web-app` branch also contains a Python Dash tactical scenario simulator. It is intended for
+synthetic training and demonstrations; it does not connect to live sensors.
+
+### Setup and launch
+
+From the repository root, create and activate a virtual environment, install the dependencies, and
+start the server:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python app.py
+```
+
+Open <http://127.0.0.1:8050/> in a browser. The map uses OpenStreetMap tiles, so map tiles require
+internet access.
+
+### Create and run a scenario
+
+1. Choose a sensor or hostile contact from **Place entity**, then click the map to place it.
+2. Select an entity in **Entity inspector** to edit coordinates, sensor limits, refresh rate,
+   probabilities, orientation, and enabled state.
+3. Select a hostile contact and choose **Add waypoint on map**. Click successive map positions to
+   build its route. Arrival times are derived from the previous waypoint's speed; air contacts
+   support altitude and hold time, while surface contacts remain at zero altitude.
+4. For hostile contacts, set **EMCON** (active, passive, or silent) and per-sensor detectable
+   range caps when needed.
+5. Use the timeline controls to play, pause, restart, scrub, and change simulation speed.
+6. Click **Generate outputs**. The seeded simulation produces one JSON stream per sensor. CCTV
+   reports include track, bearing, range, classification, confidence, and deterministic image
+   references when eligible targets are detected.
+7. Download an individual sensor file or click **Download all JSON** for separate files.
+
+Use **Export scenario** to save complete scenario JSON and **Import scenario** to restore it.
+Saved scenarios persist in the browser; generated outputs remain in memory.
+
+### Test the application
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest tests -q
+```
+
+For browser acceptance tests, install the development dependencies and Chromium first:
+
+```powershell
+python -m pip install -r requirements-dev.txt
+$env:PLAYWRIGHT_BROWSERS_PATH = "$PWD\.venv\pw-browsers"
+python -m playwright install chromium
+python -m pytest tests/e2e -q
+```
