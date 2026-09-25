@@ -17,7 +17,7 @@ from typing import Any
 
 
 random.seed(42)
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).resolve().parent
 AIRBASE_DIR = ROOT / "synthetic_airbase_data"
 OUTPUT_DIR = ROOT / "synthetic_armybase_data"
 OBJECT_IDS = [f"UAS-{index:02d}" for index in range(1, 6)]

@@ -1,0 +1,51 @@
+{
+  "scenario_id": "SCENARIO_02",
+  "scenario_name": "Southwest UAS Approach with Multi-Sensor Disagreement",
+  "start_time": "14:30:00",
+  "end_time": "15:00:00",
+  "hidden_physical_uas_count": 5,
+  "general_approach_direction": "southwest to northeast",
+  "fixed_random_seed": 20260925,
+  "sites": {
+    "AIRBASE_02": {
+      "latitude": 1.275,
+      "longitude": 103.82
+    },
+    "ARMY_BASE_02": {
+      "latitude": 1.263,
+      "longitude": 103.829
+    }
+  },
+  "coordinate_system": "WGS84",
+  "site_altitude_m": 0,
+  "timing_policy": "Strict inclusive end at 15:00:00; later second-offset updates are outside the window.",
+  "geometry_model": "Spherical Earth radius 6371.0088 km; surface radar range; local flat elevation from altitude.",
+  "trajectory_model": "Linear east/north approach with smooth sinusoidal lateral and altitude variation; one-second truth samples.",
+  "resolution_model": "Scripted acquisition by viewpoint: Airbase object order 1,3,5,2,4; Army 2,4,1,5,3. Unresolved objects still exist.",
+  "sensor_schedules": {
+    "MPSTAR_AIRBASE_02": {
+      "interval_minutes": 2,
+      "second": 0
+    },
+    "EOIR_AIRBASE_02": {
+      "interval_minutes": 3,
+      "second": 1
+    },
+    "AIRBASE_EW_02": {
+      "interval_minutes": 5,
+      "second": 2
+    },
+    "EOIR_ARMYBASE_02": {
+      "interval_minutes": 3,
+      "second": 1
+    },
+    "CCTV_ARMYBASE_02": {
+      "interval_minutes": 4,
+      "second": 5
+    },
+    "ARMYBASE_EW_02": {
+      "interval_minutes": 5,
+      "second": 2
+    }
+  }
+}

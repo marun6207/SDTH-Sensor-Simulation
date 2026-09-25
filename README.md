@@ -10,9 +10,47 @@ sensor performance, communications, weapon performance, or an actual attack
 trajectory. The geographic coordinates are synthetic WGS84 coordinates chosen
 only to make the tracks coherent on a map.
 
-## Scenario 1
 
-Scenario 1 is named **Consistent Multi-Sensor Detection**. Five synthetic
+The repository contains **two separated scenarios** in the same Git repository:
+
+- `scenario_01_consistent/`: existing five-UAS multi-sensor corroboration, for
+  ingestion and fusion of mutually supporting observations.
+- `scenario_02_conflicting/`: a shared five-UAS southwest approach with controlled
+  disagreement between two synthetic sites.
+
+Generate Scenario 2 by running its Airbase generator first, then its Army generator:
+
+```text
+cd scenario_02_conflicting
+python generate_airbase_02_scenario.py
+python generate_armybase_02_scenario.py
+```
+
+The Airbase generator creates the shared five-UAS physical ground truth, associations,
+expected behavior, scenario configuration, and Airbase observations. The Army generator
+reads that saved ground truth and mapping, creates Army observations, and writes the
+combined `scenario_02_all_sensor_events.json`. It never generates trajectories or writes
+the shared truth or Airbase files. Run both scripts in this order to refresh a scenario.
+Missing shared inputs cause a clear error directing you to run the Airbase generator first.
+The Army script imports common observation and validation helpers from the Airbase script;
+there is only one implementation of those helpers.
+
+From the Scenario 2 directory, validate saved data without writing:
+
+```text
+python generate_airbase_02_scenario.py --validate-only
+python generate_armybase_02_scenario.py --validate-only
+```
+
+The first validates shared truth and Airbase files; the second validates the complete
+scenario and combined stream. Both verify the archived Scenario 1 SHA-256 manifest.
+No external packages
+are required. See [the completed report](SCENARIO_02_REPORT.md) for the full directory
+tree, starting positions, hidden associations, count progression, and validation results.
+
+## Scenario 1 - Multi-Sensor Corroboration
+
+Scenario 1 is named **Multi-Sensor Corroboration** (previously Consistent Multi-Sensor Detection). Five synthetic
 fixed-wing UAS objects move as a loose swarm from the eastern side of
 `AIRBASE_01` toward the airbase area during:
 
@@ -49,7 +87,7 @@ modalities and are located at different sites.
 ### AIRBASE_01
 
 `AIRBASE_01` is the original synthetic sensor site. Its fixed WGS84 location
-is stored in [synthetic_airbase_data/scenario_config.json](synthetic_airbase_data/scenario_config.json).
+is stored in [scenario_01_consistent/synthetic_airbase_data/scenario_config.json](scenario_01_consistent/synthetic_airbase_data/scenario_config.json).
 
 Sensors at this site are:
 
@@ -65,7 +103,7 @@ Sensors at this site are:
 `ARMY_BASE_01` is generated separately approximately 2 km southwest of
 `AIRBASE_01`. The generator reads the existing Airbase configuration instead
 of hard-coding its coordinates, calculates the southwest offset, and stores
-the result in [synthetic_armybase_data/scenario_config.json](synthetic_armybase_data/scenario_config.json).
+the result in [scenario_01_consistent/synthetic_armybase_data/scenario_config.json](scenario_01_consistent/synthetic_armybase_data/scenario_config.json).
 
 Sensors at this site are:
 
@@ -101,7 +139,7 @@ rather than assuming all sensors report simultaneously.
 The two sites are deliberately separated in the VS Code Explorer:
 
 ```text
-synthetic_airbase_data/
+scenario_01_consistent/synthetic_airbase_data/
 	scenario_config.json
 	mpstar.json
 	eoir.json
@@ -110,7 +148,7 @@ synthetic_airbase_data/
 	ground_truth_associations.json
 	all_sensor_events.json
 
-synthetic_armybase_data/
+scenario_01_consistent/synthetic_armybase_data/
 	scenario_config.json
 	eoir.json
 	cctv.json
@@ -141,12 +179,17 @@ geographic ground truth or fused object IDs:
 - `all_sensor_events.json` combines only that site's raw sensor records and
 	sorts them chronologically without adding fields.
 
-## Running the Generators
+## Original Scenario 1 generators
+
+The existing Scenario 1 datasets are preserved byte-for-byte under `scenario_01_consistent/`.
+The commands below are retained for reference: running them overwrites those archived
+datasets. They are not needed to generate Scenario 2. Only their directory paths have changed.
 
 Open the project folder in VS Code and open **Terminal > New Terminal**.
 Run the original Airbase generator with:
 
 ```text
+cd scenario_01_consistent
 python generate_airbase_scenario.py
 ```
 
@@ -157,7 +200,7 @@ python generate_armybase_scenario.py
 ```
 
 The Army generator expects the existing Airbase configuration and ground truth
-to exist. It writes only to `synthetic_armybase_data/` and checks that the
+to exist. It writes only to `scenario_01_consistent/synthetic_armybase_data/` and checks that the
 existing Airbase JSON files were not modified.
 
 Both generators use fixed random seeds so repeated runs produce reproducible
@@ -170,3 +213,73 @@ renamed, or added. They also check confidence ranges, timestamp boundaries,
 track persistence, chronological event ordering, ground-truth coordinate
 bounds, and the separation between raw observations and development-only
 ground truth.
+
+## Scenario 2 - Multi-Sensor Disagreement
+
+**Southwest UAS Approach with Multi-Sensor Disagreement** contains exactly five
+physical fixed-wing UAS, shared by both sites. AIRBASE_02 is at **1.275000,
+103.820000** and ARMY_BASE_02 is at **1.263000, 103.829000**. Their spherical
+surface separation is **1.6678 km**. These are fictional scenario coordinates.
+
+The group approaches northeast from southwest of both sites over 14:30:00 through 15:00:00.
+Continuous curved trajectories have different starting positions, paths, and altitudes.
+The development file samples them every second, including all observation times.
+The fixed seed is `20260925`. Geometry uses a spherical Earth with radius 6371.0088 km,
+surface range, and local flat elevation relative to synthetic sites at altitude zero.
+This is a coherent synthetic observation model, not a calibrated sensor performance model.
+
+All sensors stay operational. Scenario 2 does **not** simulate sensor outages,
+RF non-detection, CCTV non-detection, or radar track dropout. Disagreement comes from
+resolved counts and subsets, shuffled persistent sensor-local IDs, different viewing
+geometry, asynchronous timing, varying confidence, and one temporary classification uncertainty.
+Acquisition order is a scripted model of different viewpoints and gradual resolution;
+fewer EO tracks never means fewer physical UAS. Confidence depends on approach distance
+with independent seeded quality variation and small non-monotonic changes.
+
+| Sensor | Interval | Seconds | Observations |
+|---|---:|---:|---:|
+| Airbase MPSTAR | 2 min | :00 | 80 |
+| Airbase EO/IR | 3 min | :01 | 41 |
+| Airbase EW | 5 min | :02 | 6 |
+| Army EO/IR | 3 min | :01 | 44 |
+| Army CCTV | 4 min | :05 | 8 |
+| Army EW | 5 min | :02 | 6 |
+
+Scenario 2 uses a strict inclusive **15:00:00** boundary. Radar reports at 15:00:00;
+EO at 15:00:01 and EW at 15:00:02 are outside the scenario and are not scheduled.
+This differs from the archived Scenario 1 convention, which includes end-minute offsets.
+CCTV rotates CAM-001, CAM-002, and CAM-003, one scheduled camera observation per scan.
+EW RF-001 represents the general group sector, with bearings derived from the shared
+five-object centroid at each site's location. Neither cameras nor RF-001 map to a UAS.
+Image names are synthetic references; image files are not generated.
+
+At 14:42:01, one existing Airbase EO track reports UNKNOWN/unknown with confidence
+0.38; at 14:45:01 the same ID returns to UAS/fixed-wing with improved confidence.
+Both EO systems independently resolve five objects from 14:45:01 onward. Radar
+resolves five at every scheduled scan.
+
+### Replay versus development data
+
+Use [scenario_02_all_sensor_events.json](scenario_02_conflicting/scenario_02_all_sensor_events.json)
+as the primary Nexus C2 input: all **185** raw observations sorted chronologically.
+The two site folders also contain individual feeds and chronological per-site combined
+streams. Raw observations use exactly the original sensor schemas, with no hidden
+physical identifiers, geographic truth, associations, or evaluation metadata.
+
+`shared_ground_truth/ground_truth_positions.json`, `ground_truth_associations.json`,
+and `scenario_02_expected_behavior.json` are **developer/evaluation only**. Do not
+supply them, or scenario configuration files, as normal Nexus C2 replay input.
+Expected behavior documents count progression, temporary uncertainty, supporting
+EW/CCTV evidence, and periods of disagreement and increasing corroboration.
+
+### Scenario 2 validation
+
+Generation validates before writing and again after reading the saved JSON files.
+It checks exact schemas against the archived Scenario 1 feeds, all scheduled counts,
+track persistence and associations, physical trajectory continuity and northeast motion,
+southwest starts, site coordinates and separation, geometry against shared truth,
+confidence variation, classification recovery, positive EW/CCTV evidence, absence of
+hidden IDs, combined-stream equality and chronological sorting. It also compares all
+saved data and development metadata with the deterministic model. Validation errors
+raise an exception with the failed condition. The original SHA-256 manifest checks
+Scenario 1 inventory and bytes before and after generation.

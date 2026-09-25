@@ -12,7 +12,7 @@ from typing import Any
 
 random.seed(42)
 
-OUTPUT_DIR = Path(__file__).parent / "synthetic_airbase_data"
+OUTPUT_DIR = Path(__file__).resolve().parent / "synthetic_airbase_data"
 AIRBASE = {
     "site_id": "AIRBASE_01",
     "latitude": 1.3500,
