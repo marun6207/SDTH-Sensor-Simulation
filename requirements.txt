@@ -1,0 +1,8 @@
+dash>=2.18,<4
+dash-leaflet>=1.0.15,<2
+numpy>=2.0,<3
+pydantic>=2.9,<3
+pyproj>=3.7,<4
+requests>=2.32,<3
+shapely>=2.0,<3
+pytest>=8.3,<9
