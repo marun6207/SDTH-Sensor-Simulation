@@ -231,6 +231,9 @@ def build(positions, mapping, folders=(AIR, ARMY, NAVY)):
                 else:
                     camera = f"CAM-{scan % 3 + 1:03d}"
                     event.update(camera_id=camera, image=f"{camera.replace('-', '')}_{time.replace(':', '')}.jpg")
+                    # Synthetic late visual acquisition, not a real CCTV range model.
+                    if second != schedule(minutes, offset)[-1]:
+                        event.update(detected=False, classification="no_relevant_uas_detection", confidence=0.0)
                 records.append(event)
                 continue
             selected = range(5) if kind == "mpstar" else ORDERS[folder][:COUNTS[folder][scan]]
@@ -302,12 +305,12 @@ def build(positions, mapping, folders=(AIR, ARMY, NAVY)):
             "restored_timestamp": "14:45:01", "restored_classification": "UAS", "restored_subtype": "fixed-wing"},
         "ew_support": "Every scheduled update detected=false; no relevant RF signature is detectable in this simulation. Absence of RF does not invalidate radar/EO evidence.",
         "navy_support": "Coastal radar initially sees only vessels, then acquires five UNKNOWN airborne contacts at 14:45:11 within 31 km using the same shared truth. Missing early tracks mean not yet detected, not nonexistent. AIS/SAR remain maritime.",
-        "cctv_support": "Every scheduled update detected=true; three rotating cameras provide event-level evidence, not object counts.",
+        "cctv_support": "Only the final valid scheduled scan at 14:58:05 detects UAS; earlier scans report no_relevant_uas_detection with zero confidence. Synthetic late visual acquisition; group-level evidence only, not object counts or proof of earlier absence.",
         "early": "Airbase radar resolves five shahed-type UAS; EO resolves 2/3 fixed-wing subsets; EW does not corroborate.",
         "middle": "EO counts and confidence generally increase, with site-dependent subtype convergence and one UNKNOWN; Airbase radar maintains five; EW remains negative.",
         "late": "Both EO sensors resolve five shahed-type UAS by 14:51:01; confidence still varies, EW remains negative.",
         "early_snapshot": {"window": "14:30:00 through 14:30:05", "mpstar": 5, "airbase_eoir": 2,
-                           "armybase_eoir": 3, "navy_coastal_airborne": 0, "airbase_ew_detected": False, "armybase_ew_detected": False, "cctv_detected": True}}
+                           "armybase_eoir": 3, "navy_coastal_airborne": 0, "airbase_ew_detected": False, "armybase_ew_detected": False, "cctv_detected": False}}
     return files
 
 
@@ -441,7 +444,11 @@ def validate(files, folders=(AIR, ARMY, NAVY)):
                             and r["classification"] == "no_relevant_rf_detection" and r["confidence"] == 0,
                             f"{sid}: EW must not corroborate or invent an emitter/bearing")
                 else:
-                    require(r["detected"] is True and r["classification"] == "UAS", f"{sid}: missing CCTV support")
+                    final_scan = r["timestamp"] == expected_times[-1]
+                    require(r["detected"] is final_scan and r["classification"] == ("UAS" if final_scan else "no_relevant_uas_detection"),
+                            f"{sid}: only the final valid CCTV scan may detect UAS")
+                    require(r["confidence"] > 0 if final_scan else r["confidence"] == 0,
+                            f"{sid}: CCTV confidence must reflect detection status")
                     require(r["camera_id"] in {"CAM-001", "CAM-002", "CAM-003"}, "Invalid camera")
                 continue
             reverse = {m[key]: uid for uid, m in mapping.items()}

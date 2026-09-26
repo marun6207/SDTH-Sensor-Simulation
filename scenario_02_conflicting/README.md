@@ -66,8 +66,15 @@ preserved, with `detected=false`, `emitter_id=null`, `bearing_deg=null`,
 RF detection confidence). Consumers must accept these nulls; no emitter or
 bearing is fabricated. This synthetic RF assumption does not describe all real
 Shahed-type UAS. Lack of EW corroboration must not automatically invalidate the
-radar/EO evidence. Army CCTV provides event-level UAS visibility from three
-rotating cameras, not individual counts or hidden associations.
+radar/EO evidence. Army CCTV cycles through three cameras but provides positive
+event/group-level UAS evidence **only at its final valid scan, 14:58:05**.
+Earlier scans retain their camera/image fields and report `detected=false`,
+`classification="no_relevant_uas_detection"`, and `confidence=0.0`.
+The last scan reports `detected=true` and `classification="UAS"`; it does not
+resolve five individual tracks or expose hidden associations. This deterministic
+synthetic assumption represents the objects becoming sufficiently close for
+visual evidence, not actual CCTV performance. Earlier non-detection does not
+mean the physical objects are absent.
 
 ## Asynchronous observations
 

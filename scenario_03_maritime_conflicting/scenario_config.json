@@ -1,0 +1,63 @@
+{
+  "scenario_id": "SCENARIO_03",
+  "scenario_name": "Maritime Multi-Sensor Disagreement",
+  "start_time": "15:00:00",
+  "end_time": "15:30:00",
+  "fixed_random_seed": 20260926,
+  "hidden_physical_usv_count": 3,
+  "sites": {
+    "ARMY_BASE_03": {
+      "latitude": 1.35,
+      "longitude": 103.7
+    },
+    "NAVY_BASE_03": {
+      "latitude": 1.26,
+      "longitude": 103.72
+    }
+  },
+  "coordinate_system": "WGS84",
+  "general_approach_direction": "southwest to northeast/east",
+  "simulation_notice": "All coordinates, identities, classifications and behaviors are fictional simulation data; not real military installations or sensor/USV performance.",
+  "timing_policy": "Full timestamp <= 15:30:00; second-offset 15:30 updates excluded.",
+  "measurement_model": "Exact synthetic surface positions, zero surface altitude/elevation; spherical bearing; seeded EO confidence variation.",
+  "eoir_counts": [
+    1,
+    1,
+    2,
+    2,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "radar_classification": "15:00:11-15:06:11 UNKNOWN; 15:09:11-15:18:11 SURFACE_CRAFT; 15:21:11 onward USV/unmanned-suspected.",
+  "eoir_classification": "SURFACE_CRAFT initially; one temporary UNKNOWN at 15:12:01; USV/small-surface-craft from 15:18:01.",
+  "ais_policy": "Only one simulated cooperative craft reports AIS; other objects send no AIS messages, not negative detections.",
+  "ew_policy": "Intermittent group-sector RF evidence; no individual object/emitter association. Synthetic assumption, not a real communications claim.",
+  "sensor_schedules": {
+    "NAVY_COASTAL_RADAR_03": {
+      "interval_minutes": 3,
+      "second": 11
+    },
+    "MPA_OCEANS_X_AIS": {
+      "interval_minutes": 5,
+      "second": 7
+    },
+    "GLINT_SAR_PASS_SIM_03": {
+      "observation_times": [
+        "15:14:17"
+      ],
+      "mode": "single_pass"
+    },
+    "EOIR_ARMYBASE_03": {
+      "interval_minutes": 3,
+      "second": 1
+    },
+    "ARMYBASE_EW_03": {
+      "interval_minutes": 5,
+      "second": 2
+    }
+  }
+}

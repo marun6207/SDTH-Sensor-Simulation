@@ -1,0 +1,62 @@
+[
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "15:00:07",
+    "mmsi": 990000003,
+    "vessel_name": "SIMULATED COOPERATIVE CRAFT",
+    "lat": 1.180211598,
+    "lon": 103.598170131,
+    "sog_knots": 11.198,
+    "cog_deg": 54.741
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "15:05:07",
+    "mmsi": 990000003,
+    "vessel_name": "SIMULATED COOPERATIVE CRAFT",
+    "lat": 1.189193339,
+    "lon": 103.610855057,
+    "sog_knots": 11.194,
+    "cog_deg": 54.601
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "15:10:07",
+    "mmsi": 990000003,
+    "vessel_name": "SIMULATED COOPERATIVE CRAFT",
+    "lat": 1.198225845,
+    "lon": 103.623489217,
+    "sog_knots": 11.182,
+    "cog_deg": 54.23
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "15:15:07",
+    "mmsi": 990000003,
+    "vessel_name": "SIMULATED COOPERATIVE CRAFT",
+    "lat": 1.207345065,
+    "lon": 103.636036664,
+    "sog_knots": 11.166,
+    "cog_deg": 53.727
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "15:20:07",
+    "mmsi": 990000003,
+    "vessel_name": "SIMULATED COOPERATIVE CRAFT",
+    "lat": 1.216563712,
+    "lon": 103.648484683,
+    "sog_knots": 11.152,
+    "cog_deg": 53.226
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "15:25:07",
+    "mmsi": 990000003,
+    "vessel_name": "SIMULATED COOPERATIVE CRAFT",
+    "lat": 1.225867858,
+    "lon": 103.660847204,
+    "sog_knots": 11.142,
+    "cog_deg": 52.862
+  }
+]

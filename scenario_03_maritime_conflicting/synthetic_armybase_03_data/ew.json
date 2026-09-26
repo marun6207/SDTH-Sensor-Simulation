@@ -1,0 +1,56 @@
+[
+  {
+    "sensor_id": "ARMYBASE_EW_03",
+    "timestamp": "15:00:02",
+    "emitter_id": "RF-GROUP-03",
+    "detected": true,
+    "bearing_deg": 210.954,
+    "classification": "ambiguous_rf_activity",
+    "confidence": 0.32
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_03",
+    "timestamp": "15:05:02",
+    "emitter_id": null,
+    "detected": false,
+    "bearing_deg": null,
+    "classification": "no_relevant_rf_detection",
+    "confidence": 0.0
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_03",
+    "timestamp": "15:10:02",
+    "emitter_id": "RF-GROUP-03",
+    "detected": true,
+    "bearing_deg": 206.866,
+    "classification": "suspected_surface_link",
+    "confidence": 0.64
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_03",
+    "timestamp": "15:15:02",
+    "emitter_id": "RF-GROUP-03",
+    "detected": true,
+    "bearing_deg": 204.293,
+    "classification": "suspected_surface_link",
+    "confidence": 0.71
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_03",
+    "timestamp": "15:20:02",
+    "emitter_id": null,
+    "detected": false,
+    "bearing_deg": null,
+    "classification": "no_relevant_rf_detection",
+    "confidence": 0.0
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_03",
+    "timestamp": "15:25:02",
+    "emitter_id": "RF-GROUP-03",
+    "detected": true,
+    "bearing_deg": 197.608,
+    "classification": "suspected_surface_link",
+    "confidence": 0.78
+  }
+]

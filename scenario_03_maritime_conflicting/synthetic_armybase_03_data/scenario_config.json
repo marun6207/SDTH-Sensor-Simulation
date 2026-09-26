@@ -1,0 +1,19 @@
+{
+  "scenario_id": "SCENARIO_03",
+  "site_id": "ARMY_BASE_03",
+  "latitude": 1.35,
+  "longitude": 103.7,
+  "start_time": "15:00:00",
+  "end_time": "15:30:00",
+  "simulation_notice": "All coordinates, identities, classifications and behaviors are fictional simulation data; not real military installations or sensor/USV performance.",
+  "sensor_schedules": {
+    "EOIR_ARMYBASE_03": {
+      "interval_minutes": 3,
+      "second": 1
+    },
+    "ARMYBASE_EW_03": {
+      "interval_minutes": 5,
+      "second": 2
+    }
+  }
+}

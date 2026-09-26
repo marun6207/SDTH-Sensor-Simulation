@@ -1,0 +1,25 @@
+{
+  "scenario_id": "SCENARIO_03",
+  "site_id": "NAVY_BASE_03",
+  "latitude": 1.26,
+  "longitude": 103.72,
+  "start_time": "15:00:00",
+  "end_time": "15:30:00",
+  "simulation_notice": "All coordinates, identities, classifications and behaviors are fictional simulation data; not real military installations or sensor/USV performance.",
+  "sensor_schedules": {
+    "NAVY_COASTAL_RADAR_03": {
+      "interval_minutes": 3,
+      "second": 11
+    },
+    "MPA_OCEANS_X_AIS": {
+      "interval_minutes": 5,
+      "second": 7
+    },
+    "GLINT_SAR_PASS_SIM_03": {
+      "observation_times": [
+        "15:14:17"
+      ],
+      "mode": "single_pass"
+    }
+  }
+}

@@ -20,15 +20,36 @@ class ScenarioValidationTests(unittest.TestCase):
         scenario.validate(self.saved)
         self.assertEqual(self.saved, scenario.build(scenario.trajectories(), scenario.associations()))
 
-    def test_existing_sites_positions_ais_and_sar_unchanged(self):
-        # Frozen byte fingerprints from before the coastal acquisition change.
-        expected = {'synthetic_airbase_02_data': 'c17c3328ef71c2b4218db0630fa769459b16418dab62bdfd97df23526e8a52e2', 'synthetic_armybase_02_data': 'cf321ec69e0b191c71199793b4935c51b3921e5e2606c40a02c82e6eb7de5e25', 'shared_ground_truth/ground_truth_positions.json': 'bc549a47b08003f0f82b1a4295241e7c395971d4485f1b0087fbed529e11e2f9', 'synthetic_navybase_02_data/ais.json': 'be34316b5441b2c5a1d5fcea55f97ed75fbe99a8ff7ac0d6602dcaaf4266700a', 'synthetic_navybase_02_data/glint_sar.json': '8bcd7f643bc40f4ba047a78f33cdd839bf4a12480966bc82f2d810dcdd2f9734'}
+    def test_all_non_cctv_feeds_truth_and_configs_unchanged(self):
+        # Frozen byte fingerprints from before the targeted CCTV adjustment.
+        expected = {'synthetic_airbase_02_data': 'c17c3328ef71c2b4218db0630fa769459b16418dab62bdfd97df23526e8a52e2', 'synthetic_navybase_02_data': '68227856b97e23c3c480dd9e2f6ede5b810dd055b35ebf258c2d67964c48a8d6', 'synthetic_armybase_02_data/eoir.json': 'fd3a2bf99bed4a8e838413efdd089de208bd93ed4f2a6e823b7abf1e8143675b', 'synthetic_armybase_02_data/ew.json': 'bb87ec17841c082b0b1c12d3b9f4f3549c21df6c5306f3825f32ae4ca76dfae9', 'synthetic_armybase_02_data/scenario_config.json': 'aeaae76cdb39b8789623c7c187bbed595cb727141776ab69b4bebfa1f71cfd52', 'shared_ground_truth/ground_truth_positions.json': 'bc549a47b08003f0f82b1a4295241e7c395971d4485f1b0087fbed529e11e2f9', 'shared_ground_truth/ground_truth_associations.json': '891bf6aa6d5f8b67a2c9d5af6fe1e568ae837687af5b5cfd962b23ffa2d84604', 'scenario_config.json': 'fc907008572d9840a92557d579a6833bd8d915ff230bfedffa227ea054974239'}
         for group, digest in expected.items():
             with self.subTest(group=group):
                 path = scenario.OUTPUT / group
                 paths = [path] if path.is_file() else sorted(path.glob("*.json"))
                 actual = {p.relative_to(scenario.OUTPUT).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
                 self.assertEqual(hashlib.sha256(json.dumps(actual, sort_keys=True).encode()).hexdigest(), digest)
+
+    def test_cctv_only_final_scan_is_positive_group_evidence(self):
+        rows = self.saved[f"{scenario.ARMY}/cctv.json"]
+        times = ["14:30:05", "14:34:05", "14:38:05", "14:42:05",
+                 "14:46:05", "14:50:05", "14:54:05", "14:58:05"]
+        self.assertEqual([r["timestamp"] for r in rows], times)
+        self.assertEqual([r["detected"] for r in rows], [False] * 7 + [True])
+        self.assertEqual(times, [scenario.stamp(t) for t in scenario.schedule(4, 5)])
+        for r in rows:
+            self.assertEqual(set(r), scenario.FIELDS["cctv"])
+            self.assertEqual(r["sensor_id"], "CCTV_ARMYBASE_02")
+            self.assertNotIn("track_id", r)
+            for uid in scenario.IDS:
+                self.assertNotIn(uid, json.dumps(r))
+        for r in rows[:-1]:
+            self.assertEqual(r["classification"], "no_relevant_uas_detection")
+            self.assertEqual(r["confidence"], 0.0)
+        self.assertEqual(rows[-1]["classification"], "UAS")
+        self.assertEqual(rows[-1]["confidence"], .873)
+        for name in (f"{scenario.ARMY}/all_sensor_events.json", "scenario_02_all_sensor_events.json"):
+            self.assertEqual([r for r in self.saved[name] if r["sensor_id"] == "CCTV_ARMYBASE_02"], rows)
 
     def test_coastal_transition_and_surface_preservation(self):
         rows = self.saved[f"{scenario.NAVY}/coastal_radar.json"]
@@ -44,6 +65,10 @@ class ScenarioValidationTests(unittest.TestCase):
             next(r for r in rows if r["track_id"].startswith("NAVY-UNK-")).update(changes)
 
         cases = [
+            ("early_cctv_detection", f"{scenario.ARMY}/cctv.json", lambda rows: rows[0].update(detected=True, classification="UAS")),
+            ("missing_final_cctv", f"{scenario.ARMY}/cctv.json", lambda rows: rows[-1].update(detected=False)),
+            ("cctv_hidden_id", f"{scenario.ARMY}/cctv.json", lambda rows: rows[-1].update(image="UAS-01.jpg")),
+            ("cctv_individual_track", f"{scenario.ARMY}/cctv.json", lambda rows: rows[-1].update(track_id="CCTV-001")),
             ("premature_acquisition", f"{scenario.NAVY}/coastal_radar.json", lambda rows: corrupt_airborne(rows, timestamp="14:30:11")),
             ("coastal_classification", f"{scenario.NAVY}/coastal_radar.json", lambda rows: corrupt_airborne(rows, classification="UAS", subtype="shahed-type")),
             ("coastal_altitude", f"{scenario.NAVY}/coastal_radar.json", lambda rows: corrupt_airborne(rows, altitude_m=0)),

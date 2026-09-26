@@ -1,0 +1,119 @@
+{
+  "development_only": true,
+  "hidden_physical_usv_count": 3,
+  "coastal_counts": [
+    {
+      "timestamp": "15:00:11",
+      "count": 3,
+      "classification": "UNKNOWN"
+    },
+    {
+      "timestamp": "15:03:11",
+      "count": 3,
+      "classification": "UNKNOWN"
+    },
+    {
+      "timestamp": "15:06:11",
+      "count": 3,
+      "classification": "UNKNOWN"
+    },
+    {
+      "timestamp": "15:09:11",
+      "count": 3,
+      "classification": "SURFACE_CRAFT"
+    },
+    {
+      "timestamp": "15:12:11",
+      "count": 3,
+      "classification": "SURFACE_CRAFT"
+    },
+    {
+      "timestamp": "15:15:11",
+      "count": 3,
+      "classification": "SURFACE_CRAFT"
+    },
+    {
+      "timestamp": "15:18:11",
+      "count": 3,
+      "classification": "SURFACE_CRAFT"
+    },
+    {
+      "timestamp": "15:21:11",
+      "count": 3,
+      "classification": "USV"
+    },
+    {
+      "timestamp": "15:24:11",
+      "count": 3,
+      "classification": "USV"
+    },
+    {
+      "timestamp": "15:27:11",
+      "count": 3,
+      "classification": "USV"
+    }
+  ],
+  "eoir_counts": [
+    {
+      "timestamp": "15:00:01",
+      "count": 1
+    },
+    {
+      "timestamp": "15:03:01",
+      "count": 1
+    },
+    {
+      "timestamp": "15:06:01",
+      "count": 2
+    },
+    {
+      "timestamp": "15:09:01",
+      "count": 2
+    },
+    {
+      "timestamp": "15:12:01",
+      "count": 2
+    },
+    {
+      "timestamp": "15:15:01",
+      "count": 3
+    },
+    {
+      "timestamp": "15:18:01",
+      "count": 3
+    },
+    {
+      "timestamp": "15:21:01",
+      "count": 3
+    },
+    {
+      "timestamp": "15:24:01",
+      "count": 3
+    },
+    {
+      "timestamp": "15:27:01",
+      "count": 3
+    }
+  ],
+  "ais_reporting_object": "USV-02",
+  "ais_reporting_object_count": 1,
+  "temporary_uncertainty": {
+    "timestamp": "15:12:01",
+    "track_id": "ARMY-EO-002",
+    "recovery": "15:15:01"
+  },
+  "ew_detection_sequence": [
+    true,
+    false,
+    true,
+    true,
+    false,
+    true
+  ],
+  "ew_association": "Group sector only; no unique object association.",
+  "sar_timestamp": "15:14:17",
+  "sar_association": "Three-contact area centroid; not three identified objects.",
+  "early": "Three UNKNOWN radar tracks, one generic EO contact, one cooperative AIS identity.",
+  "middle": "Radar becomes SURFACE_CRAFT; EO progresses from two to three, with temporary uncertainty; intermittent RF and one SAR candidate.",
+  "late": "Radar/EO converge on three USVs with different specificity; AIS still one reporting identity; group evidence cannot uniquely associate objects."
+}

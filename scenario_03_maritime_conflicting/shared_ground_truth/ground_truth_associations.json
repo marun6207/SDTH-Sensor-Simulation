@@ -1,0 +1,15 @@
+{
+  "USV-01": {
+    "coastal_radar": "NAVY-UNK-003",
+    "army_eoir": "ARMY-EO-002"
+  },
+  "USV-02": {
+    "coastal_radar": "NAVY-UNK-001",
+    "army_eoir": "ARMY-EO-003",
+    "ais_mmsi": 990000003
+  },
+  "USV-03": {
+    "coastal_radar": "NAVY-UNK-002",
+    "army_eoir": "ARMY-EO-001"
+  }
+}
