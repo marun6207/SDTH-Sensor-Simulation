@@ -1,6 +1,6 @@
 # Canonical C2 exports
 
-> **Primary hero is airborne `S2_osint_swarm`. Maritime secondary track is `S1_trojan` (tri-service + GLINT hull anchor) then `S3_sar_ais` (GLINT macro × SIA × AIS dark vessel). marun `scenario_02_conflicting` is a legacy fusion bench, not Nexus S2.**
+> **Primary hero is airborne `S2_osint_swarm`. Maritime secondary track is `S1_trojan` (tri-service + GLINT hull anchor) then `S3_sar_ais` (GLINT macro × SIA × AIS dark vessel). marun `scenario_02_conflicting` → Nexus auxiliary `S4_fusion_disagreement` (not Pillar-1 S2).**
 
 This directory houses time-compressed, canonical multi-service exports consumed by Nexus C2.
 
@@ -8,9 +8,10 @@ This directory houses time-compressed, canonical multi-service exports consumed 
 
 | Pillar | Nexus ID | Export File | Status / Source |
 |---|---|---|---|
-| **1 (Primary Hero)** | `S2_osint_swarm` | `exports/s2_osint_swarm_*.jsonl` | **Planned marun export** (50-drone autonomous swarm, civilian passenger in-flight OSINT, radar clutter, RF silence; *distinct from legacy `scenario_02_conflicting`*) |
+| **1 (Primary Hero)** | `S2_osint_swarm` | `exports/s2_osint_swarm_*.jsonl` | **Planned marun export** (50-drone autonomous swarm, civilian passenger in-flight OSINT, radar clutter, RF silence; *distinct from `scenario_02_conflicting`*) |
 | **2** | `S1_trojan` | `exports/s1_trojan_scenario.jsonl` | **Active export** (tri-service contradiction, Navy AIS vs coastal radar, EW LOB, GLINT aft-deck anchor, Option B) |
 | **3** | `S3_sar_ais` | Nexus / SIA / GLINT (`:5051`, `:5050`) | Coastal AIS/radar optionally from marun; GLINT macro & SIA micro SAR managed by Nexus / Team 02 / SIA |
+| **Aux** | `S4_fusion_disagreement` | `exports/s4_fusion_disagreement_scenario.jsonl` | **Active export** from `scenario_02_conflicting` (Air/Army/Navy multi-site disagreement bench) |
 
 ## Pillar 2: `s1_trojan` export
 
@@ -35,14 +36,18 @@ Wall clock `14:30:00`–`15:00:00` (1800 s) maps onto a ~184 s pitch window via
 
 ```text
 exports/
-  s1_trojan_scenario.jsonl        # Pillar 2: Trojan mothership
-  s2_osint_swarm_scenario.jsonl   # Pillar 1 (Primary Hero; planned)
+  s1_trojan_scenario.jsonl               # Pillar 2: Trojan mothership
+  s2_osint_swarm_scenario.jsonl          # Pillar 1 (Primary Hero; planned)
+  s4_fusion_disagreement_scenario.jsonl  # Aux: scenario_02 multi-site bench
   site_origins.json
   pois.json
 ```
 
 - `s1_trojan_scenario.jsonl` — 228 newline-delimited events with `service`,
   `source`, and sensor fields.
+- `s4_fusion_disagreement_scenario.jsonl` — compressed key-timestamp subset
+  from `scenario_02_conflicting` (Air/Army/Navy disagreement). Regenerate with
+  `python generate_s4_fusion_disagreement_export.py` (`--full` for all rows).
 - `site_origins.json` — `AIRBASE_01` / `ARMY_BASE_01` / mothership origins for
   polar reverse-geocode.
 - `pois.json` — copy of maritime POIs (Jurong CNI + military stubs) for ETA /
@@ -63,11 +68,14 @@ time_s, service, source, sensor_id, timestamp
 ## Regenerate
 
 Prerequisite: airbase, armybase, and maritime generators have been run at
-least once.
+least once. S4 also requires `scenario_02_conflicting` replay data.
 
 ```text
 python generate_maritime_overlay.py
 python generate_canonical_stream.py
+
+# Aux S4 (scenario_02 fusion bench)
+python generate_s4_fusion_disagreement_export.py
 ```
 
 Nexus loads this export via `MARUN_EXPORT_DIR` or the sibling path
