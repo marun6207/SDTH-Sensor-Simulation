@@ -1,0 +1,15 @@
+﻿{
+    "synthetic_airbase_data/all_sensor_events.json":  "07969f186ab6372fac6b4f84d9e4a776e653f196b5370da18e168aa1cf3d8749",
+    "synthetic_armybase_data/cctv.json":  "7a3d77ab6cdc101eda2c16d548d0f67119af26f1037a052ed36813806f1c95a4",
+    "synthetic_armybase_data/all_sensor_events.json":  "25d67530f233f66cbdb819ad084b8d73aa2bf386416754a25c6cfc6a33a9605c",
+    "synthetic_armybase_data/scenario_config.json":  "ec5fc9a56d776f0b37629ccda6a0ad64a2b7171b9e71ea8e56da5905fb1b80f2",
+    "synthetic_airbase_data/eoir.json":  "2dfbfc4f619aa46610a7bb68c90af9fc26cce20d98ed13515be189c0aeb1c4f1",
+    "synthetic_armybase_data/eoir.json":  "59d45141488557085b190ccce7b840a496021c4b6a56d3bc5732d947c9c15810",
+    "synthetic_airbase_data/scenario_config.json":  "d090a97b3692ebd45b387991f3a6d51102582c660b72e1cd04ee420db05993ec",
+    "synthetic_airbase_data/ground_truth_positions.json":  "e8ee75dc698baa9548dc81e7bda6526ed2b2b4ec7ed5f951915739b5b34bc69b",
+    "synthetic_airbase_data/ground_truth_associations.json":  "9c6fbec9e97f1530cb94a8ab6c66b22ac9bec7d448b55bf11ab43e793f1ace3d",
+    "synthetic_airbase_data/mpstar.json":  "3b840817fe2a6e18180c34af7f0cc753ed7826d06b6c68e2782bd22395240d42",
+    "synthetic_armybase_data/ground_truth_associations.json":  "5211022b87559868ba652734d65de7aea6ef1858486595a4ca9b181e4352dee8",
+    "synthetic_armybase_data/ew.json":  "05db9f93d9394bd5455f48c0df3e0cad6de27b3caf00a363aff7cdc1b454d37d",
+    "synthetic_airbase_data/ew.json":  "15417b58f154390dc129f1fe53616af9dbd028a05ab35266d1fa74e3150d24d7"
+}

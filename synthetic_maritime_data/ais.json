@@ -1,0 +1,72 @@
+[
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:30:00",
+    "mmsi": 563098710,
+    "vessel_name": "HAPPY TUG 8",
+    "lat": 1.214806,
+    "lon": 103.664781,
+    "sog_knots": 6.06,
+    "cog_deg": 48.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:35:00",
+    "mmsi": 563098710,
+    "vessel_name": "HAPPY TUG 8",
+    "lat": 1.215189,
+    "lon": 103.665409,
+    "sog_knots": 6.14,
+    "cog_deg": 48.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:40:00",
+    "mmsi": 563098710,
+    "vessel_name": "HAPPY TUG 8",
+    "lat": 1.215616,
+    "lon": 103.665983,
+    "sog_knots": 6.08,
+    "cog_deg": 48.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:45:00",
+    "mmsi": 563098710,
+    "vessel_name": "HAPPY TUG 8",
+    "lat": 1.215981,
+    "lon": 103.666589,
+    "sog_knots": 6.1,
+    "cog_deg": 48.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:50:00",
+    "mmsi": 563098710,
+    "vessel_name": "HAPPY TUG 8",
+    "lat": 1.216381,
+    "lon": 103.667188,
+    "sog_knots": 6.13,
+    "cog_deg": 48.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:55:00",
+    "mmsi": 563098710,
+    "vessel_name": "HAPPY TUG 8",
+    "lat": 1.216802,
+    "lon": 103.667789,
+    "sog_knots": 6.12,
+    "cog_deg": 48.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "15:00:00",
+    "mmsi": 563098710,
+    "vessel_name": "HAPPY TUG 8",
+    "lat": 1.217212,
+    "lon": 103.66838,
+    "sog_knots": 6.16,
+    "cog_deg": 48.0
+  }
+]
