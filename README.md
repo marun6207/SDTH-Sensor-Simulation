@@ -35,11 +35,11 @@ The best-case scenario is intentionally mutually consistent:
 
 - MPSTAR reports five persistent inbound radar tracks.
 - EO/IR reports visual observations classified as `UAS` with subtype
-	`fixed-wing`.
+  `fixed-wing`.
 - EW reports persistent RF activity classified as `suspected_uas_link` in the
-	same general sector.
+  same general sector.
 - Army Base sensors observe the same physical UAS trajectories from a second
-	location and use different viewing geometry.
+  location and use different viewing geometry.
 
 The measurements are not identical because the sensors use different
 modalities and are located at different sites.
@@ -54,11 +54,11 @@ is stored in [synthetic_airbase_data/scenario_config.json](synthetic_airbase_dat
 Sensors at this site are:
 
 - **MPSTAR**: five persistent tracks, `RDR-001` through `RDR-005`, updating
-	every 2 minutes.
+  every 2 minutes.
 - **EO/IR**: tracks `EO-001` through `EO-005`, updating every 3 minutes.
-	Fewer tracks may be visible in the early scans, then more become available.
+  Fewer tracks may be visible in the early scans, then more become available.
 - **EW**: one persistent supporting RF signature, `RF-001`, updating every
-	5 minutes. `RF-001` is evidence about the overall event, not a specific UAS.
+  5 minutes. `RF-001` is evidence about the overall event, not a specific UAS.
 
 ### ARMY_BASE_01
 
@@ -70,13 +70,13 @@ the result in [synthetic_armybase_data/scenario_config.json](synthetic_armybase_
 Sensors at this site are:
 
 - **EO/IR**: Army-specific tracks `ARMY-EO-001` through `ARMY-EO-005`, using
-	the same EO/IR schema as the Airbase sensor and updating every 3 minutes.
+  the same EO/IR schema as the Airbase sensor and updating every 3 minutes.
 - **CCTV**: simple visual detections from `CAM-001`, `CAM-002`, and
-	`CAM-003`, updating every 4 minutes. CCTV reports that a UAS is visible but
-	does not identify the fixed-wing subtype.
+  `CAM-003`, updating every 4 minutes. CCTV reports that a UAS is visible but
+  does not identify the fixed-wing subtype.
 - **EW**: sensor `ARMYBASE_EW_01`, using persistent emitter `RF-001` and
-	updating every 5 minutes. This RF signature is not mapped to an individual
-	UAS.
+  updating every 5 minutes. This RF signature is not mapped to an individual
+  UAS.
 
 Both sites reuse the same Airbase ground-truth trajectory. Army Base does not
 create a second independent swarm.
@@ -102,21 +102,21 @@ The two sites are deliberately separated in the VS Code Explorer:
 
 ```text
 synthetic_airbase_data/
-	scenario_config.json
-	mpstar.json
-	eoir.json
-	ew.json
-	ground_truth_positions.json
-	ground_truth_associations.json
-	all_sensor_events.json
+  scenario_config.json
+  mpstar.json
+  eoir.json
+  ew.json
+  ground_truth_positions.json
+  ground_truth_associations.json
+  all_sensor_events.json
 
 synthetic_armybase_data/
-	scenario_config.json
-	eoir.json
-	cctv.json
-	ew.json
-	ground_truth_associations.json
-	all_sensor_events.json
+  scenario_config.json
+  eoir.json
+  cctv.json
+  ew.json
+  ground_truth_associations.json
+  all_sensor_events.json
 ```
 
 ### Raw sensor files
@@ -134,12 +134,12 @@ geographic ground truth or fused object IDs:
 ### Development and evaluation files
 
 - `ground_truth_positions.json` contains the shared latitude/longitude
-	position of each UAS at every minute. It is not sensor data.
+  position of each UAS at every minute. It is not sensor data.
 - `ground_truth_associations.json` contains hidden object-to-track mappings
-	for evaluating correlation. RF emitters and CCTV cameras are intentionally
-	not mapped to individual UAS objects.
+  for evaluating correlation. RF emitters and CCTV cameras are intentionally
+  not mapped to individual UAS objects.
 - `all_sensor_events.json` combines only that site's raw sensor records and
-	sorts them chronologically without adding fields.
+  sorts them chronologically without adding fields.
 
 ## Running the Generators
 
@@ -162,6 +162,26 @@ existing Airbase JSON files were not modified.
 
 Both generators use fixed random seeds so repeated runs produce reproducible
 measurements. No external Python packages are required.
+
+## Trojan mothership overlay (issue #116)
+
+Navy AIS (Happy Tug 8), coastal radar (~120 kt UAS), GLINT SAR, POIs, and
+story EW LOBs live under
+[`synthetic_maritime_data/`](synthetic_maritime_data/)
+(see [synthetic_maritime_data/README.md](synthetic_maritime_data/README.md)).
+Canonical C2 export files live under [`exports/`](exports/)
+(see [exports/README.md](exports/README.md)).
+
+```text
+python generate_maritime_overlay.py
+python generate_canonical_stream.py
+```
+
+Outputs:
+
+- `exports/s1_trojan_scenario.jsonl` — time-compressed multi-service stream
+- `exports/site_origins.json` — site latitudes/longitudes for polar reverse-geocode
+- `exports/pois.json` — Jurong CNI + military POI buffers
 
 ## Validation
 

@@ -1,0 +1,33 @@
+{
+  "air_ew_story": [
+    {
+      "sensor_id": "RSAF_EW_01",
+      "timestamp": "14:30:06",
+      "emitter_id": "RF-027",
+      "detected": true,
+      "bearing_deg": 135.2,
+      "freq_mhz": 2437.0,
+      "protocol": "FHSS_TACTICAL",
+      "classification": "suspected_uas_link",
+      "confidence": 0.88,
+      "story_lob": true
+    }
+  ],
+  "army_ew_story": [
+    {
+      "sensor_id": "ARMY_EW_01",
+      "timestamp": "14:30:06",
+      "emitter_id": "RF-027",
+      "detected": true,
+      "bearing_deg": 195.4,
+      "remote_id": false,
+      "classification": "suspected_uas_link",
+      "confidence": 0.86,
+      "story_lob": true
+    }
+  ],
+  "geometry_note": {
+    "air_site_bearing_to_mothership_deg": 248.4,
+    "army_site_bearing_to_mothership_deg": 249.3
+  }
+}

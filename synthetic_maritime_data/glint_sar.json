@@ -1,0 +1,13 @@
+[
+  {
+    "sensor_id": "GLINT_SAR_PASS_402",
+    "timestamp": "14:30:00",
+    "candidate_id": "SAR-DET-0881",
+    "center_lat": 1.2140000000000002,
+    "center_lon": 103.663,
+    "length_m": 78.5,
+    "width_m": 14.2,
+    "anomaly": "AFT_DECK_METALLIC_STRUCTURE",
+    "anomaly_length_m": 12.0
+  }
+]
