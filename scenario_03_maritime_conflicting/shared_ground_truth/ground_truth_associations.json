@@ -1,15 +1,27 @@
 {
   "USV-01": {
     "coastal_radar": "NAVY-UNK-003",
-    "army_eoir": "ARMY-EO-002"
+    "army_eoir": "ARMY-EO-002",
+    "airbase_mpstar": "RDR-003",
+    "airbase_eoir": "EO-004"
   },
   "USV-02": {
     "coastal_radar": "NAVY-UNK-001",
-    "army_eoir": "ARMY-EO-003",
-    "ais_mmsi": 990000003
+    "army_eoir": "ARMY-EO-004",
+    "ais_mmsi": 990000003,
+    "airbase_mpstar": "RDR-001",
+    "airbase_eoir": "EO-002"
   },
   "USV-03": {
+    "coastal_radar": "NAVY-UNK-004",
+    "army_eoir": "ARMY-EO-001",
+    "airbase_mpstar": "RDR-004",
+    "airbase_eoir": "EO-003"
+  },
+  "USV-04": {
     "coastal_radar": "NAVY-UNK-002",
-    "army_eoir": "ARMY-EO-001"
+    "army_eoir": "ARMY-EO-003",
+    "airbase_mpstar": "RDR-002",
+    "airbase_eoir": "EO-001"
   }
 }

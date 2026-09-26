@@ -1,100 +1,226 @@
 {
   "development_only": true,
-  "hidden_physical_usv_count": 3,
+  "hidden_physical_usv_count": 4,
   "coastal_counts": [
     {
       "timestamp": "15:00:11",
-      "count": 3,
+      "count": 4,
       "classification": "UNKNOWN"
     },
     {
       "timestamp": "15:03:11",
-      "count": 3,
+      "count": 4,
       "classification": "UNKNOWN"
     },
     {
       "timestamp": "15:06:11",
-      "count": 3,
+      "count": 4,
       "classification": "UNKNOWN"
     },
     {
       "timestamp": "15:09:11",
-      "count": 3,
+      "count": 4,
       "classification": "SURFACE_CRAFT"
     },
     {
       "timestamp": "15:12:11",
-      "count": 3,
+      "count": 4,
       "classification": "SURFACE_CRAFT"
     },
     {
       "timestamp": "15:15:11",
-      "count": 3,
+      "count": 4,
       "classification": "SURFACE_CRAFT"
     },
     {
       "timestamp": "15:18:11",
-      "count": 3,
+      "count": 4,
       "classification": "SURFACE_CRAFT"
     },
     {
       "timestamp": "15:21:11",
-      "count": 3,
+      "count": 4,
       "classification": "USV"
     },
     {
       "timestamp": "15:24:11",
-      "count": 3,
+      "count": 4,
       "classification": "USV"
     },
     {
       "timestamp": "15:27:11",
-      "count": 3,
+      "count": 4,
       "classification": "USV"
     }
   ],
-  "eoir_counts": [
+  "mpstar_counts": [
     {
-      "timestamp": "15:00:01",
-      "count": 1
+      "timestamp": "15:00:00",
+      "count": 4,
+      "classification": "UNKNOWN"
     },
     {
-      "timestamp": "15:03:01",
-      "count": 1
+      "timestamp": "15:02:00",
+      "count": 4,
+      "classification": "UNKNOWN"
     },
     {
-      "timestamp": "15:06:01",
-      "count": 2
+      "timestamp": "15:04:00",
+      "count": 4,
+      "classification": "UNKNOWN"
     },
     {
-      "timestamp": "15:09:01",
-      "count": 2
+      "timestamp": "15:06:00",
+      "count": 4,
+      "classification": "UNKNOWN"
     },
     {
-      "timestamp": "15:12:01",
-      "count": 2
+      "timestamp": "15:08:00",
+      "count": 4,
+      "classification": "UNKNOWN"
     },
     {
-      "timestamp": "15:15:01",
-      "count": 3
+      "timestamp": "15:10:00",
+      "count": 4,
+      "classification": "SURFACE_CRAFT"
     },
     {
-      "timestamp": "15:18:01",
-      "count": 3
+      "timestamp": "15:12:00",
+      "count": 4,
+      "classification": "SURFACE_CRAFT"
     },
     {
-      "timestamp": "15:21:01",
-      "count": 3
+      "timestamp": "15:14:00",
+      "count": 4,
+      "classification": "SURFACE_CRAFT"
     },
     {
-      "timestamp": "15:24:01",
-      "count": 3
+      "timestamp": "15:16:00",
+      "count": 4,
+      "classification": "SURFACE_CRAFT"
     },
     {
-      "timestamp": "15:27:01",
-      "count": 3
+      "timestamp": "15:18:00",
+      "count": 4,
+      "classification": "SURFACE_CRAFT"
+    },
+    {
+      "timestamp": "15:20:00",
+      "count": 4,
+      "classification": "SURFACE_CRAFT"
+    },
+    {
+      "timestamp": "15:22:00",
+      "count": 4,
+      "classification": "USV"
+    },
+    {
+      "timestamp": "15:24:00",
+      "count": 4,
+      "classification": "USV"
+    },
+    {
+      "timestamp": "15:26:00",
+      "count": 4,
+      "classification": "USV"
+    },
+    {
+      "timestamp": "15:28:00",
+      "count": 4,
+      "classification": "USV"
+    },
+    {
+      "timestamp": "15:30:00",
+      "count": 4,
+      "classification": "USV"
     }
   ],
+  "eoir_counts": {
+    "ARMY_BASE_03": [
+      {
+        "timestamp": "15:00:01",
+        "count": 1
+      },
+      {
+        "timestamp": "15:03:01",
+        "count": 1
+      },
+      {
+        "timestamp": "15:06:01",
+        "count": 2
+      },
+      {
+        "timestamp": "15:09:01",
+        "count": 2
+      },
+      {
+        "timestamp": "15:12:01",
+        "count": 2
+      },
+      {
+        "timestamp": "15:15:01",
+        "count": 3
+      },
+      {
+        "timestamp": "15:18:01",
+        "count": 3
+      },
+      {
+        "timestamp": "15:21:01",
+        "count": 3
+      },
+      {
+        "timestamp": "15:24:01",
+        "count": 4
+      },
+      {
+        "timestamp": "15:27:01",
+        "count": 4
+      }
+    ],
+    "AIRBASE_03": [
+      {
+        "timestamp": "15:00:01",
+        "count": 1
+      },
+      {
+        "timestamp": "15:03:01",
+        "count": 1
+      },
+      {
+        "timestamp": "15:06:01",
+        "count": 1
+      },
+      {
+        "timestamp": "15:09:01",
+        "count": 2
+      },
+      {
+        "timestamp": "15:12:01",
+        "count": 2
+      },
+      {
+        "timestamp": "15:15:01",
+        "count": 2
+      },
+      {
+        "timestamp": "15:18:01",
+        "count": 3
+      },
+      {
+        "timestamp": "15:21:01",
+        "count": 3
+      },
+      {
+        "timestamp": "15:24:01",
+        "count": 3
+      },
+      {
+        "timestamp": "15:27:01",
+        "count": 4
+      }
+    ]
+  },
   "ais_reporting_object": "USV-02",
   "ais_reporting_object_count": 1,
   "temporary_uncertainty": {
@@ -102,14 +228,24 @@
     "track_id": "ARMY-EO-002",
     "recovery": "15:15:01"
   },
-  "ew_detection_sequence": [
-    true,
-    false,
-    true,
-    true,
-    false,
-    true
-  ],
+  "ew_detection_sequence": {
+    "synthetic_armybase_03_data": [
+      true,
+      false,
+      true,
+      true,
+      false,
+      true
+    ],
+    "synthetic_airbase_03_data": [
+      false,
+      true,
+      true,
+      false,
+      true,
+      true
+    ]
+  },
   "ew_association": "Group sector only; no unique object association.",
   "cctv_detection_sequence": [
     false,
@@ -123,8 +259,8 @@
   ],
   "cctv_association": "None; no relevant visual evidence or individual USV tracks throughout.",
   "sar_timestamp": "15:14:17",
-  "sar_association": "Three-contact area centroid; not three identified objects.",
-  "early": "Three UNKNOWN radar tracks, one generic EO contact, one cooperative AIS identity.",
-  "middle": "Radar becomes SURFACE_CRAFT; EO progresses from two to three, with temporary uncertainty; intermittent RF and one SAR candidate.",
-  "late": "Radar/EO converge on three USVs with different specificity; AIS still one reporting identity; group evidence cannot uniquely associate objects."
+  "sar_association": "Four-contact area centroid; not four identified objects.",
+  "early": "Four UNKNOWN tracks per radar, one generic contact per EO sensor, one cooperative AIS identity.",
+  "middle": "Radar becomes SURFACE_CRAFT; EO progresses toward four, with temporary uncertainty; intermittent RF and one SAR candidate.",
+  "late": "Radar/EO converge on four USVs with different specificity; AIS still one reporting identity; group evidence cannot uniquely associate objects."
 }

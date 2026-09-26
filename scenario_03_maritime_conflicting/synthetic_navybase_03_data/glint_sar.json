@@ -3,11 +3,11 @@
     "sensor_id": "GLINT_SAR_PASS_SIM_03",
     "timestamp": "15:14:17",
     "candidate_id": "SAR-SIM-0301",
-    "center_lat": 1.20601142,
-    "center_lon": 103.63373888,
-    "length_m": 650.0,
-    "width_m": 350.0,
+    "center_lat": 1.148027787,
+    "center_lon": 103.773659614,
+    "length_m": 900.0,
+    "width_m": 500.0,
     "anomaly": "SYNTHETIC_MARITIME_RETURN_CLUSTER",
-    "anomaly_length_m": 450.0
+    "anomaly_length_m": 700.0
   }
 ]

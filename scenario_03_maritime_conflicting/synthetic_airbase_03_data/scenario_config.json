@@ -1,23 +1,23 @@
 {
   "scenario_id": "SCENARIO_03",
-  "site_id": "ARMY_BASE_03",
-  "latitude": 1.265,
-  "longitude": 103.8,
+  "site_id": "AIRBASE_03",
+  "latitude": 1.29,
+  "longitude": 103.86,
   "start_time": "15:00:00",
   "end_time": "15:30:00",
   "simulation_notice": "All coordinates, identities, classifications and behaviors are fictional simulation data; not real military installations or sensor/USV performance.",
   "sensor_schedules": {
-    "EOIR_ARMYBASE_03": {
+    "MPSTAR_AIRBASE_03": {
+      "interval_minutes": 2,
+      "second": 0
+    },
+    "EOIR_AIRBASE_03": {
       "interval_minutes": 3,
       "second": 1
     },
-    "ARMYBASE_EW_03": {
+    "AIRBASE_EW_03": {
       "interval_minutes": 5,
       "second": 2
-    },
-    "CCTV_ARMYBASE_03": {
-      "interval_minutes": 4,
-      "second": 5
     }
   }
 }

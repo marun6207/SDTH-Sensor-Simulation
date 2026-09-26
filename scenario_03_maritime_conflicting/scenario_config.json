@@ -4,11 +4,15 @@
   "start_time": "15:00:00",
   "end_time": "15:30:00",
   "fixed_random_seed": 20260926,
-  "hidden_physical_usv_count": 3,
+  "hidden_physical_usv_count": 4,
   "sites": {
     "ARMY_BASE_03": {
-      "latitude": 1.35,
-      "longitude": 103.7
+      "latitude": 1.265,
+      "longitude": 103.8
+    },
+    "AIRBASE_03": {
+      "latitude": 1.29,
+      "longitude": 103.86
     },
     "NAVY_BASE_03": {
       "latitude": 1.26,
@@ -16,23 +20,37 @@
     }
   },
   "coordinate_system": "WGS84",
-  "general_approach_direction": "southwest to northeast/east",
+  "general_approach_direction": "south to north",
   "simulation_notice": "All coordinates, identities, classifications and behaviors are fictional simulation data; not real military installations or sensor/USV performance.",
   "timing_policy": "Full timestamp <= 15:30:00; second-offset 15:30 updates excluded.",
   "measurement_model": "Exact synthetic surface positions, zero surface altitude/elevation; spherical bearing; seeded EO confidence variation.",
-  "eoir_counts": [
-    1,
-    1,
-    2,
-    2,
-    2,
-    3,
-    3,
-    3,
-    3,
-    3
-  ],
-  "radar_classification": "15:00:11-15:06:11 UNKNOWN; 15:09:11-15:18:11 SURFACE_CRAFT; 15:21:11 onward USV/unmanned-suspected.",
+  "eoir_counts": {
+    "synthetic_armybase_03_data": [
+      1,
+      1,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      4,
+      4
+    ],
+    "synthetic_airbase_03_data": [
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      3,
+      3,
+      3,
+      4
+    ]
+  },
+  "radar_classification": "UNKNOWN before 15:09; SURFACE_CRAFT from 15:09 until 15:21; USV/unmanned-suspected from 15:21, applied at each radar scan.",
   "eoir_classification": "SURFACE_CRAFT initially; one temporary UNKNOWN at 15:12:01; USV/small-surface-craft from 15:18:01.",
   "ais_policy": "Only one simulated cooperative craft reports AIS; other objects send no AIS messages, not negative detections.",
   "ew_policy": "Intermittent group-sector RF evidence; no individual object/emitter association. Synthetic assumption, not a real communications claim.",
@@ -63,6 +81,18 @@
     "CCTV_ARMYBASE_03": {
       "interval_minutes": 4,
       "second": 5
+    },
+    "MPSTAR_AIRBASE_03": {
+      "interval_minutes": 2,
+      "second": 0
+    },
+    "EOIR_AIRBASE_03": {
+      "interval_minutes": 3,
+      "second": 1
+    },
+    "AIRBASE_EW_03": {
+      "interval_minutes": 5,
+      "second": 2
     }
   }
 }

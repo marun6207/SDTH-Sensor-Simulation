@@ -1,16 +1,7 @@
 [
   {
-    "sensor_id": "ARMYBASE_EW_03",
+    "sensor_id": "AIRBASE_EW_03",
     "timestamp": "15:00:02",
-    "emitter_id": "RF-GROUP-03",
-    "detected": true,
-    "bearing_deg": 188.471,
-    "classification": "ambiguous_rf_activity",
-    "confidence": 0.32
-  },
-  {
-    "sensor_id": "ARMYBASE_EW_03",
-    "timestamp": "15:05:02",
     "emitter_id": null,
     "detected": false,
     "bearing_deg": null,
@@ -18,26 +9,26 @@
     "confidence": 0.0
   },
   {
-    "sensor_id": "ARMYBASE_EW_03",
+    "sensor_id": "AIRBASE_EW_03",
+    "timestamp": "15:05:02",
+    "emitter_id": "RF-GROUP-03",
+    "detected": true,
+    "bearing_deg": 205.161,
+    "classification": "suspected_surface_link",
+    "confidence": 0.42
+  },
+  {
+    "sensor_id": "AIRBASE_EW_03",
     "timestamp": "15:10:02",
     "emitter_id": "RF-GROUP-03",
     "detected": true,
-    "bearing_deg": 191.013,
+    "bearing_deg": 208.16,
     "classification": "suspected_surface_link",
-    "confidence": 0.64
+    "confidence": 0.58
   },
   {
-    "sensor_id": "ARMYBASE_EW_03",
+    "sensor_id": "AIRBASE_EW_03",
     "timestamp": "15:15:02",
-    "emitter_id": "RF-GROUP-03",
-    "detected": true,
-    "bearing_deg": 193.042,
-    "classification": "suspected_surface_link",
-    "confidence": 0.71
-  },
-  {
-    "sensor_id": "ARMYBASE_EW_03",
-    "timestamp": "15:20:02",
     "emitter_id": null,
     "detected": false,
     "bearing_deg": null,
@@ -45,12 +36,21 @@
     "confidence": 0.0
   },
   {
-    "sensor_id": "ARMYBASE_EW_03",
+    "sensor_id": "AIRBASE_EW_03",
+    "timestamp": "15:20:02",
+    "emitter_id": "RF-GROUP-03",
+    "detected": true,
+    "bearing_deg": 216.74,
+    "classification": "suspected_surface_link",
+    "confidence": 0.68
+  },
+  {
+    "sensor_id": "AIRBASE_EW_03",
     "timestamp": "15:25:02",
     "emitter_id": "RF-GROUP-03",
     "detected": true,
-    "bearing_deg": 200.999,
+    "bearing_deg": 223.01,
     "classification": "suspected_surface_link",
-    "confidence": 0.78
+    "confidence": 0.74
   }
 ]

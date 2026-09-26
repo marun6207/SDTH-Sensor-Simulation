@@ -4,59 +4,59 @@
     "timestamp": "15:00:07",
     "mmsi": 990000003,
     "vessel_name": "SIMULATED COOPERATIVE CRAFT",
-    "lat": 1.180211598,
-    "lon": 103.598170131,
-    "sog_knots": 11.198,
-    "cog_deg": 54.741
+    "lat": 1.081542154,
+    "lon": 103.771686242,
+    "sog_knots": 16.676,
+    "cog_deg": 1.306
   },
   {
     "sensor_id": "MPA_OCEANS_X_AIS",
     "timestamp": "15:05:07",
     "mmsi": 990000003,
     "vessel_name": "SIMULATED COOPERATIVE CRAFT",
-    "lat": 1.189193339,
-    "lon": 103.610855057,
-    "sog_knots": 11.194,
-    "cog_deg": 54.601
+    "lat": 1.104690561,
+    "lon": 103.772204501,
+    "sog_knots": 16.695,
+    "cog_deg": 1.237
   },
   {
     "sensor_id": "MPA_OCEANS_X_AIS",
     "timestamp": "15:10:07",
     "mmsi": 990000003,
     "vessel_name": "SIMULATED COOPERATIVE CRAFT",
-    "lat": 1.198225845,
-    "lon": 103.623489217,
-    "sog_knots": 11.182,
-    "cog_deg": 54.23
+    "lat": 1.127889734,
+    "lon": 103.772671995,
+    "sog_knots": 16.746,
+    "cog_deg": 1.055
   },
   {
     "sensor_id": "MPA_OCEANS_X_AIS",
     "timestamp": "15:15:07",
     "mmsi": 990000003,
     "vessel_name": "SIMULATED COOPERATIVE CRAFT",
-    "lat": 1.207345065,
-    "lon": 103.636036664,
-    "sog_knots": 11.166,
-    "cog_deg": 53.727
+    "lat": 1.151175621,
+    "lon": 103.773052775,
+    "sog_knots": 16.815,
+    "cog_deg": 0.811
   },
   {
     "sensor_id": "MPA_OCEANS_X_AIS",
     "timestamp": "15:20:07",
     "mmsi": 990000003,
     "vessel_name": "SIMULATED COOPERATIVE CRAFT",
-    "lat": 1.216563712,
-    "lon": 103.648484683,
-    "sog_knots": 11.152,
-    "cog_deg": 53.226
+    "lat": 1.174560934,
+    "lon": 103.773334128,
+    "sog_knots": 16.884,
+    "cog_deg": 0.572
   },
   {
     "sensor_id": "MPA_OCEANS_X_AIS",
     "timestamp": "15:25:07",
     "mmsi": 990000003,
     "vessel_name": "SIMULATED COOPERATIVE CRAFT",
-    "lat": 1.225867858,
-    "lon": 103.660847204,
-    "sog_knots": 11.142,
-    "cog_deg": 52.862
+    "lat": 1.198031747,
+    "lon": 103.773529982,
+    "sog_knots": 16.934,
+    "cog_deg": 0.399
   }
 ]
