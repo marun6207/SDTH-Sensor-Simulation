@@ -1,0 +1,38 @@
+[
+  {
+    "poi_id": "POI-01",
+    "name": "Jurong Island Petrochem Complex",
+    "kind": "civilian_cni",
+    "center_lat": 1.266,
+    "center_lon": 103.7,
+    "buffer_m": 2500.0,
+    "offshore_nofire_m": 1200.0
+  },
+  {
+    "poi_id": "POI-02",
+    "name": "Tuas Mega Port",
+    "kind": "civilian_cni",
+    "center_lat": 1.24,
+    "center_lon": 103.64,
+    "buffer_m": 2000.0,
+    "offshore_nofire_m": 1200.0
+  },
+  {
+    "poi_id": "POI-03",
+    "name": "Changi Naval Base",
+    "kind": "military",
+    "center_lat": 1.33,
+    "center_lon": 104.02,
+    "buffer_m": 1500.0,
+    "offshore_nofire_m": 800.0
+  },
+  {
+    "poi_id": "POI-04",
+    "name": "RSAF GBAD Site (synthetic)",
+    "kind": "military",
+    "center_lat": 1.33,
+    "center_lon": 103.74,
+    "buffer_m": 1000.0,
+    "offshore_nofire_m": 800.0
+  }
+]

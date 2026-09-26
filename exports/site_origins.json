@@ -1,0 +1,19 @@
+{
+  "AIRBASE_01": {
+    "latitude": 1.35,
+    "longitude": 104.0
+  },
+  "ARMY_BASE_01": {
+    "latitude": 1.337282,
+    "longitude": 103.987278
+  },
+  "mothership": {
+    "lat": 1.2148,
+    "lon": 103.6648,
+    "mmsi": 563098710,
+    "vessel_name": "HAPPY TUG 8",
+    "sog_knots": 6.1,
+    "cog_deg": 48.0
+  },
+  "demo_duration_s": 184.0
+}

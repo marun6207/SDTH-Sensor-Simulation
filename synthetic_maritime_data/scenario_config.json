@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "scenario_start": "14:30:00",
+  "scenario_end": "15:00:00",
+  "mothership": {
+    "lat": 1.2148,
+    "lon": 103.6648,
+    "mmsi": 563098710,
+    "vessel_name": "HAPPY TUG 8",
+    "sog_knots": 6.1,
+    "cog_deg": 48.0
+  },
+  "uas_track": {
+    "track_id": "RDR-NAVY-024",
+    "start_lat": 1.216,
+    "start_lon": 103.666,
+    "end_lat": 1.26,
+    "end_lon": 103.7,
+    "velocity_knots": 120.4,
+    "altitude_m": 71.0,
+    "rcs_m2": 0.035
+  },
+  "related_object_id": "UAS-01"
+}

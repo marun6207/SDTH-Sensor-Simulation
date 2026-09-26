@@ -10,13 +10,40 @@ sensor performance, communications, weapon performance, or an actual attack
 trajectory. The geographic coordinates are synthetic WGS84 coordinates chosen
 only to make the tracks coherent on a map.
 
+---
 
-The repository contains **two separated scenarios** in the same Git repository:
+## 🏛️ Relationship with Nexus C2 (Three Operational Pillars)
+
+> **Primary hero is airborne `S2_osint_swarm`. Maritime secondary track is `S1_trojan` (tri-service + GLINT hull anchor) then `S3_sar_ais` (GLINT macro × SIA × AIS dark vessel). marun `scenario_02_conflicting` is a legacy fusion bench, not Nexus S2.**
+
+### Three-Pillar Operational Mapping
+
+| Rank | Nexus ID | Role | GLINT Usage |
+|------|----------|------|-------------|
+| **1 (Primary Hero)** | `S2_osint_swarm` | In-flight OSINT ~50 × radar 4 / RF silence → GNSS denial + GBAD (Cognitive / Autonomous Saturation / Anti-Exhaustion) | **Not used** (Air domain & social sensor) |
+| **2** | `S1_trojan` | Maritime + Land/Air: AIS vs coastal radar, CNI VETO, Option B (Tri-service contradiction + spatial SAR mothership lock) | **Used** — Mothership aft-deck / hull spatial anchor (already in narrative & export) |
+| **3** | `S3_sar_ais` | Dark vessel: Dual-SAR × thin AIS → Approach Patrol (Orbital latency → reachable ellipse → USV intercept) | **Primary showcase** — macro cluster (`:5051` / live) + SIA micro |
+
+*Auxiliary baseline*: `S1_ais_spoof` serves as a lightweight baseline outside the three pillars (no GLINT).
+
+### Data Role Alignment with marun
+
+| Data Feed | Storage Location | marun Role |
+|-----------|------------------|------------|
+| **S2 Synthetic** (OSINT / radar 4 / acoustic / RF silent) | marun **new** `exports/s2_osint_swarm_*.jsonl` | marun canonical export (*`scenario_02_conflicting` is a legacy fusion bench, not Nexus S2*) |
+| **Trojan Maritime + Land/Air + GLINT row** | Existing `synthetic_maritime_data/` → `exports/s1_trojan_*` | marun `exports/s1_trojan_scenario.jsonl` |
+| **S3 Coastal AIS / Radar** | marun optional; **GLINT macro / SIA chip owned by Nexus / Team 02 / SIA** | GLINT `:5051` / SIA `:5050` / Indago DuckDB |
+
+*Note on `scenario_02_conflicting/`*: The in-repo directory `scenario_02_conflicting/` is a **legacy fusion benchmark** (evaluating dual-site Airbase vs Army Base 5-UAS resolution), **not** Nexus `S2_osint_swarm`. Nexus `S2_osint_swarm` represents the 50-drone autonomous saturation raid triggered by in-flight civilian passenger OSINT and will be housed under `exports/s2_osint_swarm_*.jsonl`.
+
+---
+
+The repository contains **two separated legacy scenarios** in the same Git repository:
 
 - `scenario_01_consistent/`: existing five-UAS multi-sensor corroboration, for
   ingestion and fusion of mutually supporting observations.
 - `scenario_02_conflicting/`: a shared five-UAS southwest approach with controlled
-  disagreement between two synthetic sites.
+  disagreement between two synthetic sites (legacy fusion benchmark).
 
 Generate Scenario 2 by running its Airbase generator first, then its Army generator:
 
@@ -73,11 +100,11 @@ The best-case scenario is intentionally mutually consistent:
 
 - MPSTAR reports five persistent inbound radar tracks.
 - EO/IR reports visual observations classified as `UAS` with subtype
-	`fixed-wing`.
+  `fixed-wing`.
 - EW reports persistent RF activity classified as `suspected_uas_link` in the
-	same general sector.
+  same general sector.
 - Army Base sensors observe the same physical UAS trajectories from a second
-	location and use different viewing geometry.
+  location and use different viewing geometry.
 
 The measurements are not identical because the sensors use different
 modalities and are located at different sites.
@@ -92,11 +119,11 @@ is stored in [scenario_01_consistent/synthetic_airbase_data/scenario_config.json
 Sensors at this site are:
 
 - **MPSTAR**: five persistent tracks, `RDR-001` through `RDR-005`, updating
-	every 2 minutes.
+  every 2 minutes.
 - **EO/IR**: tracks `EO-001` through `EO-005`, updating every 3 minutes.
-	Fewer tracks may be visible in the early scans, then more become available.
+  Fewer tracks may be visible in the early scans, then more become available.
 - **EW**: one persistent supporting RF signature, `RF-001`, updating every
-	5 minutes. `RF-001` is evidence about the overall event, not a specific UAS.
+  5 minutes. `RF-001` is evidence about the overall event, not a specific UAS.
 
 ### ARMY_BASE_01
 
@@ -108,13 +135,13 @@ the result in [scenario_01_consistent/synthetic_armybase_data/scenario_config.js
 Sensors at this site are:
 
 - **EO/IR**: Army-specific tracks `ARMY-EO-001` through `ARMY-EO-005`, using
-	the same EO/IR schema as the Airbase sensor and updating every 3 minutes.
+  the same EO/IR schema as the Airbase sensor and updating every 3 minutes.
 - **CCTV**: simple visual detections from `CAM-001`, `CAM-002`, and
-	`CAM-003`, updating every 4 minutes. CCTV reports that a UAS is visible but
-	does not identify the fixed-wing subtype.
+  `CAM-003`, updating every 4 minutes. CCTV reports that a UAS is visible but
+  does not identify the fixed-wing subtype.
 - **EW**: sensor `ARMYBASE_EW_01`, using persistent emitter `RF-001` and
-	updating every 5 minutes. This RF signature is not mapped to an individual
-	UAS.
+  updating every 5 minutes. This RF signature is not mapped to an individual
+  UAS.
 
 Both sites reuse the same Airbase ground-truth trajectory. Army Base does not
 create a second independent swarm.
@@ -140,21 +167,21 @@ The two sites are deliberately separated in the VS Code Explorer:
 
 ```text
 scenario_01_consistent/synthetic_airbase_data/
-	scenario_config.json
-	mpstar.json
-	eoir.json
-	ew.json
-	ground_truth_positions.json
-	ground_truth_associations.json
-	all_sensor_events.json
+  scenario_config.json
+  mpstar.json
+  eoir.json
+  ew.json
+  ground_truth_positions.json
+  ground_truth_associations.json
+  all_sensor_events.json
 
 scenario_01_consistent/synthetic_armybase_data/
-	scenario_config.json
-	eoir.json
-	cctv.json
-	ew.json
-	ground_truth_associations.json
-	all_sensor_events.json
+  scenario_config.json
+  eoir.json
+  cctv.json
+  ew.json
+  ground_truth_associations.json
+  all_sensor_events.json
 ```
 
 ### Raw sensor files
@@ -172,12 +199,12 @@ geographic ground truth or fused object IDs:
 ### Development and evaluation files
 
 - `ground_truth_positions.json` contains the shared latitude/longitude
-	position of each UAS at every minute. It is not sensor data.
+  position of each UAS at every minute. It is not sensor data.
 - `ground_truth_associations.json` contains hidden object-to-track mappings
-	for evaluating correlation. RF emitters and CCTV cameras are intentionally
-	not mapped to individual UAS objects.
+  for evaluating correlation. RF emitters and CCTV cameras are intentionally
+  not mapped to individual UAS objects.
 - `all_sensor_events.json` combines only that site's raw sensor records and
-	sorts them chronologically without adding fields.
+  sorts them chronologically without adding fields.
 
 ## Original Scenario 1 generators
 
@@ -213,6 +240,31 @@ renamed, or added. They also check confidence ranges, timestamp boundaries,
 track persistence, chronological event ordering, ground-truth coordinate
 bounds, and the separation between raw observations and development-only
 ground truth.
+
+## Trojan mothership overlay (issue #116)
+
+Navy AIS (Happy Tug 8), coastal radar (~120 kt UAS), GLINT SAR, POIs, and
+story EW LOBs live under
+[`synthetic_maritime_data/`](synthetic_maritime_data/)
+(see [synthetic_maritime_data/README.md](synthetic_maritime_data/README.md)).
+Canonical C2 export files live under [`exports/`](exports/)
+(see [exports/README.md](exports/README.md)).
+
+The canonical stream merges Scenario 1 land/air feeds from
+`scenario_01_consistent/` with the maritime overlay (story contradiction is
+AIS vs coastal radar). Run from the repository root:
+
+```text
+python generate_maritime_overlay.py
+python generate_canonical_stream.py
+```
+
+Outputs:
+
+- `exports/s1_trojan_scenario.jsonl` — time-compressed multi-service stream
+- `exports/site_origins.json` — site latitudes/longitudes for polar
+  reverse-geocode
+- `exports/pois.json` — Jurong CNI + military POI buffers
 
 ## Scenario 2 - Multi-Sensor Disagreement
 
@@ -256,7 +308,7 @@ Confidence depends on approach distance with independent seeded quality variatio
 and small non-monotonic changes.
 
 | Sensor | Interval | Seconds | Observations |
-|---|---:|---:|---:|
+| --- | ---: | ---: | ---: |
 | Airbase MPSTAR | 2 min | :00 | 80 |
 | Airbase EO/IR | 3 min | :01 | 41 |
 | Airbase EW | 5 min | :02 | 6 |
