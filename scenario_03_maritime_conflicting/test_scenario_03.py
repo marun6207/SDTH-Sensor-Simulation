@@ -15,14 +15,14 @@ class ScenarioThreeTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.names = scenario.navy_file_names() + [
-            f"{scenario.ARMY}/{kind}.json" for kind in ("eoir", "ew", "all_sensor_events", "scenario_config")
+            f"{scenario.ARMY}/{kind}.json" for kind in ("eoir", "ew", "cctv", "all_sensor_events", "scenario_config")
         ] + ["scenario_03_all_sensor_events.json"]
         cls.files = {name: scenario.read(scenario.OUTPUT / name) for name in cls.names}
 
     def test_complete_saved_validation_and_json_inventory(self):
         scenario.validate(self.files)
         self.assertEqual({p.relative_to(scenario.OUTPUT).as_posix() for p in scenario.OUTPUT.rglob("*.json")}, set(self.names))
-        self.assertEqual(len(self.names), 14)
+        self.assertEqual(len(self.names), 15)
 
     def test_three_shared_physical_trajectories(self):
         rows = self.files["shared_ground_truth/ground_truth_positions.json"]
@@ -102,10 +102,10 @@ class ScenarioThreeTests(unittest.TestCase):
 
     def test_replay_raw_only_exact_sensors_and_inclusive_window(self):
         replay = self.files["scenario_03_all_sensor_events.json"]
-        self.assertEqual(len(replay), 66)
-        self.assertEqual(len(self.files[f"{scenario.ARMY}/all_sensor_events.json"]), 29)
+        self.assertEqual(len(replay), 74)
+        self.assertEqual(len(self.files[f"{scenario.ARMY}/all_sensor_events.json"]), 37)
         self.assertEqual(len(self.files[f"{scenario.NAVY}/all_sensor_events.json"]), 37)
-        self.assertEqual({r["sensor_id"] for r in replay}, {"NAVY_COASTAL_RADAR_03", "MPA_OCEANS_X_AIS", "GLINT_SAR_PASS_SIM_03", "EOIR_ARMYBASE_03", "ARMYBASE_EW_03"})
+        self.assertEqual({r["sensor_id"] for r in replay}, {"NAVY_COASTAL_RADAR_03", "MPA_OCEANS_X_AIS", "GLINT_SAR_PASS_SIM_03", "EOIR_ARMYBASE_03", "ARMYBASE_EW_03", "CCTV_ARMYBASE_03"})
         self.assertEqual([r["timestamp"] for r in replay], sorted(r["timestamp"] for r in replay))
         self.assertTrue(all("15:00:00" <= r["timestamp"] <= "15:30:00" for r in replay))
         for uid in scenario.IDS:
@@ -113,8 +113,45 @@ class ScenarioThreeTests(unittest.TestCase):
         for r in replay:
             self.assertFalse({"usv_id", "development_only", "associations"} & set(r))
 
+    def test_cctv_negative_observations_and_combined_inclusion(self):
+        rows = self.files[f"{scenario.ARMY}/cctv.json"]
+        times = ["15:00:05", "15:04:05", "15:08:05", "15:12:05",
+                 "15:16:05", "15:20:05", "15:24:05", "15:28:05"]
+        self.assertEqual(len(rows), 8)
+        self.assertEqual([r["timestamp"] for r in rows], times)
+        config = self.files[f"{scenario.ARMY}/scenario_config.json"]["sensor_schedules"]["CCTV_ARMYBASE_03"]
+        self.assertEqual(times, [scenario.stamp(t) for t in scenario.schedule(config["interval_minutes"], config["second"])])
+        reference = scenario.read(scenario.ROOT / "scenario_02_conflicting/synthetic_armybase_02_data/cctv.json")
+        for r in rows:
+            self.assertEqual(set(r), set(reference[0]))
+            self.assertEqual(r["sensor_id"], "CCTV_ARMYBASE_03")
+            self.assertIs(r["detected"], False)
+            self.assertEqual(r["classification"], "no_relevant_visual_anomaly")
+            self.assertEqual(r["confidence"], 0.0)
+            self.assertNotIn("track_id", r)
+            for uid in scenario.IDS:
+                self.assertNotIn(uid, json.dumps(r))
+        for name in (f"{scenario.ARMY}/all_sensor_events.json", "scenario_03_all_sensor_events.json"):
+            stream = self.files[name]
+            self.assertEqual([r for r in stream if r["sensor_id"] == "CCTV_ARMYBASE_03"], rows)
+            self.assertEqual([r["timestamp"] for r in stream], sorted(r["timestamp"] for r in stream))
+        for uid, mapping in self.files["shared_ground_truth/ground_truth_associations.json"].items():
+            self.assertEqual(set(mapping), {"coastal_radar", "army_eoir", "ais_mmsi"} if uid == "USV-02" else {"coastal_radar", "army_eoir"})
+
+    def test_existing_sensor_files_and_shared_truth_unchanged(self):
+        # Byte fingerprints captured before adding CCTV; all existing raw feeds are protected.
+        expected = {'shared_ground_truth/ground_truth_associations.json': 'e7d7e3408b7b22a1f6dedcd13cff57a4bb1a8d6d02e0f18e2323911232be6b8c', 'shared_ground_truth/ground_truth_positions.json': '4c31f008384eb3daddc8696469bcbb18b1c823a5ab290f21fdab94c5fb47dd44', 'synthetic_armybase_03_data/eoir.json': '2a471722e416cc02023f6f753a8740113915925e211f7575281b50fbfd32229b', 'synthetic_armybase_03_data/ew.json': 'c28334bec802f4f9d2d455722f050f1d4b5a28ad1f671040b914c79d0e56aa93', 'synthetic_navybase_03_data/ais.json': '1bc3e46736b5dbad20de8294b3ecae4c537b0eeaa6d051cee5e2c25cebd6a4e4', 'synthetic_navybase_03_data/all_sensor_events.json': 'b48b36e4c58663d9f4e0ecb3bf73a55b98efee8f5be01613bed3fc6bfd644a89', 'synthetic_navybase_03_data/coastal_radar.json': 'ba46d89342067930296818047373eac751087b4744e7a9159fced87c94410809', 'synthetic_navybase_03_data/glint_sar.json': 'ebbd0fbd7d7584283ba839ab99e5e31e4f671e28d96dbaf654d03dcbbb86ad6d', 'synthetic_navybase_03_data/scenario_config.json': '8a9c022d5c92d6c0842eb91b3133eb845314df0645466eed4efaae79e889b237'}
+        for name, digest in expected.items():
+            with self.subTest(file=name):
+                self.assertEqual(hashlib.sha256((scenario.OUTPUT / name).read_bytes()).hexdigest(), digest)
+
     def test_validation_rejects_corruption(self):
         cases = [
+            (f"{scenario.ARMY}/cctv.json", lambda r: r[0].update(detected=True)),
+            (f"{scenario.ARMY}/cctv.json", lambda r: r[0].update(classification="USV")),
+            (f"{scenario.ARMY}/cctv.json", lambda r: r[0].update(track_id="CCTV-001")),
+            (f"{scenario.ARMY}/cctv.json", lambda r: r[0].update(image="USV-01.jpg")),
+            (f"{scenario.ARMY}/cctv.json", lambda r: r.pop()),
             ("shared_ground_truth/ground_truth_positions.json", lambda r: r.pop()),
             ("shared_ground_truth/ground_truth_associations.json", lambda m: m["USV-01"].update(ais_mmsi=990000004)),
             (f"{scenario.NAVY}/coastal_radar.json", lambda r: r.pop(0)),

@@ -1,0 +1,74 @@
+[
+  {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:00:05",
+    "camera_id": "CAM-001",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM001_150005.jpg"
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:04:05",
+    "camera_id": "CAM-002",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM002_150405.jpg"
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:08:05",
+    "camera_id": "CAM-003",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM003_150805.jpg"
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:12:05",
+    "camera_id": "CAM-001",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM001_151205.jpg"
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:16:05",
+    "camera_id": "CAM-002",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM002_151605.jpg"
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:20:05",
+    "camera_id": "CAM-003",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM003_152005.jpg"
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:24:05",
+    "camera_id": "CAM-001",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM001_152405.jpg"
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:28:05",
+    "camera_id": "CAM-002",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM002_152805.jpg"
+  }
+]

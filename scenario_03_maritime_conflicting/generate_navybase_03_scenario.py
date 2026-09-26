@@ -24,13 +24,15 @@ SENSORS = [(NAVY, "coastal_radar", "NAVY_COASTAL_RADAR_03", 3, 11),
            (NAVY, "ais", "MPA_OCEANS_X_AIS", 5, 7),
            (NAVY, "glint_sar", "GLINT_SAR_PASS_SIM_03", None, 857),
            (ARMY, "eoir", "EOIR_ARMYBASE_03", 3, 1),
-           (ARMY, "ew", "ARMYBASE_EW_03", 5, 2)]
+           (ARMY, "ew", "ARMYBASE_EW_03", 5, 2),
+           (ARMY, "cctv", "CCTV_ARMYBASE_03", 4, 5)]
 FIELDS = {
     "coastal_radar": set("sensor_id timestamp track_id lat lon velocity_knots altitude_m rcs_m2 classification subtype".split()),
     "ais": set("sensor_id timestamp mmsi vessel_name lat lon sog_knots cog_deg".split()),
     "glint_sar": set("sensor_id timestamp candidate_id center_lat center_lon length_m width_m anomaly anomaly_length_m".split()),
     "eoir": set("sensor_id timestamp track_id azimuth_deg elevation_deg classification subtype confidence image".split()),
     "ew": set("sensor_id timestamp emitter_id detected bearing_deg classification confidence".split()),
+    "cctv": set("sensor_id timestamp camera_id detected classification confidence image".split()),
 }
 EO_COUNTS = [1, 1, 2, 2, 2, 3, 3, 3, 3, 3]
 EO_ORDER = ["USV-03", "USV-01", "USV-02"]
@@ -126,6 +128,7 @@ def build(positions, mapping, folders=(NAVY, ARMY)):
         "eoir_classification": "SURFACE_CRAFT initially; one temporary UNKNOWN at 15:12:01; USV/small-surface-craft from 15:18:01.",
         "ais_policy": "Only one simulated cooperative craft reports AIS; other objects send no AIS messages, not negative detections.",
         "ew_policy": "Intermittent group-sector RF evidence; no individual object/emitter association. Synthetic assumption, not a real communications claim.",
+        "cctv_policy": "Operational throughout; no relevant visual anomaly detected at any scan. Synthetic assumption, not evidence of physical object absence or real CCTV performance.",
         "sensor_schedules": {sid: {"observation_times": [stamp(offset)], "mode": "single_pass"} if minutes is None
             else {"interval_minutes": minutes, "second": offset} for _, _, sid, minutes, offset in SENSORS}}
     files = {"scenario_config.json": config, "shared_ground_truth/ground_truth_positions.json": positions,
@@ -137,6 +140,8 @@ def build(positions, mapping, folders=(NAVY, ARMY)):
                  "ais_reporting_object": "USV-02", "ais_reporting_object_count": 1,
                  "temporary_uncertainty": {"timestamp": "15:12:01", "track_id": mapping["USV-01"]["army_eoir"], "recovery": "15:15:01"},
                  "ew_detection_sequence": EW_DETECTED, "ew_association": "Group sector only; no unique object association.",
+                 "cctv_detection_sequence": [False] * len(schedule(4, 5)),
+                 "cctv_association": "None; no relevant visual evidence or individual USV tracks throughout.",
                  "sar_timestamp": "15:14:17", "sar_association": "Three-contact area centroid; not three identified objects.",
                  "early": "Three UNKNOWN radar tracks, one generic EO contact, one cooperative AIS identity.",
                  "middle": "Radar becomes SURFACE_CRAFT; EO progresses from two to three, with temporary uncertainty; intermittent RF and one SAR candidate.",
@@ -179,6 +184,11 @@ def build(positions, mapping, folders=(NAVY, ARMY)):
                         "azimuth_deg": round(bearing, 3), "elevation_deg": 0.0,
                         "classification": classification, "subtype": subtype, "confidence": confidence,
                         "image": f"{track.replace('-', '')}_{time.replace(':', '')}.jpg"})
+            elif kind == "cctv":
+                camera = f"CAM-{scan % 3 + 1:03d}"
+                records.append({"sensor_id": sid, "timestamp": time, "camera_id": camera,
+                    "detected": False, "classification": "no_relevant_visual_anomaly", "confidence": 0.0,
+                    "image": f"{camera.replace('-', '')}_{time.replace(':', '')}.jpg"})
             else:
                 detected = EW_DETECTED[scan]
                 records.append({"sensor_id": sid, "timestamp": time, "emitter_id": "RF-GROUP-03" if detected else None,
@@ -245,6 +255,10 @@ def validate(files, folders=(NAVY, ARMY)):
             elif kind == "ew":
                 require(r["detected"] is EW_DETECTED[scan], "Incorrect intermittent EW evidence")
                 require(r["emitter_id"] == ("RF-GROUP-03" if r["detected"] else None), "EW must remain group-level")
+            elif kind == "cctv":
+                require(r["detected"] is False and r["classification"] == "no_relevant_visual_anomaly"
+                        and r["confidence"] == 0.0, "CCTV must never provide relevant detection")
+                require(r["camera_id"] == f"CAM-{scan % 3 + 1:03d}", "Incorrect CCTV camera sequence")
             else:
                 centroid = {field: round(sum(truth[r["timestamp"], uid][field] for uid in IDS) / 3, 9) for field in ("latitude", "longitude")}
                 require((r["center_lat"], r["center_lon"]) == (centroid["latitude"], centroid["longitude"]), "SAR must describe the shared contact area")

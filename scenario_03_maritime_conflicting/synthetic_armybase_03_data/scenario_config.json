@@ -14,6 +14,10 @@
     "ARMYBASE_EW_03": {
       "interval_minutes": 5,
       "second": 2
+    },
+    "CCTV_ARMYBASE_03": {
+      "interval_minutes": 4,
+      "second": 5
     }
   }
 }

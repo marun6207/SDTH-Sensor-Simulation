@@ -36,6 +36,7 @@
   "eoir_classification": "SURFACE_CRAFT initially; one temporary UNKNOWN at 15:12:01; USV/small-surface-craft from 15:18:01.",
   "ais_policy": "Only one simulated cooperative craft reports AIS; other objects send no AIS messages, not negative detections.",
   "ew_policy": "Intermittent group-sector RF evidence; no individual object/emitter association. Synthetic assumption, not a real communications claim.",
+  "cctv_policy": "Operational throughout; no relevant visual anomaly detected at any scan. Synthetic assumption, not evidence of physical object absence or real CCTV performance.",
   "sensor_schedules": {
     "NAVY_COASTAL_RADAR_03": {
       "interval_minutes": 3,
@@ -58,6 +59,10 @@
     "ARMYBASE_EW_03": {
       "interval_minutes": 5,
       "second": 2
+    },
+    "CCTV_ARMYBASE_03": {
+      "interval_minutes": 4,
+      "second": 5
     }
   }
 }

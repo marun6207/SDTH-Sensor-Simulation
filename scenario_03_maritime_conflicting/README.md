@@ -14,7 +14,7 @@ about real sensor performance or USV communications.
 
 | Site | Latitude | Longitude | Sensors |
 | --- | --- | --- | --- |
-| ARMY_BASE_03, western Singapore region | 1.350 | 103.700 | EO/IR, EW |
+| ARMY_BASE_03, western Singapore region | 1.350 | 103.700 | EO/IR, EW, CCTV |
 | NAVY_BASE_03, southwestern Singapore region | 1.260 | 103.720 | Coastal radar, AIS, GLINT SAR |
 
 | Sensor | Schedule | Records |
@@ -23,6 +23,7 @@ about real sensor performance or USV communications.
 | MPA_OCEANS_X_AIS | Every 5 minutes, starting 15:00:07 | 6 |
 | EOIR_ARMYBASE_03 | Every 3 minutes, starting 15:00:01 | 23 |
 | ARMYBASE_EW_03 | Every 5 minutes, starting 15:00:02 | 6 |
+| CCTV_ARMYBASE_03 | Every 4 minutes, starting 15:00:05 | 8 |
 | GLINT_SAR_PASS_SIM_03 | One pass at 15:14:17 | 1 |
 
 Full timestamps must be <= 15:30:00. Thus the final radar/EO scans occur at
@@ -52,6 +53,14 @@ Full timestamps must be <= 15:30:00. Thus the final radar/EO scans occur at
 - **GLINT SAR** supplies one maritime return-cluster anomaly at the contact-area
   centroid, not three identified objects. Its dimensions describe a synthetic
   anomaly area rather than an individual hull.
+- **Army CCTV** remains operational throughout but obtains no relevant visual
+  evidence at any scan, while EO/IR progressively resolves the maritime contacts.
+  All eight records use Scenario 2's CCTV fields and negative-observation
+  conventions: `detected=false`, `confidence=0.0`, retained camera/image fields,
+  and the maritime-appropriate classification `no_relevant_visual_anomaly`.
+  No individual tracks or hidden USV associations are created. Non-detection
+  does not mean the three physical USVs do not exist. This is a deterministic
+  synthetic assumption, not a real-world CCTV performance limitation.
 
 Late radar and EO agree on three contacts with differing classification specificity.
 AIS still reports one identity; RF and SAR remain supplementary group evidence.
@@ -61,7 +70,7 @@ Nexus must infer cross-sensor associations rather than match track-number suffix
 
 **Replay `scenario_03_all_sensor_events.json` in Nexus.** It contains only raw
 observations, sorted by timestamp with deterministic sensor/identity tie-breaking:
-**66 records total**, comprising **29 Army** and **37 Navy** records.
+**74 records total**, comprising **37 Army** and **37 Navy** records.
 
 ```text
 scenario_03_maritime_conflicting/
@@ -78,6 +87,7 @@ scenario_03_maritime_conflicting/
   synthetic_armybase_03_data/
     eoir.json
     ew.json
+    cctv.json
     all_sensor_events.json
     scenario_config.json
   synthetic_navybase_03_data/
@@ -90,7 +100,8 @@ scenario_03_maritime_conflicting/
 
 The shared truth contains `USV-01` through `USV-03`, one-second positions, surface
 speed/course and the true `USV / small-surface-craft` type. Associations and expected
-behavior are development/evaluation files, excluded from raw replay. Neither
+behavior are development/evaluation files, excluded from raw replay. CCTV has
+no individual ground-truth association; EW remains group-level. Neither
 hidden IDs nor those associations appear in any raw feed. Maritime observations
 retain their schema-defined coordinates. EO/IR and EW use Scenario 2 Army field
 names; maritime feeds use the repository's existing maritime schemas.

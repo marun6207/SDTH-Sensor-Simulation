@@ -15,7 +15,7 @@ def main():
     before = shared.file_hashes(names)
     files = {name: shared.read(shared.OUTPUT / name) for name in names}
     shared.validate(files, (shared.NAVY,))
-    army_names = [f"{shared.ARMY}/{name}.json" for name in ("eoir", "ew", "all_sensor_events", "scenario_config")]
+    army_names = [f"{shared.ARMY}/{name}.json" for name in ("eoir", "ew", "cctv", "all_sensor_events", "scenario_config")]
     replay = "scenario_03_all_sensor_events.json"
     if args.validate_only:
         outputs = {name: shared.read(shared.OUTPUT / name) for name in army_names + [replay]}

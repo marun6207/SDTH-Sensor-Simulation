@@ -20,6 +20,15 @@
     "confidence": 0.32
   },
   {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:00:05",
+    "camera_id": "CAM-001",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM001_150005.jpg"
+  },
+  {
     "sensor_id": "MPA_OCEANS_X_AIS",
     "timestamp": "15:00:07",
     "mmsi": 990000003,
@@ -113,6 +122,15 @@
     "subtype": "unknown"
   },
   {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:04:05",
+    "camera_id": "CAM-002",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM002_150405.jpg"
+  },
+  {
     "sensor_id": "ARMYBASE_EW_03",
     "timestamp": "15:05:02",
     "emitter_id": null,
@@ -188,6 +206,15 @@
     "rcs_m2": 0.8,
     "classification": "UNKNOWN",
     "subtype": "unknown"
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:08:05",
+    "camera_id": "CAM-003",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM003_150805.jpg"
   },
   {
     "sensor_id": "EOIR_ARMYBASE_03",
@@ -287,6 +314,15 @@
     "subtype": "unknown",
     "confidence": 0.36,
     "image": "ARMYEO002_151201.jpg"
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:12:05",
+    "camera_id": "CAM-001",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM001_151205.jpg"
   },
   {
     "sensor_id": "NAVY_COASTAL_RADAR_03",
@@ -424,6 +460,15 @@
     "subtype": "unknown"
   },
   {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:16:05",
+    "camera_id": "CAM-002",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM002_151605.jpg"
+  },
+  {
     "sensor_id": "EOIR_ARMYBASE_03",
     "timestamp": "15:18:01",
     "track_id": "ARMY-EO-001",
@@ -500,6 +545,15 @@
     "bearing_deg": null,
     "classification": "no_relevant_rf_detection",
     "confidence": 0.0
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:20:05",
+    "camera_id": "CAM-003",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM003_152005.jpg"
   },
   {
     "sensor_id": "MPA_OCEANS_X_AIS",
@@ -612,6 +666,15 @@
     "subtype": "small-surface-craft",
     "confidence": 0.758,
     "image": "ARMYEO003_152401.jpg"
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:24:05",
+    "camera_id": "CAM-001",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM001_152405.jpg"
   },
   {
     "sensor_id": "NAVY_COASTAL_RADAR_03",
@@ -736,5 +799,14 @@
     "rcs_m2": 0.8,
     "classification": "USV",
     "subtype": "unmanned-suspected"
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_03",
+    "timestamp": "15:28:05",
+    "camera_id": "CAM-002",
+    "detected": false,
+    "classification": "no_relevant_visual_anomaly",
+    "confidence": 0.0,
+    "image": "CAM002_152805.jpg"
   }
 ]
