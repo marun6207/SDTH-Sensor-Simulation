@@ -10,12 +10,40 @@ sensor performance, communications, weapon performance, or an actual attack
 trajectory. The geographic coordinates are synthetic WGS84 coordinates chosen
 only to make the tracks coherent on a map.
 
-The repository contains **two separated scenarios** in the same Git repository:
+---
+
+## 🏛️ Relationship with Nexus C2 (Three Operational Pillars)
+
+> **Primary hero is airborne `S2_osint_swarm`. Maritime secondary track is `S1_trojan` (tri-service + GLINT hull anchor) then `S3_sar_ais` (GLINT macro × SIA × AIS dark vessel). marun `scenario_02_conflicting` is a legacy fusion bench, not Nexus S2.**
+
+### Three-Pillar Operational Mapping
+
+| Rank | Nexus ID | Role | GLINT Usage |
+|------|----------|------|-------------|
+| **1 (Primary Hero)** | `S2_osint_swarm` | In-flight OSINT ~50 × radar 4 / RF silence → GNSS denial + GBAD (Cognitive / Autonomous Saturation / Anti-Exhaustion) | **Not used** (Air domain & social sensor) |
+| **2** | `S1_trojan` | Maritime + Land/Air: AIS vs coastal radar, CNI VETO, Option B (Tri-service contradiction + spatial SAR mothership lock) | **Used** — Mothership aft-deck / hull spatial anchor (already in narrative & export) |
+| **3** | `S3_sar_ais` | Dark vessel: Dual-SAR × thin AIS → Approach Patrol (Orbital latency → reachable ellipse → USV intercept) | **Primary showcase** — macro cluster (`:5051` / live) + SIA micro |
+
+*Auxiliary baseline*: `S1_ais_spoof` serves as a lightweight baseline outside the three pillars (no GLINT).
+
+### Data Role Alignment with marun
+
+| Data Feed | Storage Location | marun Role |
+|-----------|------------------|------------|
+| **S2 Synthetic** (OSINT / radar 4 / acoustic / RF silent) | marun **new** `exports/s2_osint_swarm_*.jsonl` | marun canonical export (*`scenario_02_conflicting` is a legacy fusion bench, not Nexus S2*) |
+| **Trojan Maritime + Land/Air + GLINT row** | Existing `synthetic_maritime_data/` → `exports/s1_trojan_*` | marun `exports/s1_trojan_scenario.jsonl` |
+| **S3 Coastal AIS / Radar** | marun optional; **GLINT macro / SIA chip owned by Nexus / Team 02 / SIA** | GLINT `:5051` / SIA `:5050` / Indago DuckDB |
+
+*Note on `scenario_02_conflicting/`*: The in-repo directory `scenario_02_conflicting/` is a **legacy fusion benchmark** (evaluating dual-site Airbase vs Army Base 5-UAS resolution), **not** Nexus `S2_osint_swarm`. Nexus `S2_osint_swarm` represents the 50-drone autonomous saturation raid triggered by in-flight civilian passenger OSINT and will be housed under `exports/s2_osint_swarm_*.jsonl`.
+
+---
+
+The repository contains **two separated legacy scenarios** in the same Git repository:
 
 - `scenario_01_consistent/`: existing five-UAS multi-sensor corroboration, for
   ingestion and fusion of mutually supporting observations.
 - `scenario_02_conflicting/`: a shared five-UAS southwest approach with controlled
-  disagreement between two synthetic sites.
+  disagreement between two synthetic sites (legacy fusion benchmark).
 
 Generate Scenario 2 by running its Airbase generator first, then its Army generator:
 
