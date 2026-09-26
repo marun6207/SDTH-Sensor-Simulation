@@ -15,8 +15,8 @@ from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).parent
-AIR = ROOT / "synthetic_airbase_data"
-ARMY = ROOT / "synthetic_armybase_data"
+AIR = ROOT / "scenario_01_consistent" / "synthetic_airbase_data"
+ARMY = ROOT / "scenario_01_consistent" / "synthetic_armybase_data"
 MAR = ROOT / "synthetic_maritime_data"
 EXPORT = ROOT / "exports"
 

@@ -1,0 +1,56 @@
+[
+  {
+    "sensor_id": "AIRBASE_EW_02",
+    "timestamp": "14:30:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.698,
+    "emitter_id": "RF-001",
+    "bearing_deg": 224.046
+  },
+  {
+    "sensor_id": "AIRBASE_EW_02",
+    "timestamp": "14:35:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.677,
+    "emitter_id": "RF-001",
+    "bearing_deg": 223.349
+  },
+  {
+    "sensor_id": "AIRBASE_EW_02",
+    "timestamp": "14:40:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.764,
+    "emitter_id": "RF-001",
+    "bearing_deg": 222.435
+  },
+  {
+    "sensor_id": "AIRBASE_EW_02",
+    "timestamp": "14:45:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.727,
+    "emitter_id": "RF-001",
+    "bearing_deg": 221.198
+  },
+  {
+    "sensor_id": "AIRBASE_EW_02",
+    "timestamp": "14:50:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.828,
+    "emitter_id": "RF-001",
+    "bearing_deg": 219.271
+  },
+  {
+    "sensor_id": "AIRBASE_EW_02",
+    "timestamp": "14:55:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.789,
+    "emitter_id": "RF-001",
+    "bearing_deg": 215.038
+  }
+]

@@ -177,8 +177,12 @@ def generate_pois() -> list[dict[str, Any]]:
 
 def generate_ew_overlay() -> dict[str, list[dict[str, Any]]]:
     """LOB bearings from existing air/army site configs toward mothership."""
-    air_cfg = json.loads((ROOT / "synthetic_airbase_data" / "scenario_config.json").read_text())
-    army_cfg = json.loads((ROOT / "synthetic_armybase_data" / "scenario_config.json").read_text())
+    air_cfg = json.loads(
+        (ROOT / "scenario_01_consistent" / "synthetic_airbase_data" / "scenario_config.json").read_text()
+    )
+    army_cfg = json.loads(
+        (ROOT / "scenario_01_consistent" / "synthetic_armybase_data" / "scenario_config.json").read_text()
+    )
     air_brg = round(
         bearing_deg(air_cfg["latitude"], air_cfg["longitude"], MOTHERSHIP["lat"], MOTHERSHIP["lon"])
         + random.uniform(-0.4, 0.4),

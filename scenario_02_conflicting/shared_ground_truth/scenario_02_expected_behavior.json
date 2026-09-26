@@ -1,0 +1,81 @@
+{
+  "development_only": true,
+  "hidden_physical_uas_count": 5,
+  "expected_mpstar_count_per_scan": 5,
+  "eoir_counts": [
+    {
+      "timestamp": "14:30:01",
+      "airbase": 2,
+      "armybase": 3
+    },
+    {
+      "timestamp": "14:33:01",
+      "airbase": 3,
+      "armybase": 3
+    },
+    {
+      "timestamp": "14:36:01",
+      "airbase": 3,
+      "armybase": 4
+    },
+    {
+      "timestamp": "14:39:01",
+      "airbase": 4,
+      "armybase": 4
+    },
+    {
+      "timestamp": "14:42:01",
+      "airbase": 4,
+      "armybase": 5
+    },
+    {
+      "timestamp": "14:45:01",
+      "airbase": 5,
+      "armybase": 5
+    },
+    {
+      "timestamp": "14:48:01",
+      "airbase": 5,
+      "armybase": 5
+    },
+    {
+      "timestamp": "14:51:01",
+      "airbase": 5,
+      "armybase": 5
+    },
+    {
+      "timestamp": "14:54:01",
+      "airbase": 5,
+      "armybase": 5
+    },
+    {
+      "timestamp": "14:57:01",
+      "airbase": 5,
+      "armybase": 5
+    }
+  ],
+  "classification_uncertainty": {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "track_id": "EO-003",
+    "timestamp": "14:42:01",
+    "classification": "UNKNOWN",
+    "subtype": "unknown",
+    "confidence": 0.38,
+    "restored_timestamp": "14:45:01",
+    "restored_classification": "UAS",
+    "restored_subtype": "fixed-wing"
+  },
+  "ew_support": "Every scheduled update detected=true; RF-001 is group-sector evidence from the centroid, never a one-to-one UAS ID.",
+  "cctv_support": "Every scheduled update detected=true; three rotating cameras provide event-level evidence, not object counts.",
+  "strong_disagreement_period": "14:30:00 through 14:42:01: count/subset differences and temporary visual uncertainty.",
+  "increasing_corroboration_period": "14:45:01 through 15:00:00: both EO sensors resolve five; confidence still varies.",
+  "early_snapshot": {
+    "window": "14:30:00 through 14:30:05",
+    "mpstar": 5,
+    "airbase_eoir": 2,
+    "armybase_eoir": 3,
+    "airbase_ew_detected": true,
+    "armybase_ew_detected": true,
+    "cctv_detected": true
+  }
+}

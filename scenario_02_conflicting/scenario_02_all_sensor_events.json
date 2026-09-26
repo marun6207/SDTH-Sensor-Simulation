@@ -1,0 +1,1837 @@
+[
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:30:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 222.941,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 31.2672
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:30:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 224.728,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 33.4677
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:30:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 224.913,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 32.3818
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:30:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 225.074,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 31.7391
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:30:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 222.548,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 32.2367
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:30:01",
+    "track_id": "EO-003",
+    "azimuth_deg": 225.072,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.468,
+    "confidence": 0.653,
+    "image": "EO003_143001.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:30:01",
+    "track_id": "EO-004",
+    "azimuth_deg": 224.727,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.123,
+    "confidence": 0.639,
+    "image": "EO004_143001.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:30:01",
+    "track_id": "ARMY-EO-003",
+    "azimuth_deg": 225.485,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.539,
+    "confidence": 0.66,
+    "image": "ARMYEO003_143001.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:30:01",
+    "track_id": "ARMY-EO-004",
+    "azimuth_deg": 227.572,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.13,
+    "confidence": 0.655,
+    "image": "ARMYEO004_143001.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:30:01",
+    "track_id": "ARMY-EO-005",
+    "azimuth_deg": 227.853,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.281,
+    "confidence": 0.668,
+    "image": "ARMYEO005_143001.jpg"
+  },
+  {
+    "sensor_id": "AIRBASE_EW_02",
+    "timestamp": "14:30:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.698,
+    "emitter_id": "RF-001",
+    "bearing_deg": 224.046
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_02",
+    "timestamp": "14:30:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.709,
+    "emitter_id": "RF-001",
+    "bearing_deg": 227.0
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_02",
+    "timestamp": "14:30:05",
+    "detected": true,
+    "classification": "UAS",
+    "confidence": 0.749,
+    "camera_id": "CAM-001",
+    "image": "CAM001_143005.jpg"
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:32:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 222.672,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 29.3439
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:32:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 224.584,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 31.4068
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:32:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 224.737,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 30.3568
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:32:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 224.785,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 29.6812
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:32:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 222.152,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 30.2925
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:33:01",
+    "track_id": "EO-003",
+    "azimuth_deg": 224.625,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.599,
+    "confidence": 0.609,
+    "image": "EO003_143301.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:33:01",
+    "track_id": "EO-004",
+    "azimuth_deg": 224.504,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.197,
+    "confidence": 0.59,
+    "image": "EO004_143301.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:33:01",
+    "track_id": "EO-005",
+    "azimuth_deg": 222.522,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.907,
+    "confidence": 0.612,
+    "image": "EO005_143301.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:33:01",
+    "track_id": "ARMY-EO-003",
+    "azimuth_deg": 225.165,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.652,
+    "confidence": 0.609,
+    "image": "ARMYEO003_143301.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:33:01",
+    "track_id": "ARMY-EO-004",
+    "azimuth_deg": 227.639,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.205,
+    "confidence": 0.593,
+    "image": "ARMYEO004_143301.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:33:01",
+    "track_id": "ARMY-EO-005",
+    "azimuth_deg": 227.886,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.373,
+    "confidence": 0.617,
+    "image": "ARMYEO005_143301.jpg"
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:34:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 222.369,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 27.4181
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:34:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 224.422,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 29.3456
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:34:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 224.54,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 28.3317
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:34:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 224.461,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 27.6257
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:34:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 221.712,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 28.3463
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_02",
+    "timestamp": "14:34:05",
+    "detected": true,
+    "classification": "UAS",
+    "confidence": 0.698,
+    "camera_id": "CAM-002",
+    "image": "CAM002_143405.jpg"
+  },
+  {
+    "sensor_id": "AIRBASE_EW_02",
+    "timestamp": "14:35:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.677,
+    "emitter_id": "RF-001",
+    "bearing_deg": 223.349
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_02",
+    "timestamp": "14:35:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.672,
+    "emitter_id": "RF-001",
+    "bearing_deg": 226.847
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:36:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 222.027,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 25.4868
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:36:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 224.237,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 27.2838
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:36:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 224.318,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 26.3064
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:36:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 224.103,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 25.5741
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:36:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 221.227,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 26.3946
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:36:01",
+    "track_id": "EO-003",
+    "azimuth_deg": 224.1,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.745,
+    "confidence": 0.697,
+    "image": "EO003_143601.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:36:01",
+    "track_id": "EO-004",
+    "azimuth_deg": 224.236,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.3,
+    "confidence": 0.677,
+    "image": "EO004_143601.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:36:01",
+    "track_id": "EO-005",
+    "azimuth_deg": 222.024,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.118,
+    "confidence": 0.697,
+    "image": "EO005_143601.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:36:01",
+    "track_id": "ARMY-EO-001",
+    "azimuth_deg": 225.747,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.141,
+    "confidence": 0.701,
+    "image": "ARMYEO001_143601.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:36:01",
+    "track_id": "ARMY-EO-003",
+    "azimuth_deg": 224.809,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.797,
+    "confidence": 0.688,
+    "image": "ARMYEO003_143601.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:36:01",
+    "track_id": "ARMY-EO-004",
+    "azimuth_deg": 227.727,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.31,
+    "confidence": 0.684,
+    "image": "ARMYEO004_143601.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:36:01",
+    "track_id": "ARMY-EO-005",
+    "azimuth_deg": 227.939,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.501,
+    "confidence": 0.696,
+    "image": "ARMYEO005_143601.jpg"
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:38:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 221.64,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 23.5473
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:38:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 224.027,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 25.2209
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:38:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 224.069,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 24.2805
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:38:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 223.712,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 23.5277
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:38:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 220.694,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 24.4343
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_02",
+    "timestamp": "14:38:05",
+    "detected": true,
+    "classification": "UAS",
+    "confidence": 0.812,
+    "camera_id": "CAM-003",
+    "image": "CAM003_143805.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:39:01",
+    "track_id": "EO-001",
+    "azimuth_deg": 223.931,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.677,
+    "confidence": 0.645,
+    "image": "EO001_143901.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:39:01",
+    "track_id": "EO-003",
+    "azimuth_deg": 223.5,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.931,
+    "confidence": 0.653,
+    "image": "EO003_143901.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:39:01",
+    "track_id": "EO-004",
+    "azimuth_deg": 223.908,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.458,
+    "confidence": 0.635,
+    "image": "EO004_143901.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:39:01",
+    "track_id": "EO-005",
+    "azimuth_deg": 221.424,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.355,
+    "confidence": 0.644,
+    "image": "EO005_143901.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:39:01",
+    "track_id": "ARMY-EO-001",
+    "azimuth_deg": 225.627,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.384,
+    "confidence": 0.657,
+    "image": "ARMYEO001_143901.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:39:01",
+    "track_id": "ARMY-EO-003",
+    "azimuth_deg": 224.438,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.007,
+    "confidence": 0.653,
+    "image": "ARMYEO003_143901.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:39:01",
+    "track_id": "ARMY-EO-004",
+    "azimuth_deg": 227.848,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.471,
+    "confidence": 0.642,
+    "image": "ARMYEO004_143901.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:39:01",
+    "track_id": "ARMY-EO-005",
+    "azimuth_deg": 228.028,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.692,
+    "confidence": 0.639,
+    "image": "ARMYEO005_143901.jpg"
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:40:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 221.199,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 21.5974
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:40:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 223.785,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 23.1565
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:40:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 223.789,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 22.2538
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:40:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 223.286,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 21.4876
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:40:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 220.11,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 22.4629
+  },
+  {
+    "sensor_id": "AIRBASE_EW_02",
+    "timestamp": "14:40:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.764,
+    "emitter_id": "RF-001",
+    "bearing_deg": 222.435
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_02",
+    "timestamp": "14:40:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.782,
+    "emitter_id": "RF-001",
+    "bearing_deg": 226.726
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:42:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 220.69,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 19.6352
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:42:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 223.503,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 21.0906
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:42:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 223.468,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 20.2261
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:42:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 222.823,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 19.4545
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:42:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 219.465,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 20.4779
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:42:01",
+    "track_id": "EO-001",
+    "azimuth_deg": 223.466,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.958,
+    "confidence": 0.724,
+    "image": "EO001_144201.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:42:01",
+    "track_id": "EO-003",
+    "azimuth_deg": 222.819,
+    "classification": "UNKNOWN",
+    "subtype": "unknown",
+    "elevation_deg": 2.199,
+    "confidence": 0.38,
+    "image": "EO003_144201.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:42:01",
+    "track_id": "EO-004",
+    "azimuth_deg": 223.5,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.699,
+    "confidence": 0.725,
+    "image": "EO004_144201.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:42:01",
+    "track_id": "EO-005",
+    "azimuth_deg": 220.685,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.645,
+    "confidence": 0.749,
+    "image": "EO005_144201.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:42:01",
+    "track_id": "ARMY-EO-001",
+    "azimuth_deg": 225.519,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.685,
+    "confidence": 0.733,
+    "image": "ARMYEO001_144201.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:42:01",
+    "track_id": "ARMY-EO-002",
+    "azimuth_deg": 227.719,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.225,
+    "confidence": 0.738,
+    "image": "ARMYEO002_144201.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:42:01",
+    "track_id": "ARMY-EO-003",
+    "azimuth_deg": 224.077,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.318,
+    "confidence": 0.724,
+    "image": "ARMYEO003_144201.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:42:01",
+    "track_id": "ARMY-EO-004",
+    "azimuth_deg": 228.022,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.716,
+    "confidence": 0.738,
+    "image": "ARMYEO004_144201.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:42:01",
+    "track_id": "ARMY-EO-005",
+    "azimuth_deg": 228.182,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 1.979,
+    "confidence": 0.742,
+    "image": "ARMYEO005_144201.jpg"
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_02",
+    "timestamp": "14:42:05",
+    "detected": true,
+    "classification": "UAS",
+    "confidence": 0.756,
+    "camera_id": "CAM-001",
+    "image": "CAM001_144205.jpg"
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:44:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 220.09,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 17.6598
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:44:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 223.168,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 19.023
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:44:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 223.098,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 18.1975
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:44:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 222.314,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 17.4291
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:44:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 218.745,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 18.4781
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:45:01",
+    "track_id": "EO-001",
+    "azimuth_deg": 222.885,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.37,
+    "confidence": 0.695,
+    "image": "EO001_144501.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:45:01",
+    "track_id": "EO-002",
+    "azimuth_deg": 218.343,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.727,
+    "confidence": 0.673,
+    "image": "EO002_144501.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:45:01",
+    "track_id": "EO-003",
+    "azimuth_deg": 222.035,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.608,
+    "confidence": 0.689,
+    "image": "EO003_144501.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:45:01",
+    "track_id": "EO-004",
+    "azimuth_deg": 222.972,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.053,
+    "confidence": 0.672,
+    "image": "EO004_144501.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:45:01",
+    "track_id": "EO-005",
+    "azimuth_deg": 219.739,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 3.048,
+    "confidence": 0.69,
+    "image": "EO005_144501.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:45:01",
+    "track_id": "ARMY-EO-001",
+    "azimuth_deg": 225.436,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 3.105,
+    "confidence": 0.692,
+    "image": "ARMYEO001_144501.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:45:01",
+    "track_id": "ARMY-EO-002",
+    "azimuth_deg": 227.846,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.647,
+    "confidence": 0.7,
+    "image": "ARMYEO002_144501.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:45:01",
+    "track_id": "ARMY-EO-003",
+    "azimuth_deg": 223.752,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.783,
+    "confidence": 0.677,
+    "image": "ARMYEO003_144501.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:45:01",
+    "track_id": "ARMY-EO-004",
+    "azimuth_deg": 228.278,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.078,
+    "confidence": 0.679,
+    "image": "ARMYEO004_144501.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:45:01",
+    "track_id": "ARMY-EO-005",
+    "azimuth_deg": 228.442,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.4,
+    "confidence": 0.69,
+    "image": "ARMYEO005_144501.jpg"
+  },
+  {
+    "sensor_id": "AIRBASE_EW_02",
+    "timestamp": "14:45:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.727,
+    "emitter_id": "RF-001",
+    "bearing_deg": 221.198
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_02",
+    "timestamp": "14:45:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.725,
+    "emitter_id": "RF-001",
+    "bearing_deg": 226.76
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:46:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 219.364,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 15.6709
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:46:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 222.762,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 16.9538
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:46:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 222.659,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 16.1679
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:46:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 221.747,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 15.4116
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:46:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 217.924,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 16.4626
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_02",
+    "timestamp": "14:46:05",
+    "detected": true,
+    "classification": "UAS",
+    "confidence": 0.845,
+    "camera_id": "CAM-002",
+    "image": "CAM002_144605.jpg"
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:48:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 218.457,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 13.6692
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:48:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 222.255,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 14.8832
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:48:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 222.122,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 14.1376
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:48:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 221.096,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 13.4019
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:48:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 216.955,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 14.4319
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:48:01",
+    "track_id": "EO-001",
+    "azimuth_deg": 222.117,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.966,
+    "confidence": 0.78,
+    "image": "EO001_144801.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:48:01",
+    "track_id": "EO-002",
+    "azimuth_deg": 216.946,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 3.387,
+    "confidence": 0.769,
+    "image": "EO002_144801.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:48:01",
+    "track_id": "EO-003",
+    "azimuth_deg": 221.091,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 3.253,
+    "confidence": 0.788,
+    "image": "EO003_144801.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:48:01",
+    "track_id": "EO-004",
+    "azimuth_deg": 222.251,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.564,
+    "confidence": 0.766,
+    "image": "EO004_144801.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:48:01",
+    "track_id": "EO-005",
+    "azimuth_deg": 218.448,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 3.67,
+    "confidence": 0.772,
+    "image": "EO005_144801.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:48:01",
+    "track_id": "ARMY-EO-001",
+    "azimuth_deg": 225.401,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 3.76,
+    "confidence": 0.771,
+    "image": "ARMYEO001_144801.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:48:01",
+    "track_id": "ARMY-EO-002",
+    "azimuth_deg": 228.222,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 3.314,
+    "confidence": 0.769,
+    "image": "ARMYEO002_144801.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:48:01",
+    "track_id": "ARMY-EO-003",
+    "azimuth_deg": 223.495,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 3.477,
+    "confidence": 0.782,
+    "image": "ARMYEO003_144801.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:48:01",
+    "track_id": "ARMY-EO-004",
+    "azimuth_deg": 228.673,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 2.603,
+    "confidence": 0.775,
+    "image": "ARMYEO004_144801.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:48:01",
+    "track_id": "ARMY-EO-005",
+    "azimuth_deg": 228.881,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 3.014,
+    "confidence": 0.785,
+    "image": "ARMYEO005_144801.jpg"
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:50:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 217.269,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 11.6566
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:50:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 221.597,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 12.8117
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:50:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 221.435,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 12.1069
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:50:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 220.314,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 11.4
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:50:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 215.758,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 12.3876
+  },
+  {
+    "sensor_id": "AIRBASE_EW_02",
+    "timestamp": "14:50:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.828,
+    "emitter_id": "RF-001",
+    "bearing_deg": 219.271
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_02",
+    "timestamp": "14:50:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.846,
+    "emitter_id": "RF-001",
+    "bearing_deg": 227.198
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_02",
+    "timestamp": "14:50:05",
+    "detected": true,
+    "classification": "UAS",
+    "confidence": 0.814,
+    "camera_id": "CAM-003",
+    "image": "CAM003_145005.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:51:01",
+    "track_id": "EO-001",
+    "azimuth_deg": 221.002,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 3.857,
+    "confidence": 0.729,
+    "image": "EO001_145101.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:51:01",
+    "track_id": "EO-002",
+    "azimuth_deg": 215.019,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 4.393,
+    "confidence": 0.713,
+    "image": "EO002_145101.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:51:01",
+    "track_id": "EO-003",
+    "azimuth_deg": 219.838,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 4.304,
+    "confidence": 0.717,
+    "image": "EO003_145101.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:51:01",
+    "track_id": "EO-004",
+    "azimuth_deg": 221.179,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 3.315,
+    "confidence": 0.715,
+    "image": "EO004_145101.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:51:01",
+    "track_id": "EO-005",
+    "azimuth_deg": 216.505,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 4.721,
+    "confidence": 0.733,
+    "image": "EO005_145101.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:51:01",
+    "track_id": "ARMY-EO-001",
+    "azimuth_deg": 225.45,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 4.883,
+    "confidence": 0.72,
+    "image": "ARMYEO001_145101.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:51:01",
+    "track_id": "ARMY-EO-002",
+    "azimuth_deg": 229.056,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 4.411,
+    "confidence": 0.735,
+    "image": "ARMYEO002_145101.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:51:01",
+    "track_id": "ARMY-EO-003",
+    "azimuth_deg": 223.349,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 4.555,
+    "confidence": 0.721,
+    "image": "ARMYEO003_145101.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:51:01",
+    "track_id": "ARMY-EO-004",
+    "azimuth_deg": 229.315,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 3.381,
+    "confidence": 0.712,
+    "image": "ARMYEO004_145101.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:51:01",
+    "track_id": "ARMY-EO-005",
+    "azimuth_deg": 229.647,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 3.937,
+    "confidence": 0.735,
+    "image": "ARMYEO005_145101.jpg"
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:52:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 215.618,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 9.6368
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:52:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 220.7,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 10.7404
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:52:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 220.506,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 10.0768
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:52:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 219.306,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 9.4056
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:52:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 214.184,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 10.333
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:54:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 213.125,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 7.6169
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:54:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 219.388,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 8.671
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:54:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 219.145,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 8.0489
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:54:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 217.876,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 7.4193
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:54:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 211.928,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 8.2741
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:54:01",
+    "track_id": "EO-001",
+    "azimuth_deg": 219.131,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 5.33,
+    "confidence": 0.823,
+    "image": "EO001_145401.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:54:01",
+    "track_id": "EO-002",
+    "azimuth_deg": 211.905,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 6.083,
+    "confidence": 0.811,
+    "image": "EO002_145401.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:54:01",
+    "track_id": "EO-003",
+    "azimuth_deg": 217.861,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 6.182,
+    "confidence": 0.819,
+    "image": "EO003_145401.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:54:01",
+    "track_id": "EO-004",
+    "azimuth_deg": 219.374,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 4.523,
+    "confidence": 0.805,
+    "image": "EO004_145401.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:54:01",
+    "track_id": "EO-005",
+    "azimuth_deg": 213.099,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 6.697,
+    "confidence": 0.821,
+    "image": "EO005_145401.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:54:01",
+    "track_id": "ARMY-EO-001",
+    "azimuth_deg": 225.666,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 7.065,
+    "confidence": 0.812,
+    "image": "ARMYEO001_145401.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:54:01",
+    "track_id": "ARMY-EO-002",
+    "azimuth_deg": 230.871,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 6.401,
+    "confidence": 0.816,
+    "image": "ARMYEO002_145401.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:54:01",
+    "track_id": "ARMY-EO-003",
+    "azimuth_deg": 223.388,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 6.429,
+    "confidence": 0.822,
+    "image": "ARMYEO003_145401.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:54:01",
+    "track_id": "ARMY-EO-004",
+    "azimuth_deg": 230.474,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 4.651,
+    "confidence": 0.81,
+    "image": "ARMYEO004_145401.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:54:01",
+    "track_id": "ARMY-EO-005",
+    "azimuth_deg": 231.108,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 5.489,
+    "confidence": 0.82,
+    "image": "ARMYEO005_145401.jpg"
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_02",
+    "timestamp": "14:54:05",
+    "detected": true,
+    "classification": "UAS",
+    "confidence": 0.917,
+    "camera_id": "CAM-001",
+    "image": "CAM001_145405.jpg"
+  },
+  {
+    "sensor_id": "AIRBASE_EW_02",
+    "timestamp": "14:55:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.789,
+    "emitter_id": "RF-001",
+    "bearing_deg": 215.038
+  },
+  {
+    "sensor_id": "ARMYBASE_EW_02",
+    "timestamp": "14:55:02",
+    "detected": true,
+    "classification": "suspected_uas_link",
+    "confidence": 0.804,
+    "emitter_id": "RF-001",
+    "bearing_deg": 228.893
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:56:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 208.873,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 5.6118
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:56:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 217.27,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 6.6074
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:56:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 216.907,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 6.0271
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:56:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 215.532,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 5.4433
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:56:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 208.284,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 6.2232
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:57:01",
+    "track_id": "EO-001",
+    "azimuth_deg": 215.09,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 8.401,
+    "confidence": 0.754,
+    "image": "EO001_145701.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:57:01",
+    "track_id": "EO-002",
+    "azimuth_deg": 205.365,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 9.565,
+    "confidence": 0.754,
+    "image": "EO002_145701.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:57:01",
+    "track_id": "EO-003",
+    "azimuth_deg": 213.589,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 10.374,
+    "confidence": 0.762,
+    "image": "EO003_145701.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:57:01",
+    "track_id": "EO-004",
+    "azimuth_deg": 215.597,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 6.917,
+    "confidence": 0.756,
+    "image": "EO004_145701.jpg"
+  },
+  {
+    "sensor_id": "EOIR_AIRBASE_02",
+    "timestamp": "14:57:01",
+    "track_id": "EO-005",
+    "azimuth_deg": 205.311,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 11.211,
+    "confidence": 0.776,
+    "image": "EO005_145701.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:57:01",
+    "track_id": "ARMY-EO-001",
+    "azimuth_deg": 226.369,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 12.547,
+    "confidence": 0.762,
+    "image": "ARMYEO001_145701.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:57:01",
+    "track_id": "ARMY-EO-002",
+    "azimuth_deg": 235.604,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 10.983,
+    "confidence": 0.758,
+    "image": "ARMYEO002_145701.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:57:01",
+    "track_id": "ARMY-EO-003",
+    "azimuth_deg": 223.847,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 10.644,
+    "confidence": 0.769,
+    "image": "ARMYEO003_145701.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:57:01",
+    "track_id": "ARMY-EO-004",
+    "azimuth_deg": 233.042,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 7.251,
+    "confidence": 0.768,
+    "image": "ARMYEO004_145701.jpg"
+  },
+  {
+    "sensor_id": "EOIR_ARMYBASE_02",
+    "timestamp": "14:57:01",
+    "track_id": "ARMY-EO-005",
+    "azimuth_deg": 234.55,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "elevation_deg": 8.826,
+    "confidence": 0.762,
+    "image": "ARMYEO005_145701.jpg"
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:58:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 200.034,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 3.6641
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:58:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 213.255,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 4.5598
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:58:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 212.464,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 4.0225
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:58:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 210.682,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 3.4875
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "14:58:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 201.21,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 4.2119
+  },
+  {
+    "sensor_id": "CCTV_ARMYBASE_02",
+    "timestamp": "14:58:05",
+    "detected": true,
+    "classification": "UAS",
+    "confidence": 0.861,
+    "camera_id": "CAM-002",
+    "image": "CAM002_145805.jpg"
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "15:00:00",
+    "track_id": "RDR-001",
+    "azimuth_deg": 174.187,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 1.9773
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "15:00:00",
+    "track_id": "RDR-002",
+    "azimuth_deg": 202.896,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 2.5696
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "15:00:00",
+    "track_id": "RDR-003",
+    "azimuth_deg": 199.581,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 2.0879
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "15:00:00",
+    "track_id": "RDR-004",
+    "azimuth_deg": 194.31,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 1.6173
+  },
+  {
+    "sensor_id": "MPSTAR_AIRBASE_02",
+    "timestamp": "15:00:00",
+    "track_id": "RDR-005",
+    "azimuth_deg": 182.413,
+    "classification": "UAS",
+    "subtype": "fixed-wing",
+    "range_km": 2.3693
+  }
+]
