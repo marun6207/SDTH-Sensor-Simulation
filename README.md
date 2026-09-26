@@ -30,11 +30,11 @@ only to make the tracks coherent on a map.
 
 | Data Feed | Storage Location | marun Role |
 |-----------|------------------|------------|
-| **S2 Synthetic** (OSINT / radar 4 / acoustic / RF silent) | marun **new** `exports/s2_osint_swarm_*.jsonl` | marun canonical export (*`scenario_02_conflicting` is a legacy fusion bench, not Nexus S2*) |
+| **S2 Synthetic** (OSINT / radar 4 / acoustic / RF silent) | marun `exports/s2_osint_swarm_scenario.jsonl` | marun canonical export (*`scenario_02_conflicting` is a legacy fusion bench, not Nexus S2*) |
 | **Trojan Maritime + Land/Air + GLINT row** | Existing `synthetic_maritime_data/` → `exports/s1_trojan_*` | marun `exports/s1_trojan_scenario.jsonl` |
 | **S3 Coastal AIS / Radar** | marun optional; **GLINT macro / SIA chip owned by Nexus / Team 02 / SIA** | GLINT `:5051` / SIA `:5050` / Indago DuckDB |
 
-*Note on `scenario_02_conflicting/`*: The in-repo directory `scenario_02_conflicting/` is a **legacy fusion benchmark** (evaluating dual-site Airbase vs Army Base 5-UAS resolution), **not** Nexus `S2_osint_swarm`. Nexus `S2_osint_swarm` represents the 50-drone autonomous saturation raid triggered by in-flight civilian passenger OSINT and will be housed under `exports/s2_osint_swarm_*.jsonl`.
+*Note on `scenario_02_conflicting/`*: The in-repo directory `scenario_02_conflicting/` is a **legacy fusion benchmark** (evaluating dual-site Airbase vs Army Base 5-UAS resolution), **not** Nexus `S2_osint_swarm`. Nexus `S2_osint_swarm` represents the 50-drone autonomous saturation raid triggered by in-flight civilian passenger OSINT and is housed under `exports/s2_osint_swarm_scenario.jsonl`.
 
 ---
 
