@@ -1,19 +1,26 @@
 {
   "scenario_id": "SCENARIO_02",
-  "scenario_name": "Southwest UAS Approach with Multi-Sensor Disagreement",
+  "scenario_name": "Southeast UAS Approach with Multi-Sensor Disagreement",
   "start_time": "14:30:00",
   "end_time": "15:00:00",
   "hidden_physical_uas_count": 5,
-  "general_approach_direction": "southwest to northeast",
+  "general_approach_direction": "southeast to northwest",
   "fixed_random_seed": 20260925,
+  "simulation_notice": "Fictional sites, not real installations. Simulated Shahed-type identification and RF silence are scenario assumptions, not real-world performance claims.",
+  "eoir_identification_range_km": 18.0,
+  "ew_policy": "No relevant detectable RF signature; detected=false, emitter_id/bearing_deg=null, confidence=0 (no positive detection confidence).",
   "sites": {
     "AIRBASE_02": {
-      "latitude": 1.275,
-      "longitude": 103.82
+      "latitude": 1.345,
+      "longitude": 103.965
     },
     "ARMY_BASE_02": {
-      "latitude": 1.263,
-      "longitude": 103.829
+      "latitude": 1.415,
+      "longitude": 104.045
+    },
+    "NAVY_BASE_02": {
+      "latitude": 1.255,
+      "longitude": 103.835
     }
   },
   "coordinate_system": "WGS84",
@@ -46,6 +53,20 @@
     "ARMYBASE_EW_02": {
       "interval_minutes": 5,
       "second": 2
+    },
+    "MPA_OCEANS_X_AIS": {
+      "interval_minutes": 5,
+      "second": 7
+    },
+    "NAVY_COASTAL_RADAR_02": {
+      "interval_minutes": 3,
+      "second": 11
+    },
+    "GLINT_SAR_PASS_SIM_02": {
+      "observation_times": [
+        "14:44:17"
+      ],
+      "mode": "single_pass"
     }
   }
 }

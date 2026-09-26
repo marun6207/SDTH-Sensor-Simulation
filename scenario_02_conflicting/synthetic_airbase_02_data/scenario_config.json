@@ -1,8 +1,8 @@
 {
   "scenario_id": "SCENARIO_02",
   "site_id": "AIRBASE_02",
-  "latitude": 1.275,
-  "longitude": 103.82,
+  "latitude": 1.345,
+  "longitude": 103.965,
   "start_time": "14:30:00",
   "end_time": "15:00:00",
   "sensor_schedules": {

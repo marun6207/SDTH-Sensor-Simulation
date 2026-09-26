@@ -2,55 +2,55 @@
   {
     "sensor_id": "ARMYBASE_EW_02",
     "timestamp": "14:30:02",
-    "detected": true,
-    "classification": "suspected_uas_link",
-    "confidence": 0.709,
-    "emitter_id": "RF-001",
-    "bearing_deg": 227.0
+    "detected": false,
+    "classification": "no_relevant_rf_detection",
+    "confidence": 0.0,
+    "emitter_id": null,
+    "bearing_deg": null
   },
   {
     "sensor_id": "ARMYBASE_EW_02",
     "timestamp": "14:35:02",
-    "detected": true,
-    "classification": "suspected_uas_link",
-    "confidence": 0.672,
-    "emitter_id": "RF-001",
-    "bearing_deg": 226.847
+    "detected": false,
+    "classification": "no_relevant_rf_detection",
+    "confidence": 0.0,
+    "emitter_id": null,
+    "bearing_deg": null
   },
   {
     "sensor_id": "ARMYBASE_EW_02",
     "timestamp": "14:40:02",
-    "detected": true,
-    "classification": "suspected_uas_link",
-    "confidence": 0.782,
-    "emitter_id": "RF-001",
-    "bearing_deg": 226.726
+    "detected": false,
+    "classification": "no_relevant_rf_detection",
+    "confidence": 0.0,
+    "emitter_id": null,
+    "bearing_deg": null
   },
   {
     "sensor_id": "ARMYBASE_EW_02",
     "timestamp": "14:45:02",
-    "detected": true,
-    "classification": "suspected_uas_link",
-    "confidence": 0.725,
-    "emitter_id": "RF-001",
-    "bearing_deg": 226.76
+    "detected": false,
+    "classification": "no_relevant_rf_detection",
+    "confidence": 0.0,
+    "emitter_id": null,
+    "bearing_deg": null
   },
   {
     "sensor_id": "ARMYBASE_EW_02",
     "timestamp": "14:50:02",
-    "detected": true,
-    "classification": "suspected_uas_link",
-    "confidence": 0.846,
-    "emitter_id": "RF-001",
-    "bearing_deg": 227.198
+    "detected": false,
+    "classification": "no_relevant_rf_detection",
+    "confidence": 0.0,
+    "emitter_id": null,
+    "bearing_deg": null
   },
   {
     "sensor_id": "ARMYBASE_EW_02",
     "timestamp": "14:55:02",
-    "detected": true,
-    "classification": "suspected_uas_link",
-    "confidence": 0.804,
-    "emitter_id": "RF-001",
-    "bearing_deg": 228.893
+    "detected": false,
+    "classification": "no_relevant_rf_detection",
+    "confidence": 0.0,
+    "emitter_id": null,
+    "bearing_deg": null
   }
 ]

@@ -1,4 +1,4 @@
-"""Read Airbase-created Scenario 2 truth, generate Army observations and replay stream."""
+"""Read Airbase-created Scenario 2 truth, generate Army/Navy observations and replay."""
 from __future__ import annotations
 
 import argparse
@@ -29,6 +29,8 @@ def main():
     shared.validate(files, folders=(shared.AIR,))
     army_names = [f"{shared.ARMY}/{name}.json" for name in
                   ("eoir", "cctv", "ew", "all_sensor_events", "scenario_config")]
+    army_names += [f"{shared.NAVY}/{name}.json" for name in
+                   ("ais", "coastal_radar", "glint_sar", "all_sensor_events", "scenario_config")]
     combined_name = "scenario_02_all_sensor_events.json"
     if args.validate_only:
         outputs = {name: shared.read(shared.OUTPUT / name) for name in army_names + [combined_name]}
@@ -37,12 +39,13 @@ def main():
         derived = shared.build(
             files["shared_ground_truth/ground_truth_positions.json"],
             files["shared_ground_truth/ground_truth_associations.json"],
-            folders=(shared.ARMY,),
+            folders=(shared.ARMY, shared.NAVY),
         )
         outputs = {name: derived[name] for name in army_names}
         outputs[combined_name] = shared.combine([
             files[f"{shared.AIR}/all_sensor_events.json"],
             outputs[f"{shared.ARMY}/all_sensor_events.json"],
+            outputs[f"{shared.NAVY}/all_sensor_events.json"],
         ])
     files.update(outputs)
     shared.validate(files)

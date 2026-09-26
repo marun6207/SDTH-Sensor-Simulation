@@ -1,0 +1,34 @@
+{
+  "scenario_id": "SCENARIO_02",
+  "site_id": "NAVY_BASE_02",
+  "latitude": 1.255,
+  "longitude": 103.835,
+  "start_time": "14:30:00",
+  "end_time": "15:00:00",
+  "sensor_schedules": {
+    "MPA_OCEANS_X_AIS": {
+      "interval_minutes": 5,
+      "second": 7
+    },
+    "NAVY_COASTAL_RADAR_02": {
+      "interval_minutes": 3,
+      "second": 11
+    },
+    "GLINT_SAR_PASS_SIM_02": {
+      "observation_times": [
+        "14:44:17"
+      ],
+      "mode": "single_pass"
+    }
+  },
+  "modality_policy": {
+    "ais": "Two fictional cooperative vessels; synthetic offline MMSIs 990000001/990000002; never UAS.",
+    "coastal_radar": "Two persistent surface vessels plus range-gated UNKNOWN airborne contacts from the shared trajectories.",
+    "glint_sar": "One asynchronous maritime SAR/anomaly candidate at 14:44:17; not an aerial track."
+  },
+  "coastal_acquisition": {
+    "surface_range_km": 31.0,
+    "rule": "Each contact detected at scheduled scans when surface range from NAVY_BASE_02 <= threshold; UNKNOWN/unknown throughout.",
+    "measurement_model": "Exact shared positions and altitude; speed from preceding one-second displacement; synthetic RCS 0.035 m2."
+  }
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "sensor_id": "GLINT_SAR_PASS_SIM_02",
+    "timestamp": "14:44:17",
+    "candidate_id": "SAR-SIM-0201",
+    "center_lat": 1.218278,
+    "center_lon": 103.840547,
+    "length_m": 72.0,
+    "width_m": 13.0,
+    "anomaly": "SYNTHETIC_DECK_STRUCTURE",
+    "anomaly_length_m": 8.0
+  }
+]

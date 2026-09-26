@@ -2,26 +2,31 @@
   "UAS-01": {
     "mpstar": "RDR-002",
     "airbase_eoir": "EO-004",
-    "armybase_eoir": "ARMY-EO-004"
+    "armybase_eoir": "ARMY-EO-004",
+    "navy_coastal": "NAVY-UNK-001"
   },
   "UAS-02": {
     "mpstar": "RDR-003",
     "airbase_eoir": "EO-001",
-    "armybase_eoir": "ARMY-EO-005"
+    "armybase_eoir": "ARMY-EO-005",
+    "navy_coastal": "NAVY-UNK-004"
   },
   "UAS-03": {
     "mpstar": "RDR-004",
     "airbase_eoir": "EO-003",
-    "armybase_eoir": "ARMY-EO-002"
+    "armybase_eoir": "ARMY-EO-002",
+    "navy_coastal": "NAVY-UNK-003"
   },
   "UAS-04": {
     "mpstar": "RDR-005",
     "airbase_eoir": "EO-002",
-    "armybase_eoir": "ARMY-EO-003"
+    "armybase_eoir": "ARMY-EO-003",
+    "navy_coastal": "NAVY-UNK-005"
   },
   "UAS-05": {
     "mpstar": "RDR-001",
     "airbase_eoir": "EO-005",
-    "armybase_eoir": "ARMY-EO-001"
+    "armybase_eoir": "ARMY-EO-001",
+    "navy_coastal": "NAVY-UNK-002"
   }
 }

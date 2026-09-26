@@ -1,0 +1,122 @@
+[
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:30:07",
+    "mmsi": 990000001,
+    "vessel_name": "SIMULATED SOUTHERN TRADER",
+    "lat": 1.210136,
+    "lon": 103.810152,
+    "sog_knots": 8.0,
+    "cog_deg": 75.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:30:07",
+    "mmsi": 990000002,
+    "vessel_name": "SIMULATED SOUTHERN TUG",
+    "lat": 1.200041,
+    "lon": 103.869761,
+    "sog_knots": 6.0,
+    "cog_deg": 285.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:35:07",
+    "mmsi": 990000001,
+    "vessel_name": "SIMULATED SOUTHERN TRADER",
+    "lat": 1.21301,
+    "lon": 103.82088,
+    "sog_knots": 8.0,
+    "cog_deg": 75.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:35:07",
+    "mmsi": 990000002,
+    "vessel_name": "SIMULATED SOUTHERN TUG",
+    "lat": 1.202196,
+    "lon": 103.861716,
+    "sog_knots": 6.0,
+    "cog_deg": 285.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:40:07",
+    "mmsi": 990000001,
+    "vessel_name": "SIMULATED SOUTHERN TRADER",
+    "lat": 1.215884,
+    "lon": 103.831608,
+    "sog_knots": 8.0,
+    "cog_deg": 75.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:40:07",
+    "mmsi": 990000002,
+    "vessel_name": "SIMULATED SOUTHERN TUG",
+    "lat": 1.204352,
+    "lon": 103.85367,
+    "sog_knots": 6.0,
+    "cog_deg": 285.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:45:07",
+    "mmsi": 990000001,
+    "vessel_name": "SIMULATED SOUTHERN TRADER",
+    "lat": 1.218757,
+    "lon": 103.842335,
+    "sog_knots": 8.0,
+    "cog_deg": 75.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:45:07",
+    "mmsi": 990000002,
+    "vessel_name": "SIMULATED SOUTHERN TUG",
+    "lat": 1.206507,
+    "lon": 103.845624,
+    "sog_knots": 6.0,
+    "cog_deg": 285.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:50:07",
+    "mmsi": 990000001,
+    "vessel_name": "SIMULATED SOUTHERN TRADER",
+    "lat": 1.221631,
+    "lon": 103.853063,
+    "sog_knots": 8.0,
+    "cog_deg": 75.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:50:07",
+    "mmsi": 990000002,
+    "vessel_name": "SIMULATED SOUTHERN TUG",
+    "lat": 1.208662,
+    "lon": 103.837578,
+    "sog_knots": 6.0,
+    "cog_deg": 285.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:55:07",
+    "mmsi": 990000001,
+    "vessel_name": "SIMULATED SOUTHERN TRADER",
+    "lat": 1.224505,
+    "lon": 103.86379,
+    "sog_knots": 8.0,
+    "cog_deg": 75.0
+  },
+  {
+    "sensor_id": "MPA_OCEANS_X_AIS",
+    "timestamp": "14:55:07",
+    "mmsi": 990000002,
+    "vessel_name": "SIMULATED SOUTHERN TUG",
+    "lat": 1.210818,
+    "lon": 103.829533,
+    "sog_knots": 6.0,
+    "cog_deg": 285.0
+  }
+]

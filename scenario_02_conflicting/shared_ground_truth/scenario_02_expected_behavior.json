@@ -1,7 +1,55 @@
 {
   "development_only": true,
   "hidden_physical_uas_count": 5,
+  "true_simulated_subtype": "shahed-type",
   "expected_mpstar_count_per_scan": 5,
+  "navy_coastal_acquisition_range_km": 31.0,
+  "navy_coastal_airborne_counts": [
+    {
+      "timestamp": "14:30:11",
+      "count": 0
+    },
+    {
+      "timestamp": "14:33:11",
+      "count": 0
+    },
+    {
+      "timestamp": "14:36:11",
+      "count": 0
+    },
+    {
+      "timestamp": "14:39:11",
+      "count": 0
+    },
+    {
+      "timestamp": "14:42:11",
+      "count": 0
+    },
+    {
+      "timestamp": "14:45:11",
+      "count": 5
+    },
+    {
+      "timestamp": "14:48:11",
+      "count": 5
+    },
+    {
+      "timestamp": "14:51:11",
+      "count": 5
+    },
+    {
+      "timestamp": "14:54:11",
+      "count": 5
+    },
+    {
+      "timestamp": "14:57:11",
+      "count": 5
+    }
+  ],
+  "classification_progression": {
+    "radar": "UAS / shahed-type from first scan",
+    "eoir": "UAS / fixed-wing until site-relative range <= 18 km, then UAS / shahed-type, except the temporary UNKNOWN event"
+  },
   "eoir_counts": [
     {
       "timestamp": "14:30:01",
@@ -65,17 +113,20 @@
     "restored_classification": "UAS",
     "restored_subtype": "fixed-wing"
   },
-  "ew_support": "Every scheduled update detected=true; RF-001 is group-sector evidence from the centroid, never a one-to-one UAS ID.",
+  "ew_support": "Every scheduled update detected=false; no relevant RF signature is detectable in this simulation. Absence of RF does not invalidate radar/EO evidence.",
+  "navy_support": "Coastal radar initially sees only vessels, then acquires five UNKNOWN airborne contacts at 14:45:11 within 31 km using the same shared truth. Missing early tracks mean not yet detected, not nonexistent. AIS/SAR remain maritime.",
   "cctv_support": "Every scheduled update detected=true; three rotating cameras provide event-level evidence, not object counts.",
-  "strong_disagreement_period": "14:30:00 through 14:42:01: count/subset differences and temporary visual uncertainty.",
-  "increasing_corroboration_period": "14:45:01 through 15:00:00: both EO sensors resolve five; confidence still varies.",
+  "early": "Airbase radar resolves five shahed-type UAS; EO resolves 2/3 fixed-wing subsets; EW does not corroborate.",
+  "middle": "EO counts and confidence generally increase, with site-dependent subtype convergence and one UNKNOWN; Airbase radar maintains five; EW remains negative.",
+  "late": "Both EO sensors resolve five shahed-type UAS by 14:51:01; confidence still varies, EW remains negative.",
   "early_snapshot": {
     "window": "14:30:00 through 14:30:05",
     "mpstar": 5,
     "airbase_eoir": 2,
     "armybase_eoir": 3,
-    "airbase_ew_detected": true,
-    "armybase_ew_detected": true,
+    "navy_coastal_airborne": 0,
+    "airbase_ew_detected": false,
+    "armybase_ew_detected": false,
     "cctv_detected": true
   }
 }

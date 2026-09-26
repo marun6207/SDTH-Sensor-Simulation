@@ -4,7 +4,7 @@
     "timestamp": "14:30:05",
     "detected": true,
     "classification": "UAS",
-    "confidence": 0.749,
+    "confidence": 0.736,
     "camera_id": "CAM-001",
     "image": "CAM001_143005.jpg"
   },
@@ -13,7 +13,7 @@
     "timestamp": "14:34:05",
     "detected": true,
     "classification": "UAS",
-    "confidence": 0.698,
+    "confidence": 0.681,
     "camera_id": "CAM-002",
     "image": "CAM002_143405.jpg"
   },
@@ -22,7 +22,7 @@
     "timestamp": "14:38:05",
     "detected": true,
     "classification": "UAS",
-    "confidence": 0.812,
+    "confidence": 0.805,
     "camera_id": "CAM-003",
     "image": "CAM003_143805.jpg"
   },
@@ -31,7 +31,7 @@
     "timestamp": "14:42:05",
     "detected": true,
     "classification": "UAS",
-    "confidence": 0.756,
+    "confidence": 0.758,
     "camera_id": "CAM-001",
     "image": "CAM001_144205.jpg"
   },
@@ -40,7 +40,7 @@
     "timestamp": "14:46:05",
     "detected": true,
     "classification": "UAS",
-    "confidence": 0.845,
+    "confidence": 0.855,
     "camera_id": "CAM-002",
     "image": "CAM002_144605.jpg"
   },
@@ -49,7 +49,7 @@
     "timestamp": "14:50:05",
     "detected": true,
     "classification": "UAS",
-    "confidence": 0.814,
+    "confidence": 0.829,
     "camera_id": "CAM-003",
     "image": "CAM003_145005.jpg"
   },
@@ -58,7 +58,7 @@
     "timestamp": "14:54:05",
     "detected": true,
     "classification": "UAS",
-    "confidence": 0.917,
+    "confidence": 0.935,
     "camera_id": "CAM-001",
     "image": "CAM001_145405.jpg"
   },
@@ -67,7 +67,7 @@
     "timestamp": "14:58:05",
     "detected": true,
     "classification": "UAS",
-    "confidence": 0.861,
+    "confidence": 0.873,
     "camera_id": "CAM-002",
     "image": "CAM002_145805.jpg"
   }

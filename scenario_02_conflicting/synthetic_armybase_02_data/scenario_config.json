@@ -1,8 +1,8 @@
 {
   "scenario_id": "SCENARIO_02",
   "site_id": "ARMY_BASE_02",
-  "latitude": 1.263,
-  "longitude": 103.829,
+  "latitude": 1.415,
+  "longitude": 104.045,
   "start_time": "14:30:00",
   "end_time": "15:00:00",
   "sensor_schedules": {
