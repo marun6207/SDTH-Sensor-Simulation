@@ -2,12 +2,15 @@ from __future__ import annotations
 
 import hashlib
 import math
+import weakref
 from dataclasses import dataclass, field
 from datetime import timezone
 from typing import Any, Literal
 
 import numpy as np
 from pyproj import CRS, Geod, Transformer
+from shapely import STRtree
+from shapely import transform as transform_coords
 from shapely.geometry import GeometryCollection, LineString, Point, mapping, shape
 from shapely.ops import transform
 
@@ -16,6 +19,7 @@ from .profiles import PROFILE_CATALOG_VERSION, resolve_profile
 
 
 GEOD = Geod(ellps="WGS84")
+_PARSED_SITES: dict[int, tuple[weakref.ReferenceType, list]] = {}
 
 
 def _timestamp(value) -> str:
@@ -157,6 +161,46 @@ def _urgency(offset: int) -> str:
     return "monitor"
 
 
+def _parsed_sites(snapshot: InfrastructureSnapshot) -> list[tuple[Any, Any]]:
+    """GeoJSON parse is pure in the snapshot, so later targets reuse it."""
+    key = id(snapshot)
+    found = _PARSED_SITES.get(key)
+    if found is not None and found[0]() is snapshot:
+        return found[1]
+    cached = []
+    for feature in snapshot.features:
+        original = shape(feature.geometry)
+        if not original.is_empty:
+            cached.append((feature, original))
+
+    def _forget(dead: weakref.ReferenceType, key: int = key) -> None:
+        current = _PARSED_SITES.get(key)
+        if current is not None and current[0] is dead:
+            _PARSED_SITES.pop(key, None)
+
+    _PARSED_SITES[key] = (weakref.ref(snapshot, _forget), cached)
+    return cached
+
+
+def _project_features(snapshot: InfrastructureSnapshot, forward: Transformer) -> list[tuple[Any, Any]]:
+    """Project each non-empty site once, in snapshot order."""
+    parsed = _parsed_sites(snapshot)
+    if not parsed:
+        return []
+
+    def _xy(coords: np.ndarray) -> np.ndarray:
+        longitude, latitude = coords[:, 0], coords[:, 1]
+        x, y = forward.transform(longitude, latitude)
+        return np.column_stack((x, y))
+
+    projected = transform_coords(GeometryCollection([geom for _, geom in parsed]), _xy)
+    return [
+        (feature, local)
+        for (feature, _), local in zip(parsed, projected.geoms, strict=True)
+        if not local.is_empty
+    ]
+
+
 def _exposures(snapshot: InfrastructureSnapshot, forecast: dict[str, Any], config: ForecastConfig,
                forward: Transformer, inverse: Transformer, altitude_m: float) -> list[dict[str, Any]]:
     results = []
@@ -167,20 +211,28 @@ def _exposures(snapshot: InfrastructureSnapshot, forecast: dict[str, Any], confi
     bands = [("likely", forecast["likely_shape"], likely_steps)]
     if config.include_possible_band:
         bands.append(("possible", forecast["possible_shape"], forecast["possible_steps"]))
-    for feature in snapshot.features:
-        original = shape(feature.geometry)
-        local = transform(forward.transform, original)
-        if local.is_empty:
+    projected = _project_features(snapshot, forward)
+    if not projected:
+        return []
+    # Civil warning footprint: a fixed safety margin plus altitude-dependent
+    # horizontal uncertainty. This is not an explosive-effects model.
+    altitude_uncertainty = max(0.0, altitude_m) * config.altitude_uncertainty_m_per_m
+    warning_buffer_m = config.danger_area_buffer_m + altitude_uncertainty
+    # The query pad is the largest buffer any site can receive, so the index
+    # cannot drop a site the exact buffer test would keep.
+    pad = max(warning_buffer_m, config.infrastructure_point_buffer_m, config.infrastructure_line_buffer_m)
+    tree = STRtree([local for _, local in projected])
+    for band, corridor, steps in bands:
+        if corridor.is_empty:
             continue
-        buffer_m = (config.infrastructure_point_buffer_m
-                    if local.geom_type in {"Point", "MultiPoint"}
-                    else config.infrastructure_line_buffer_m)
-        # Civil warning footprint: a fixed safety margin plus altitude-dependent
-        # horizontal uncertainty. This is not an explosive-effects model.
-        altitude_uncertainty = max(0.0, altitude_m) * config.altitude_uncertainty_m_per_m
-        warning_buffer_m = config.danger_area_buffer_m + altitude_uncertainty
-        protected = local.buffer(max(buffer_m, warning_buffer_m))
-        for band, corridor, steps in bands:
+        candidates = set(map(int, tree.query(corridor.buffer(pad), predicate="intersects")))
+        for index, (feature, local) in enumerate(projected):
+            if index not in candidates:
+                continue
+            buffer_m = (config.infrastructure_point_buffer_m
+                        if local.geom_type in {"Point", "MultiPoint"}
+                        else config.infrastructure_line_buffer_m)
+            protected = local.buffer(max(buffer_m, warning_buffer_m))
             if not corridor.intersects(protected):
                 continue
             hits = [offset for offset, step_geometry in zip(offsets, steps) if step_geometry.intersects(protected)]
