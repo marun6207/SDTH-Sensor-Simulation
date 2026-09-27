@@ -2,355 +2,378 @@
 
 This project generates a reproducible, fictional multi-sensor dataset for a
 Command-and-Control (C2) and Common Operating Picture (COP) demonstration.
-The data is suitable for testing sensor ingestion, data unification, track
-correlation, sensor fusion, and plotting on a Singapore map.
+It supports testing sensor ingestion, data unification, track correlation,
+sensor fusion, and plotting on a Singapore map.
 
 This is a synthetic hackathon scenario. It is not a model of real military
 sensor performance, communications, weapon performance, or an actual attack
-trajectory. The geographic coordinates are synthetic WGS84 coordinates chosen
+trajectory. Geographic coordinates are synthetic WGS84 coordinates chosen
 only to make the tracks coherent on a map.
 
----
+## Scenarios
 
-## 🏛️ Relationship with Nexus C2 (Three Operational Pillars)
+The repository contains **three main synthetic scenarios**:
 
-> **Primary hero is airborne `S2_osint_swarm`. Maritime secondary track is `S1_trojan` (tri-service + GLINT hull anchor) then `S3_sar_ais` (GLINT macro × SIA × AIS dark vessel). marun `scenario_02_conflicting` is a legacy fusion bench, not Nexus S2.**
+| Scenario | Directory | Overview |
+| --- | --- | --- |
+| 1 - Multi-Sensor Corroboration | [scenario_01_consistent/](scenario_01_consistent/) | Five fixed-wing UAS observed by sensors that generally provide mutually supporting evidence. |
+| 2 - Multi-Sensor Disagreement | [scenario_02_conflicting/](scenario_02_conflicting/) | Five shared physical fixed-wing UAS observed across Airbase, Army and Navy sources, with differing resolution, classification, timing and modalities before stronger corroboration. |
+| 3 - Maritime Multi-Sensor Disagreement | [scenario_03_maritime_conflicting/](scenario_03_maritime_conflicting/) | Four shared physical USVs approaching from the south, with radar, EO/IR, AIS, EW, CCTV and GLINT providing different evidence about the same maritime event. |
 
-### Three-Pillar Operational Mapping
-
-| Rank | Nexus ID | Role | GLINT Usage |
-|------|----------|------|-------------|
-| **1 (Primary Hero)** | `S2_osint_swarm` | In-flight OSINT ~50 × radar 4 / RF silence → GNSS denial + GBAD (Cognitive / Autonomous Saturation / Anti-Exhaustion) | **Not used** (Air domain & social sensor) |
-| **2** | `S1_trojan` | Maritime + Land/Air: AIS vs coastal radar, CNI VETO, Option B (Tri-service contradiction + spatial SAR mothership lock) | **Used** — Mothership aft-deck / hull spatial anchor (already in narrative & export) |
-| **3** | `S3_sar_ais` | Dark vessel: Dual-SAR × thin AIS → Approach Patrol (Orbital latency → reachable ellipse → USV intercept) | **Primary showcase** — macro cluster (`:5051` / live) + SIA micro |
-
-*Auxiliary baseline*: `S1_ais_spoof` serves as a lightweight baseline outside the three pillars (no GLINT).
-
-### Data Role Alignment with marun
-
-| Data Feed | Storage Location | marun Role |
-|-----------|------------------|------------|
-| **S2 Synthetic** (OSINT / radar 4 / acoustic / RF silent) | marun **new** `exports/s2_osint_swarm_*.jsonl` | marun canonical export (*`scenario_02_conflicting` is a legacy fusion bench, not Nexus S2*) |
-| **Trojan Maritime + Land/Air + GLINT row** | Existing `synthetic_maritime_data/` → `exports/s1_trojan_*` | marun `exports/s1_trojan_scenario.jsonl` |
-| **S3 Coastal AIS / Radar** | marun optional; **GLINT macro / SIA chip owned by Nexus / Team 02 / SIA** | GLINT `:5051` / SIA `:5050` / Indago DuckDB |
-
-*Note on `scenario_02_conflicting/`*: The in-repo directory `scenario_02_conflicting/` is a **legacy fusion benchmark** (evaluating dual-site Airbase vs Army Base 5-UAS resolution), **not** Nexus `S2_osint_swarm`. Nexus `S2_osint_swarm` represents the 50-drone autonomous saturation raid triggered by in-flight civilian passenger OSINT and will be housed under `exports/s2_osint_swarm_*.jsonl`.
-
----
-
-The repository contains **two separated legacy scenarios** in the same Git repository:
-
-- `scenario_01_consistent/`: existing five-UAS multi-sensor corroboration, for
-  ingestion and fusion of mutually supporting observations.
-- `scenario_02_conflicting/`: a shared five-UAS southwest approach with controlled
-  disagreement between two synthetic sites (legacy fusion benchmark).
-
-Generate Scenario 2 by running its Airbase generator first, then its Army generator:
+## Repository Structure
 
 ```text
-cd scenario_02_conflicting
-python generate_airbase_02_scenario.py
-python generate_armybase_02_scenario.py
+scenario_01_consistent/
+  synthetic_airbase_data/         # Airbase feeds, config and shared truth
+  synthetic_armybase_data/        # Army feeds, config and associations
+  original_sha256.json            # Archived data preservation manifest
+scenario_02_conflicting/
+  synthetic_airbase_02_data/
+  synthetic_armybase_02_data/
+  synthetic_navybase_02_data/
+  shared_ground_truth/
+  scenario_config.json
+  scenario_02_all_sensor_events.json
+scenario_03_maritime_conflicting/
+  synthetic_airbase_03_data/
+  synthetic_armybase_03_data/
+  synthetic_navybase_03_data/
+  shared_ground_truth/
+  scenario_config.json
+  scenario_03_all_sensor_events.json
+synthetic_maritime_data/          # Separate Trojan maritime overlay
+exports/                         # Canonical C2 exports
 ```
 
-The Airbase generator creates the shared five-UAS physical ground truth, associations,
-expected behavior, scenario configuration, and Airbase observations. The Army generator
-reads that saved ground truth and mapping, creates Army observations, and writes the
-combined `scenario_02_all_sensor_events.json`. It never generates trajectories or writes
-the shared truth or Airbase files. Run both scripts in this order to refresh a scenario.
-Missing shared inputs cause a clear error directing you to run the Airbase generator first.
-The Army script imports common observation and validation helpers from the Airbase script;
-there is only one implementation of those helpers.
+Each scenario directory also contains its generators and README. Scenarios 2
+and 3 include regression tests. Each site folder contains individual modality
+feeds, a `scenario_config.json`, and a chronological `all_sensor_events.json`.
 
-From the Scenario 2 directory, validate saved data without writing:
-
-```text
-python generate_airbase_02_scenario.py --validate-only
-python generate_armybase_02_scenario.py --validate-only
-```
-
-The first validates shared truth and Airbase files; the second validates the complete
-scenario and combined stream. Both verify the archived Scenario 1 SHA-256 manifest.
-No external packages
-are required. See [the completed report](SCENARIO_02_REPORT.md) for the full directory
-tree, starting positions, hidden associations, count progression, and validation results.
+The separate [maritime overlay](synthetic_maritime_data/README.md) combines
+Navy AIS, coastal radar, GLINT SAR, POIs and story EW with Scenario 1 land/air
+feeds in the [canonical exports](exports/README.md). Its existing root commands
+are `python generate_maritime_overlay.py` followed by
+`python generate_canonical_stream.py`. See those READMEs for export details.
 
 ## Scenario 1 - Multi-Sensor Corroboration
 
-Scenario 1 is named **Multi-Sensor Corroboration** (previously Consistent Multi-Sensor Detection). Five synthetic
-fixed-wing UAS objects move as a loose swarm from the eastern side of
-`AIRBASE_01` toward the airbase area during:
+Five synthetic fixed-wing UAS approach `AIRBASE_01` from the east during
+**14:30:00-15:00:00**. `ARMY_BASE_01`, approximately 2 km southwest of Airbase,
+observes the same trajectories from another viewpoint. Its position is derived
+from the saved Airbase configuration.
 
-```text
-14:30:00 through 15:00:00
-```
+| Site | Sensor | Interval / first update | Observations |
+| --- | --- | --- | ---: |
+| AIRBASE_01 | MPSTAR | 2 min / 14:30:00 | 80 |
+| AIRBASE_01 | EO/IR | 3 min / 14:30:01 | 50 |
+| AIRBASE_01 | EW | 5 min / 14:30:02 | 7 |
+| ARMY_BASE_01 | EO/IR | 3 min / 14:30:01 | 50 |
+| ARMY_BASE_01 | CCTV | 4 min / 14:30:05 | 8 |
+| ARMY_BASE_01 | EW | 5 min / 14:30:02 | 7 |
 
-The physical objects are represented internally by:
+MPSTAR maintains five tracks. EO/IR progressively resolves the UAS and reports
+`UAS` / `fixed-wing`. EW provides persistent supporting `RF-001` evidence about
+the overall event. CCTV reports UAS visibility without identifying the subtype.
+Neither EW nor CCTV maps to individual UAS. This archived scenario includes
+end-minute second-offset observations, unlike the strict boundaries below.
 
-```text
-UAS-01  UAS-02  UAS-03  UAS-04  UAS-05
-```
-
-Their positions are stored separately in WGS84 ground truth. Raw sensor feeds
-do not contain latitude, longitude, or these internal object IDs. The purpose
-of the scenario is to let a future fusion layer infer that different sensor
-tracks describe the same physical event.
-
-The best-case scenario is intentionally mutually consistent:
-
-- MPSTAR reports five persistent inbound radar tracks.
-- EO/IR reports visual observations classified as `UAS` with subtype
-  `fixed-wing`.
-- EW reports persistent RF activity classified as `suspected_uas_link` in the
-  same general sector.
-- Army Base sensors observe the same physical UAS trajectories from a second
-  location and use different viewing geometry.
-
-The measurements are not identical because the sensors use different
-modalities and are located at different sites.
-
-## Sensor Sites
-
-### AIRBASE_01
-
-`AIRBASE_01` is the original synthetic sensor site. Its fixed WGS84 location
-is stored in [scenario_01_consistent/synthetic_airbase_data/scenario_config.json](scenario_01_consistent/synthetic_airbase_data/scenario_config.json).
-
-Sensors at this site are:
-
-- **MPSTAR**: five persistent tracks, `RDR-001` through `RDR-005`, updating
-  every 2 minutes.
-- **EO/IR**: tracks `EO-001` through `EO-005`, updating every 3 minutes.
-  Fewer tracks may be visible in the early scans, then more become available.
-- **EW**: one persistent supporting RF signature, `RF-001`, updating every
-  5 minutes. `RF-001` is evidence about the overall event, not a specific UAS.
-
-### ARMY_BASE_01
-
-`ARMY_BASE_01` is generated separately approximately 2 km southwest of
-`AIRBASE_01`. The generator reads the existing Airbase configuration instead
-of hard-coding its coordinates, calculates the southwest offset, and stores
-the result in [scenario_01_consistent/synthetic_armybase_data/scenario_config.json](scenario_01_consistent/synthetic_armybase_data/scenario_config.json).
-
-Sensors at this site are:
-
-- **EO/IR**: Army-specific tracks `ARMY-EO-001` through `ARMY-EO-005`, using
-  the same EO/IR schema as the Airbase sensor and updating every 3 minutes.
-- **CCTV**: simple visual detections from `CAM-001`, `CAM-002`, and
-  `CAM-003`, updating every 4 minutes. CCTV reports that a UAS is visible but
-  does not identify the fixed-wing subtype.
-- **EW**: sensor `ARMYBASE_EW_01`, using persistent emitter `RF-001` and
-  updating every 5 minutes. This RF signature is not mapped to an individual
-  UAS.
-
-Both sites reuse the same Airbase ground-truth trajectory. Army Base does not
-create a second independent swarm.
-
-## Asynchronous Updates
-
-The sensor streams intentionally update at different intervals and use small
-second offsets:
-
-```text
-MPSTAR: 14:30:00, 14:32:00, 14:34:00, ...
-EO/IR:  14:30:01, 14:33:01, 14:36:01, ...
-EW:     14:30:02, 14:35:02, 14:40:02, ...
-CCTV:   14:30:05, 14:34:05, 14:38:05, ...
-```
-
-This allows an ingestion or fusion system to process a realistic event stream
-rather than assuming all sensors report simultaneously.
-
-## Output Files
-
-The two sites are deliberately separated in the VS Code Explorer:
-
-```text
-scenario_01_consistent/synthetic_airbase_data/
-  scenario_config.json
-  mpstar.json
-  eoir.json
-  ew.json
-  ground_truth_positions.json
-  ground_truth_associations.json
-  all_sensor_events.json
-
-scenario_01_consistent/synthetic_armybase_data/
-  scenario_config.json
-  eoir.json
-  cctv.json
-  ew.json
-  ground_truth_associations.json
-  all_sensor_events.json
-```
-
-### Raw sensor files
-
-Raw files contain only their defined sensor fields. They do not contain
-geographic ground truth or fused object IDs:
-
-- `mpstar.json`: 80 observations, five radar records per 16 scans.
-- `eoir.json`: 50 Airbase EO/IR observations.
-- `ew.json`: 7 Airbase EW observations.
-- Army `eoir.json`: 50 observations.
-- Army `cctv.json`: 8 CCTV observations.
-- Army `ew.json`: 7 observations.
-
-### Development and evaluation files
-
-- `ground_truth_positions.json` contains the shared latitude/longitude
-  position of each UAS at every minute. It is not sensor data.
-- `ground_truth_associations.json` contains hidden object-to-track mappings
-  for evaluating correlation. RF emitters and CCTV cameras are intentionally
-  not mapped to individual UAS objects.
-- `all_sensor_events.json` combines only that site's raw sensor records and
-  sorts them chronologically without adding fields.
-
-## Original Scenario 1 generators
-
-The existing Scenario 1 datasets are preserved byte-for-byte under `scenario_01_consistent/`.
-The commands below are retained for reference: running them overwrites those archived
-datasets. They are not needed to generate Scenario 2. Only their directory paths have changed.
-
-Open the project folder in VS Code and open **Terminal > New Terminal**.
-Run the original Airbase generator with:
+From the repository root, the original generation commands are:
 
 ```text
 cd scenario_01_consistent
 python generate_airbase_scenario.py
-```
-
-Run the Army Base generator with:
-
-```text
 python generate_armybase_scenario.py
 ```
 
-The Army generator expects the existing Airbase configuration and ground truth
-to exist. It writes only to `scenario_01_consistent/synthetic_armybase_data/` and checks that the
-existing Airbase JSON files were not modified.
+These commands overwrite the archived datasets and are not needed for Scenarios
+2 or 3. Army reads existing Airbase configuration/truth, writes its own feeds,
+and checks that Airbase JSON files remain unchanged. Generation validates schemas,
+confidence, timing, track persistence, event ordering and ground-truth constraints.
 
-Both generators use fixed random seeds so repeated runs produce reproducible
-measurements. No external Python packages are required.
-
-## Validation
-
-The generators validate exact raw schemas and fail if fields are missing,
-renamed, or added. They also check confidence ranges, timestamp boundaries,
-track persistence, chronological event ordering, ground-truth coordinate
-bounds, and the separation between raw observations and development-only
-ground truth.
-
-## Trojan mothership overlay (issue #116)
-
-Navy AIS (Happy Tug 8), coastal radar (~120 kt UAS), GLINT SAR, POIs, and
-story EW LOBs live under
-[`synthetic_maritime_data/`](synthetic_maritime_data/)
-(see [synthetic_maritime_data/README.md](synthetic_maritime_data/README.md)).
-Canonical C2 export files live under [`exports/`](exports/)
-(see [exports/README.md](exports/README.md)).
-
-The canonical stream merges Scenario 1 land/air feeds from
-`scenario_01_consistent/` with the maritime overlay (story contradiction is
-AIS vs coastal radar). Run from the repository root:
-
-```text
-python generate_maritime_overlay.py
-python generate_canonical_stream.py
-```
-
-Outputs:
-
-- `exports/s1_trojan_scenario.jsonl` — time-compressed multi-service stream
-- `exports/site_origins.json` — site latitudes/longitudes for polar
-  reverse-geocode
-- `exports/pois.json` — Jurong CNI + military POI buffers
+Replay uses the per-site
+[Airbase stream](scenario_01_consistent/synthetic_airbase_data/all_sensor_events.json)
+(137 observations) and
+[Army stream](scenario_01_consistent/synthetic_armybase_data/all_sensor_events.json)
+(65 observations). There is no scenario-wide replay file in this directory.
+Raw feeds contain no geographic truth or hidden UAS IDs. Shared positions are
+sampled every minute in the Airbase development files.
 
 ## Scenario 2 - Multi-Sensor Disagreement
 
-**Southwest UAS Approach with Multi-Sensor Disagreement** retains a hidden ground
-truth of exactly five physical fixed-wing UAS approaching AIRBASE_02 and ARMY_BASE_02
-from the southwest. Unlike Scenario 1's generally corroborating observations, the
-sensors intentionally begin with differing assessments of the same physical event.
+Exactly **five shared physical fixed-wing UAS** approach from the **southeast
+toward the northwest**, during **14:30:00-15:00:00 inclusive**. All three sites
+use the same one-second trajectories. The simulated `shahed-type` identity and
+RF silence are fictional scenario assumptions.
 
-Disagreement is introduced through different numbers and subsets of independently
-resolved objects, different sensor-local track identities and confidence levels,
-temporary EO/IR classification uncertainty, asynchronous updates, and different
-viewing geometry caused by the geographically separated sites.
+| Synthetic site | Latitude | Longitude | Sensors |
+| --- | ---: | ---: | --- |
+| AIRBASE_02, eastern region | 1.345000 | 103.965000 | MPSTAR, EO/IR, EW |
+| ARMY_BASE_02, Pulau Tekong region | 1.415000 | 104.045000 | EO/IR, CCTV, EW |
+| NAVY_BASE_02, southern region | 1.255000 | 103.835000 | Coastal radar, AIS, GLINT SAR |
 
-MPSTAR consistently resolves all five tracks. Initially, Airbase EO/IR resolves
-fewer objects, while Army EO/IR may resolve a different number or subset of the same
-five UAS. One persistent EO/IR track temporarily reports `UNKNOWN` with low confidence
-before returning to `UAS` / `fixed-wing`. EW continues to provide supporting RF
-evidence for the overall event, and CCTV provides supporting visual UAS evidence.
-Nexus C2 must reconcile these observations. As the UAS approach, both EO/IR sensors
-progressively resolve all five objects, moving the picture from **multi-sensor
-disagreement** toward **stronger multi-sensor corroboration**. Fewer EO/IR tracks
-indicate incomplete resolution: **five physical UAS remain present throughout**.
+### Schedules and observations
 
-All sensors stay operational. Disagreement is **not** created through sensor outages,
-missed scheduled updates, radar track dropouts, RF or CCTV non-detection, or random
-or physically nonsensical measurements.
+| Sensor | Interval / first update | Observations |
+| --- | --- | ---: |
+| Airbase MPSTAR | 2 min / 14:30:00 | 80 |
+| Airbase EO/IR | 3 min / 14:30:01 | 41 |
+| Airbase EW | 5 min / 14:30:02 | 6 |
+| Army EO/IR | 3 min / 14:30:01 | 44 |
+| Army CCTV | 4 min / 14:30:05 | 8 |
+| Army EW | 5 min / 14:30:02 | 6 |
+| Navy AIS | 5 min / 14:30:07 | 12 |
+| Navy coastal radar | 3 min / 14:30:11 | 45 |
+| Navy GLINT SAR | Single pass / 14:44:17 | 1 |
 
-AIRBASE_02 is at **1.275000, 103.820000** and ARMY_BASE_02 is at **1.263000,
-103.829000**. Their spherical surface separation is **1.6678 km**. These are
-fictional scenario coordinates.
+Updates after 15:00:00 are excluded; MPSTAR includes the final 15:00:00 scan.
 
-The group approaches northeast from southwest of both sites over 14:30:00 through 15:00:00.
-Continuous curved trajectories have different starting positions, paths, and altitudes.
-The development file samples them every second, including all observation times.
-The fixed seed is `20260925`. Geometry uses a spherical Earth with radius 6371.0088 km,
-surface range, and local flat elevation relative to synthetic sites at altitude zero.
-This is a coherent synthetic observation model, not a calibrated sensor performance model.
+### Disagreement and progression
 
-Acquisition order is a scripted model of different viewpoints and gradual resolution.
-Confidence depends on approach distance with independent seeded quality variation
-and small non-monotonic changes.
+- MPSTAR resolves five persistent `UAS` / `shahed-type` tracks throughout.
+  Airbase EO/IR initially resolves two objects and Army EO/IR three, using
+  different subsets and independently shuffled local IDs. Both resolve all
+  five from 14:45:01; unresolved objects remain physically present.
+- EO/IR initially reports `UAS` / `fixed-wing`. Airbase `EO-003` temporarily
+  reports `UNKNOWN` / `unknown` at 14:42:01 with confidence 0.38, recovering
+  at 14:45:01. A synthetic range threshold of 18 km enables `shahed-type`
+  identification from 14:48:01 at Airbase and 14:51:01 at Army. Confidence
+  improves overall with seeded variation and temporary dips.
+- Both EW feeds remain operational but report `detected=false`, null emitter
+  and bearing, `no_relevant_rf_detection`, and zero confidence throughout.
+  Absence of RF corroboration does not invalidate radar/EO evidence.
+- Army CCTV rotates three cameras. Only the final scan at **14:58:05** provides
+  positive group-level `UAS` evidence. Earlier scans report
+  `no_relevant_uas_detection`, `detected=false`, and zero confidence.
+- Navy coastal radar maintains two surface-vessel tracks, `SURFACE-207` and
+  `SURFACE-412`. It additionally acquires all five shared airborne contacts
+  at **14:45:11**, when they meet the synthetic site-relative range threshold
+  of **31 km**. These persistent `NAVY-UNK-001` through `NAVY-UNK-005` tracks
+  remain `UNKNOWN` / `unknown`, with non-zero altitude. The 45 records comprise
+  20 vessel and 25 airborne observations. Early absence means not yet detected.
+- AIS reports two fictional cooperative vessels with MMSIs `990000001` and
+  `990000002`, rather than the UAS. GLINT supplies one maritime deck-anomaly
+  candidate at 14:44:17. AIS and SAR remain maritime context.
 
-| Sensor | Interval | Seconds | Observations |
-| --- | ---: | ---: | ---: |
-| Airbase MPSTAR | 2 min | :00 | 80 |
-| Airbase EO/IR | 3 min | :01 | 41 |
-| Airbase EW | 5 min | :02 | 6 |
-| Army EO/IR | 3 min | :01 | 44 |
-| Army CCTV | 4 min | :05 | 8 |
-| Army EW | 5 min | :02 | 6 |
+### Generation, replay and validation
 
-Scenario 2 uses a strict inclusive **15:00:00** boundary. Radar reports at 15:00:00;
-EO at 15:00:01 and EW at 15:00:02 are outside the scenario and are not scheduled.
-This differs from the archived Scenario 1 convention, which includes end-minute offsets.
-CCTV rotates CAM-001, CAM-002, and CAM-003, one scheduled camera observation per scan.
-EW RF-001 represents the general group sector, with bearings derived from the shared
-five-object centroid at each site's location. Neither cameras nor RF-001 map to a UAS.
-Image names are synthetic references; image files are not generated.
+From the repository root, run in order:
 
-At 14:42:01, one existing Airbase EO track reports UNKNOWN/unknown with confidence
-0.38; at 14:45:01 the same ID returns to UAS/fixed-wing with improved confidence.
-Both EO systems independently resolve five objects from 14:45:01 onward. Radar
-resolves five at every scheduled scan.
+```text
+cd scenario_02_conflicting
+python -B generate_airbase_02_scenario.py
+python -B generate_armybase_02_scenario.py
+```
 
-### Replay versus development data
+Airbase writes shared truth, associations, expected behavior, configuration and
+Airbase feeds. Army then reads those inputs, generates **Army and Navy** feeds,
+and writes the combined replay without changing shared truth or Airbase files.
+Missing inputs produce an error directing you to run Airbase first.
 
 Use [scenario_02_all_sensor_events.json](scenario_02_conflicting/scenario_02_all_sensor_events.json)
-as the primary Nexus C2 input: all **185** raw observations sorted chronologically.
-The two site folders also contain individual feeds and chronological per-site combined
-streams. Raw observations use exactly the original sensor schemas, with no hidden
-physical identifiers, geographic truth, associations, or evaluation metadata.
+as the primary C2 replay: **243 chronologically sorted raw observations**
+(127 Airbase, 58 Army, 58 Navy).
 
+From the Scenario 2 directory, validate saved files without writing:
+
+```text
+python -B generate_airbase_02_scenario.py --validate-only
+python -B generate_armybase_02_scenario.py --validate-only
+```
+
+The first checks shared/Airbase data; the second checks the complete scenario.
+Both verify Scenario 1's archived SHA-256 manifest. Checks cover schemas,
+schedules, shared trajectory fingerprint and geometry, southeast approach,
+EO resolution/classification/recovery, EW and CCTV behavior, Navy acquisition
+and maritime context, hidden-data separation, sorted replay and deterministic
+model equality. Army also hashes upstream inputs to verify preservation.
+The existing regression command is:
+
+```text
+python -B -m unittest discover -s . -p test_scenario_02.py
+```
+
+## Scenario 3 - Maritime Multi-Sensor Disagreement
+
+Exactly **four shared physical USVs** approach from the **south and travel
+generally northward**, during **15:00:00-15:30:00 inclusive**. All object-level
+observations relate to these same four hidden physical objects; sites do not
+create independent groups. Shared trajectories are sampled every second.
+
+| Synthetic site | Latitude | Longitude | Sensors |
+| --- | ---: | ---: | --- |
+| AIRBASE_03, southern/southeastern region | 1.290000 | 103.860000 | MPSTAR-style radar, EO/IR, EW |
+| ARMY_BASE_03, southern region | 1.265000 | 103.800000 | EO/IR, EW, CCTV |
+| NAVY_BASE_03, synthetic maritime site | 1.260000 | 103.720000 | Coastal radar, AIS, GLINT SAR |
+
+All site coordinates are synthetic. Navy Base 03 remains a synthetic maritime
+site; the Airbase maritime radar behavior and EW/CCTV assumptions describe only
+this fictional demonstration.
+
+### Schedules and observations
+
+| Sensor | Interval / first update | Observations |
+| --- | --- | ---: |
+| Airbase MPSTAR | 2 min / 15:00:00 | 64 |
+| Airbase EO/IR | 3 min / 15:00:01 | 22 |
+| Airbase EW | 5 min / 15:00:02 | 6 |
+| Army EO/IR | 3 min / 15:00:01 | 25 |
+| Army EW | 5 min / 15:00:02 | 6 |
+| Army CCTV | 4 min / 15:00:05 | 8 |
+| Navy coastal radar | 3 min / 15:00:11 | 40 |
+| Navy AIS | 5 min / 15:00:07 | 6 |
+| Navy GLINT SAR | Single pass / 15:14:17 | 1 |
+
+Updates after 15:30:00 are excluded; MPSTAR includes 15:30:00. Equal timestamps
+use deterministic sensor and local-identity ordering.
+
+### Disagreement and progression
+
+Both Navy coastal radar and Airbase MPSTAR maintain **four persistent tracks**
+from their first scans. Classification progresses from `UNKNOWN` / `unknown`
+to `SURFACE_CRAFT` / `unknown`, then `USV` / `unmanned-suspected`. Coastal radar
+changes at 15:09:11 and 15:21:11; MPSTAR changes at 15:10:00 and 15:22:00.
+Classification changes do not change track IDs.
+
+Army and Airbase EO/IR progressively resolve different subsets of the four
+contacts. At scan minutes `00, 03, 06, 09, 12, 15, 18, 21, 24, 27` (second `01`):
+
+- Army counts: `1, 1, 2, 2, 2, 3, 3, 3, 4, 4`.
+- Airbase counts: `1, 1, 1, 2, 2, 2, 3, 3, 3, 4`.
+
+EO classification starts as `SURFACE_CRAFT` / `unknown` and becomes
+`USV` / `small-surface-craft` from 15:18:01. Army `ARMY-EO-002` temporarily
+reports `UNKNOWN` at 15:12:01 and recovers at 15:15:01. Confidence generally
+improves with seeded dips.
+
+**Only one of the four USVs reports cooperative AIS**, using fictional MMSI
+`990000003`. Its association with hidden `USV-02` exists only in developer/evaluation
+ground truth. Raw AIS does not expose hidden USV IDs. The other three objects
+send no AIS messages; there are no negative AIS records.
+
+Army and Airbase EW provide intermittent **event/group-level RF evidence**,
+not one-to-one USV tracks. At the six scheduled scans, Army detection is
+`true, false, true, true, false, true`; Airbase detection is
+`false, true, true, false, true, true`. Positive reports use `RF-GROUP-03`
+and bearings toward the shared group centroid from each site. The first Army
+report is ambiguous. Negative reports have null emitter/bearing and zero confidence.
+
+Army CCTV remains operational, rotating three cameras, but **all eight scans
+report no relevant synthetic visual anomaly**: `detected=false`,
+`classification="no_relevant_visual_anomaly"`, and zero confidence. Camera/image
+fields remain present; there are no individual tracks or USV associations.
+
+GLINT SAR supplies one asynchronous maritime return-cluster anomaly at
+15:14:17, centered on the shared contact area. Its dimensions describe an area,
+not an individual hull; it does not resolve four USV tracks. EW, CCTV and GLINT
+have no one-to-one USV associations. Non-detection does not imply physical absence.
+
+Together these feeds present different counts, identities, classifications,
+confidence levels, timings and modalities for the **same four-object event**.
+Late radar/EO evidence converges on four contacts while AIS remains one reporting
+identity and CCTV remains negative.
+
+### Generation, replay and validation
+
+From the repository root, run in order:
+
+```text
+cd scenario_03_maritime_conflicting
+python -B generate_navybase_03_scenario.py
+python -B generate_airbase_03_scenario.py
+python -B generate_armybase_03_scenario.py
+```
+
+Navy writes shared truth, configuration, evaluation metadata and Navy feeds.
+Airbase reads saved Navy/shared inputs and writes Airbase feeds. Army reads
+Navy/shared/Airbase inputs, writes Army feeds and builds the complete replay.
+Downstream generators protect upstream inputs by hash; missing inputs identify
+the prerequisite generator. Run all three in order to refresh the scenario.
+
+Use [scenario_03_all_sensor_events.json](scenario_03_maritime_conflicting/scenario_03_all_sensor_events.json)
+as the primary C2 replay: **178 chronologically sorted raw observations**
+(92 Airbase, 39 Army, 47 Navy).
+
+From the Scenario 3 directory, validate saved files without writing:
+
+```text
+python -B generate_navybase_03_scenario.py --validate-only
+python -B generate_airbase_03_scenario.py --validate-only
+python -B generate_armybase_03_scenario.py --validate-only
+```
+
+These successively check Navy/shared data, Navy/shared/Airbase data, and the
+complete scenario. Validation covers four separated northbound paths, shared
+geometry and associations, schemas, strict timing, classification/count
+progression, group evidence, negative CCTV, raw-only replay and deterministic
+model equality. The existing regression command is:
+
+```text
+python -B -m unittest discover -s . -p test_scenario_03.py
+```
+
+The Scenario 3 tests **regenerate Scenario 3 data**, checking byte-identical
+reproducibility, corruption rejection and preservation of Scenarios 1 and 2.
+Use the validation-only commands when saved files must remain untouched.
+
+## Data Model
+
+### Raw feeds and hidden ground truth
+
+Raw observations contain sensor-local fields such as `sensor_id`, `timestamp`,
+`track_id` where applicable, measurements, classification and confidence where
+supported by that modality. Radar/EO feeds may use site-relative geometry;
+maritime feeds may contain observed contact coordinates. These coordinates do
+not make a raw observation a hidden ground-truth record.
+
+Developer/evaluation files contain hidden physical IDs, shared trajectories,
+object-to-track associations and expected behavior. In Scenarios 2 and 3,
 `shared_ground_truth/ground_truth_positions.json`, `ground_truth_associations.json`,
-and `scenario_02_expected_behavior.json` are **developer/evaluation only**. Do not
-supply them, or scenario configuration files, as normal Nexus C2 replay input.
-Expected behavior documents count progression, temporary uncertainty, supporting
-EW/CCTV evidence, and periods of disagreement and increasing corroboration.
+and `scenario_02_expected_behavior.json` or `scenario_03_expected_behavior.json`
+are **not normal Nexus/C2 replay inputs**. Configuration is separate metadata,
+not a sensor event stream. Image filenames are synthetic references.
 
-### Scenario 2 validation
+Combined replay files contain only chronologically sorted raw sensor observations,
+without hidden physical IDs, associations or expected-behavior metadata. Local
+track suffixes across sensors do not imply a shared physical identity. Fusion
+must infer associations from evidence rather than read evaluation mappings.
 
-Generation validates before writing and again after reading the saved JSON files.
-It checks exact schemas against the archived Scenario 1 feeds, all scheduled counts,
-track persistence and associations, physical trajectory continuity and northeast motion,
-southwest starts, site coordinates and separation, geometry against shared truth,
-confidence variation, classification recovery, positive EW/CCTV evidence, absence of
-hidden IDs, combined-stream equality and chronological sorting. It also compares all
-saved data and development metadata with the deterministic model. Validation errors
-raise an exception with the failed condition. The original SHA-256 manifest checks
-Scenario 1 inventory and bytes before and after generation.
+### Site configuration and sensor location
+
+For Scenarios 2 and 3, each site's `scenario_config.json` contains `scenario_id`,
+`site_id`, `latitude`, `longitude`, `start_time`, `end_time` and `sensor_schedules`.
+The sensor IDs under `sensor_schedules` belong to that site. Individual observations
+do not need to repeat the site's fixed coordinates.
+
+For example, `MPSTAR_AIRBASE_02` is anchored to the coordinates in
+[synthetic_airbase_02_data/scenario_config.json](scenario_02_conflicting/synthetic_airbase_02_data/scenario_config.json).
+A UI can resolve `sensor_id -> site_id -> site latitude/longitude` using these
+configs. Keep this lookup scoped to the scenario, since some sensor IDs recur.
+
+### Multiple tracks per scan
+
+One sensor may produce multiple object-level observations at the same timestamp.
+For example, an MPSTAR scan can report `RDR-001`, `RDR-002`, `RDR-003`, `RDR-004`
+and `RDR-005` together. Therefore, `sensor_id + timestamp` is not necessarily
+unique; `sensor_id + track_id + timestamp` can identify a particular track update
+within the scenario. Other modalities use identities such as MMSI or candidate ID.
+
+A UI should interpret the hierarchy as:
+
+```text
+Site -> Sensor -> Scan timestamp -> zero, one, or multiple track observations
+```
+
+## Validation
+
+Generators use fixed seeds and Python's standard library; no external packages
+are required. Scenarios 2 and 3 validate before writing and after reading saved
+outputs, checking exact schemas, schedules, geometry, evidence progression,
+raw/development separation and deterministic content. Validation failures stop
+execution with the failed condition.
+
+The commands in each scenario section distinguish generation from read-only
+validation. Preservation checks protect archived or upstream data; regression
+tests provide additional scenario-specific coverage. Detailed documentation is
+available in the [Scenario 1 README](scenario_01_consistent/README.md),
+[Scenario 2 README](scenario_02_conflicting/README.md), and
+[Scenario 3 README](scenario_03_maritime_conflicting/README.md).
